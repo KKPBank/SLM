@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e26a023f-f0b9-4580-8f6c-0c1a7a436304" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/saleleadservice/leadservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LeadService.xsd" MetadataType="Schema" ID="1af1d3ec-af5e-4681-87a8-6277ca8e8057" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LeadService1.xsd" MetadataType="Schema" ID="786ccad3-f6b3-4a87-b350-00494af70c3a" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LeadService2.xsd" MetadataType="Schema" ID="7e77c7ee-b349-4b5e-966c-cdbe383ef39e" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LeadService3.xsd" MetadataType="Schema" ID="83d01617-415e-4f0d-aaff-0344ef69ec94" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LeadService.disco" MetadataType="Disco" ID="21ec333b-e8f2-4ec8-8112-47ad0cd9f431" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?disco" />
+    <MetadataFile FileName="LeadService.wsdl" MetadataType="Wsdl" ID="d23259d5-8f2c-4195-8880-1d232b76c0d2" SourceId="1" SourceUrl="http://localhost/saleleadservice/LeadService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

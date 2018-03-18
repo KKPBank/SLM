@@ -1,0 +1,1 @@
+﻿เริ่มคุ้มครองกรมธรรม์%CoverageType% ทะเบียน %CarLicenseNo% %InsuranceCompany% เลขที่รับแจ้ง %ReceiveNo% แจ้งเหตุ %InsuranceTelNo%

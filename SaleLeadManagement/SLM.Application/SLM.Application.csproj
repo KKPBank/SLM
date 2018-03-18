@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3403D6A-DFC5-4ED3-935E-F0193036B703}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLM.Application</RootNamespace>
+    <AssemblyName>SLM.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.2.1.2.3\lib\net20\Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SharePoint.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight, Version=3.4.8.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpreadsheetLight.3.4.8\lib\SpreadsheetLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Images\ActData.png" />
+    <Content Include="Images\ActPaymentType.png" />
+    <Content Include="Images\ActPaymentTypeReceipt.png" />
+    <Content Include="Images\ActReceive.png" />
+    <Content Include="Images\ActRemark.png" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\AddLead.gif" />
+    <Content Include="Images\AddNotice.png" />
+    <Content Include="Images\AddressSendDoc.png" />
+    <Content Include="Images\AddUser.gif" />
+    <Content Include="Images\add_con_field.png" />
+    <Content Include="Images\arrow-right.gif" />
+    <Content Include="Images\arrow_down.gif" />
+    <Content Include="Images\arrow_down_icon.png" />
+    <Content Include="Images\arrow_left_icon.png" />
+    <Content Include="Images\arrow_right_icon.png" />
+    <Content Include="Images\arrow_top.gif" />
+    <Content Include="Images\Assign.png" />
+    <Content Include="Images\attention.gif" />
+    <Content Include="Images\bAdd-EN.gif" />
+    <Content Include="Images\bAdd.gif" />
+    <Content Include="Images\bDelete.gif" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bLogout.gif" />
+    <Content Include="Images\Branch.png" />
+    <Content Include="Images\BranchHoliday.png" />
+    <Content Include="Images\bullet1.png" />
+    <Content Include="Images\Calculator.png" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\calendar2.gif" />
+    <Content Include="Images\CampaignData.gif" />
+    <Content Include="Images\CampaignFinal.gif" />
+    <Content Include="Images\CancelReason.png" />
+    <Content Include="Images\car_detail.jpg" />
+    <Content Include="Images\chat_icon.png" />
+    <Content Include="Images\check_user_icon.png" />
+    <Content Include="Images\close_icon.png" />
+    <Content Include="Images\comment.png" />
+    <Content Include="Images\comments.png" />
+    <Content Include="Images\compulsory_detail.jpg" />
+    <Content Include="Images\ConfigScriptQA.png" />
+    <Content Include="Images\customer_detail.jpg" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\delete_disable.gif" />
+    <Content Include="Images\disable.gif" />
+    <Content Include="Images\disabled.jpg" />
+    <Content Include="Images\Document.png" />
+    <Content Include="Images\document_icon.png" />
+    <Content Include="Images\document_icon2.png" />
+    <Content Include="Images\document_icon3.png" />
+    <Content Include="Images\doc_pic.png" />
+    <Content Include="Images\doc_small_icon.png" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\edit_disable.gif" />
+    <Content Include="Images\email_pic.png" />
+    <Content Include="Images\email_pic2.png" />
+    <Content Include="Images\email_pic3.png" />
+    <Content Include="Images\enable.gif" />
+    <Content Include="Images\enabled.jpg" />
+    <Content Include="Images\eraser.jpg" />
+    <Content Include="Images\excel_file_small.png" />
+    <Content Include="Images\exclamation.jpg" />
+    <Content Include="Images\exclamation_circle_red.png" />
+    <Content Include="Images\existinglead_tab_icon.png" />
+    <Content Include="Images\existingproduct_tab_icon.png" />
+    <Content Include="Images\feed.png" />
+    <Content Include="Images\gear.png" />
+    <Content Include="Images\gear_sidemenu_icon.png" />
+    <Content Include="Images\gear_sidemenu_icon4.png" />
+    <Content Include="Images\gift_sidemenu_icon.png" />
+    <Content Include="Images\guarantor_detail.jpg" />
+    <Content Include="Images\GurantorList.png" />
+    <Content Include="Images\hAddress.gif" />
+    <Content Include="Images\hAddressContract.gif" />
+    <Content Include="Images\hAddressDetail.gif" />
+    <Content Include="Images\hAddressOrg.jpg" />
+    <Content Include="Images\hAddressSendDoc.gif" />
+    <Content Include="Images\HadOffer2.gif" />
+    <Content Include="Images\hAttach.gif" />
+    <Content Include="Images\hCalculateDetail.gif" />
+    <Content Include="Images\hContactDetail.gif" />
+    <Content Include="Images\hDropdownlist.png" />
+    <Content Include="Images\hFollow.gif" />
+    <Content Include="Images\hGeneral.gif" />
+    <Content Include="Images\hInsurance.gif" />
+    <Content Include="Images\hLeadDetail.gif" />
+    <Content Include="Images\hLicense.gif" />
+    <Content Include="Images\hManageReceive.jpg" />
+    <Content Include="Images\hProductOther.gif" />
+    <Content Include="Images\hResult.gif" />
+    <Content Include="Images\hSearch.gif" />
+    <Content Include="Images\iconClose.jpg" />
+    <Content Include="Images\iconHelp.jpg" />
+    <Content Include="Images\iconPrinter.jpg" />
+    <Content Include="Images\iconPrinter_ต้นฉบับ.jpg" />
+    <Content Include="Images\Icon_Delete.gif" />
+    <Content Include="Images\icon_password.png" />
+    <Content Include="Images\icon_pdf.png" />
+    <Content Include="Images\icon_username.png" />
+    <Content Include="Images\iDate.gif" />
+    <Content Include="Images\iDelete.gif" />
+    <Content Include="Images\iDelete_disable.gif" />
+    <Content Include="Images\iEdit.gif" />
+    <Content Include="Images\iEdit_disable.gif" />
+    <Content Include="Images\iGo.gif" />
+    <Content Include="Images\iGoDeposit.gif" />
+    <Content Include="Images\iGoWithdrawal.gif" />
+    <Content Include="Images\info_sidemenu_icon.png" />
+    <Content Include="Images\info_tab_icon.png" />
+    <Content Include="Images\insurance_sum_tab_icon.png" />
+    <Content Include="Images\invalid.gif" />
+    <Content Include="Images\iPDF.gif" />
+    <Content Include="Images\iSearch.gif" />
+    <Content Include="Images\iTime.gif" />
+    <Content Include="Images\iUser.gif" />
+    <Content Include="Images\iView.gif" />
+    <Content Include="Images\label_premium.png" />
+    <Content Include="Images\loading14.gif" />
+    <Content Include="Images\logoBG.gif" />
+    <Content Include="Images\logoBG_New.gif" />
+    <Content Include="Images\logokk.jpg" />
+    <Content Include="Images\logoRight.gif" />
+    <Content Include="Images\logo_control.gif" />
+    <Content Include="Images\logo_control_New.gif" />
+    <Content Include="Images\logo_loginNew.png" />
+    <Content Include="Images\logo_slm.bmp" />
+    <Content Include="Images\ManageRecieve.jpg" />
+    <Content Include="Images\MenuTab.jpg" />
+    <Content Include="Images\MenuTabControl.jpg" />
+    <Content Include="Images\MenuTabGift.jpg" />
+    <Content Include="Images\MenuTabInfo.jpg" />
+    <Content Include="Images\MenuTabKKTouch.jpg" />
+    <Content Include="Images\MenuTabScript.jpg" />
+    <Content Include="Images\menu_sidemenu_icon.png" />
+    <Content Include="Images\MockupNotification.jpg" />
+    <Content Include="Images\MonitoringTitle5.png" />
+    <Content Include="Images\newmenu_sidemenu_icon.png" />
+    <Content Include="Images\newmessages.gif" />
+    <Content Include="Images\newtab_tab_icon.png" />
+    <Content Include="Images\normal_detail.png" />
+    <Content Include="Images\note_tab_icon.png" />
+    <Content Include="Images\NoticeAll.png" />
+    <Content Include="Images\notice_small.png" />
+    <Content Include="Images\OnHand.gif" />
+    <Content Include="Images\OnHandSR.gif" />
+    <Content Include="Images\Others.png" />
+    <Content Include="Images\ownerlogging_tab_icon.png" />
+    <Content Include="Images\page_copy.png" />
+    <Content Include="Images\PaymentList.png" />
+    <Content Include="Images\PhoneCall.png" />
+    <Content Include="Images\PolicyData.png" />
+    <Content Include="Images\PolicyPaymentType.png" />
+    <Content Include="Images\PolicyPaymentTypeReceipt.png" />
+    <Content Include="Images\PolicyReceive.png" />
+    <Content Include="Images\PolicyRemark.png" />
+    <Content Include="Images\Position.png" />
+    <Content Include="Images\preview_file.png" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\print_over.gif" />
+    <Content Include="Images\Privilege.png" />
+    <Content Include="Images\ProblemList.png" />
+    <Content Include="Images\ProductAll.gif" />
+    <Content Include="Images\ProductOffer.gif" />
+    <Content Include="Images\ReciptList.png" />
+    <Content Include="Images\red-enable.gif" />
+    <Content Include="Images\ReferHistoryList.png" />
+    <Content Include="Images\refresh.gif" />
+    <Content Include="Images\refresh_disable.gif" />
+    <Content Include="Images\reload.gif" />
+    <Content Include="Images\RemarkInstallment.png" />
+    <Content Include="Images\ResultContact.png" />
+    <Content Include="Images\RevisionReceipt.png" />
+    <Content Include="Images\rss_small.png" />
+    <Content Include="Images\SaveNote.gif" />
+    <Content Include="Images\script_sidemenu_icon.png" />
+    <Content Include="Images\SearchBundle.jpg" />
+    <Content Include="Images\SearchCampaign.jpg" />
+    <Content Include="Images\SearchCampaignAll.jpg" />
+    <Content Include="Images\SidebarMenu.jpg" />
+    <Content Include="Images\SLA.png" />
+    <Content Include="Images\slide-button-left.jpg" />
+    <Content Include="Images\slide-button-left1.jpg" />
+    <Content Include="Images\stats.gif" />
+    <Content Include="Images\Suggesstion.png" />
+    <Content Include="Images\tab_pane_icon.png" />
+    <Content Include="Images\tel_tab_icon.png" />
+    <Content Include="Images\topicBG.gif" />
+    <Content Include="Images\topicBullet.gif" />
+    <Content Include="Images\topicRight.gif" />
+    <Content Include="Images\Transfer.gif" />
+    <Content Include="Images\triangle.jpg" />
+    <Content Include="Images\triangleUp.jpg" />
+    <Content Include="Images\triangle_right.jpg" />
+    <Content Include="Images\view.gif" />
+    <Content Include="Images\voluntary_detail.jpg" />
+    <Content Include="Images\waiting.gif" />
+    <Content Include="Images\warning_icon.png" />
+    <Content Include="Libs\AjaxControlToolkit.dll" />
+    <Content Include="Libs\LinqKit.dll" />
+    <Content Include="Libs\log4net.dll" />
+    <Content Include="Libs\Microsoft.SharePoint.Client.dll" />
+    <Content Include="Libs\Microsoft.SharePoint.Client.Runtime.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="ExcelTemplate\Template_ใบเสนอราคา_FLEET.xls" />
+    <Content Include="ExcelTemplate\Template-ทวิ50-หักภาษี_ณ_ที่จ่าย1%25%28นิติบุคคล%29.xls" />
+    <Content Include="ExcelTemplate\Template-ใบเสนอราคาเปรียบเทียบ.xls" />
+    <Content Include="ExcelTemplate\Template_ฟอร์มบัตรเครดิต.xls" />
+    <Content Include="ExcelTemplate\Template_แบบฟอร์มแก้ไขใบเสร็จ.xls" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="packages.config" />
+    <Content Include="ExcelTemplate\TelesalesPerformance_Template.xlsx" />
+    <None Include="Properties\PublishProfiles\MTDevPublish.pubxml" />
+    <None Include="Properties\PublishProfiles\SLMPublish.pubxml" />
+    <None Include="Properties\PublishProfiles\SLMPublishZ.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CARServiceProxy\CASLogService1.wsdl" />
+    <None Include="Service References\CARServiceProxy\configuration91.svcinfo" />
+    <None Include="Service References\CARServiceProxy\configuration.svcinfo" />
+    <None Include="Service References\CARServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService.wsdl" />
+    <None Include="Service References\CmtServiceProxy\CmtService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CmtServiceProxy\CmtService.disco" />
+    <None Include="Service References\CSMBranchService\CSMBranchService.disco" />
+    <None Include="Service References\CARServiceProxy\CASLogService1.disco" />
+    <Content Include="Service References\CSMBranchService\SLM.Application.CSMBranchService.CreateBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CSMBranchService\SLM.Application.CSMBranchService.UpdateCalendarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\CSMBranchService\CSMBranchService.wsdl" />
+    <None Include="Service References\CSMBranchService\CSMBranchService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMBranchService\CSMBranchService1.wsdl" />
+    <None Include="Service References\CSMBranchService\CSMBranchService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMBranchService\CSMBranchService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMBranchService\CSMBranchService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMBranchService\CSMBranchService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMBranchService\CSMBranchService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService.wsdl" />
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService1.wsdl" />
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.CreateSrFromReplyEmailTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.CreateSRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.GetSRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.ReSubmitActivityToCARSystemTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.ReSubmitActivityToCBSHPSystemTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.SearchSRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\SLM.Application.CSMSRServiceProxy.UpdateSRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\configuration91.svcinfo" />
+    <None Include="Service References\CSMUserServiceProxy\configuration.svcinfo" />
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService.wsdl" />
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService1.wsdl" />
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CSMSRServiceProxy\configuration91.svcinfo" />
+    <None Include="Service References\CSMSRServiceProxy\configuration.svcinfo" />
+    <None Include="Service References\CSMSRServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CSMBranchService\configuration91.svcinfo" />
+    <None Include="Service References\CSMBranchService\configuration.svcinfo" />
+    <None Include="Service References\CSMBranchService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\CSMUserService.disco" />
+    <None Include="Service References\CSMSRServiceProxy\CSMSRService.disco" />
+    <Content Include="Shared\Download.aspx" />
+    <Content Include="Shared\Tabs\Tab018_3.ascx" />
+    <Content Include="Shared\Tabs\Tab018_4.ascx" />
+    <Content Include="Shared\TextDateMaskWithEvent.ascx" />
+    <Content Include="Shared\Lead_Detail_Act.ascx" />
+    <Content Include="Shared\Lead_Detail_ContinueInsure.ascx" />
+    <Content Include="Shared\Lead_Detail_Default.ascx" />
+    <Content Include="Shared\Lead_Detail_KKMotorBox.ascx" />
+    <Content Include="Shared\Lead_Share_Common.ascx" />
+    <Content Include="Shared\Lead_Share_Ins.ascx" />
+    <Content Include="Shared\Obt\ActRenewInsureContact.ascx" />
+    <Content Include="Shared\Obt\ActRenewInsureSnap.ascx" />
+    <Content Include="Shared\Prelead_Detail.ascx" />
+    <Content Include="SLM_SCR_055.aspx" />
+    <Content Include="SLM_SCR_056.aspx" />
+    <Content Include="SLM_SCR_057.aspx" />
+    <Content Include="SLM_SCR_058.aspx" />
+    <Content Include="SLM_SCR_064.aspx" />
+    <Content Include="SLM_SCR_070.aspx" />
+    <Content Include="SLM_SCR_010.aspx" />
+    <Content Include="SLM_SCR_011.aspx" />
+    <Content Include="SLM_SCR_032.aspx" />
+    <Content Include="Shared\Obt\TabActRenewInsure.ascx" />
+    <Content Include="Shared\Obt\TabInsureSummary.ascx" />
+    <Content Include="Shared\Obt\TabNote.ascx" />
+    <Content Include="SLM_SCR_034.aspx" />
+    <Content Include="SLM_SCR_038.aspx" />
+    <Content Include="SLM_SCR_039.aspx" />
+    <Content Include="SLM_SCR_041_Export.aspx" />
+    <Content Include="SLM_SCR_046.aspx" />
+    <Content Include="SLM_SCR_047.aspx" />
+    <Content Include="SLM_SCR_035.aspx" />
+    <Content Include="Shared\Obt\TabFollowUp.ascx" />
+    <Content Include="Shared\Obt\TabInbound.ascx" />
+    <Content Include="Shared\Obt\TabOutbound.ascx" />
+    <Content Include="SLM_SCR_030.aspx" />
+    <Content Include="SLM_SCR_031.aspx" />
+    <Content Include="SLM_SCR_037.aspx" />
+    <Content Include="SLM_SCR_041.aspx" />
+    <Content Include="SLM_SCR_042.aspx" />
+    <Content Include="Scripts\jquery-2.2.0.min.js" />
+    <Content Include="Scripts\SlmScript.js" />
+    <Content Include="DownloadFile.ashx" />
+    <None Include="Service References\CARServiceProxy\SLM.Application.CARServiceProxy.CreateActivityLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CARServiceProxy\SLM.Application.CARServiceProxy.InqueryActivytyLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.CampaignSearchResponseEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.Header1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.Header3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.Header4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.Header6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.Header8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.SearchByCusEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.SearchByIdEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.SearchByTeamEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.StatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.StatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.StatusResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.StatusResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.StatusResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CmtServiceProxy\SLM.Application.CmtServiceProxy.UpdCustFlagEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSMUserServiceProxy\SLM.Application.CSMUserServiceProxy.InsertOrUpdateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LeadServiceProxy\LeadService.disco" />
+    <None Include="Service References\LeadServiceProxy\configuration91.svcinfo" />
+    <None Include="Service References\LeadServiceProxy\configuration.svcinfo" />
+    <None Include="Service References\LeadServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CmtServiceProxy\configuration91.svcinfo" />
+    <None Include="Service References\CmtServiceProxy\configuration.svcinfo" />
+    <None Include="Service References\CmtServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Shared\Calendar.ascx" />
+    <Content Include="Shared\CampaignDesc.aspx" />
+    <Content Include="Shared\GridviewPageController.ascx" />
+    <Content Include="Shared\LeadInfo.ascx" />
+    <Content Include="Shared\LeadInfoEdit.ascx" />
+    <Content Include="Shared\Tabs\Tab004.ascx" />
+    <Content Include="Shared\Tabs\Tab005.ascx" />
+    <Content Include="Shared\Tabs\Tab006.ascx" />
+    <Content Include="Shared\Tabs\Tab007.ascx" />
+    <Content Include="Shared\Tabs\Tab008.ascx" />
+    <Content Include="Shared\Tabs\Tab009.ascx" />
+    <Content Include="Shared\Tabs\Tab018_1.ascx" />
+    <Content Include="Shared\Tabs\Tab018_2.ascx" />
+    <Content Include="Shared\TextDateMask.ascx" />
+    <Content Include="SLM_SCR_003.aspx" />
+    <Content Include="SLM_SCR_004.aspx" />
+    <Content Include="SLM_SCR_010_old.aspx" />
+    <Content Include="SLM_SCR_011_old.aspx" />
+    <Content Include="SLM_SCR_015.aspx" />
+    <Content Include="SLM_SCR_016.aspx" />
+    <Content Include="SLM_SCR_017.aspx" />
+    <Content Include="SLM_SCR_018.aspx" />
+    <Content Include="SLM_SCR_019.aspx" />
+    <Content Include="SLM_SCR_020.aspx" />
+    <Content Include="SLM_SCR_021.aspx" />
+    <Content Include="SLM_SCR_022.aspx" />
+    <Content Include="SLM_SCR_023.aspx" />
+    <Content Include="SLM_SCR_024.aspx" />
+    <Content Include="SLM_SCR_025.aspx" />
+    <Content Include="SLM_SCR_026.aspx" />
+    <Content Include="SLM_SCR_027.aspx" />
+    <Content Include="SLM_SCR_028.aspx" />
+    <Content Include="SLM_SCR_029.aspx" />
+    <Content Include="SLM_SCR_033.aspx" />
+    <Content Include="SLM_SCR_036.aspx" />
+    <Content Include="SLM_SCR_040.aspx" />
+    <Content Include="SLM_SCR_043.aspx" />
+    <Content Include="SLM_SCR_044.aspx" />
+    <Content Include="SLM_SCR_045.aspx" />
+    <Content Include="SLM_SCR_048.aspx" />
+    <Content Include="SLM_SCR_049.aspx" />
+    <Content Include="SLM_SCR_050.aspx" />
+    <Content Include="SLM_SCR_051.aspx" />
+    <Content Include="SLM_SCR_052.aspx" />
+    <Content Include="SLM_SCR_053.aspx" />
+    <Content Include="SLM_SCR_054.aspx" />
+    <Content Include="SLM_SCR_062.aspx" />
+    <Content Include="SLM_SCR_063.aspx" />
+    <Content Include="SLM_SCR_999.aspx" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\kk.css" />
+    <Content Include="Styles\Menu.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\LeadServiceProxy\SLM.Application.LeadServiceProxy.Header.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Web References\CBSCustomerService\CBSCustomerService.wsdl" />
+    <Content Include="Web References\CBSCustomerService\InquiryC2ARelationshipResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryC2CRelationshipResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerAddressResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerByAccountResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerByContactResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerByIDResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerByInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerByNameResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerContactResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerDetailResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerOtherRelationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerProfileSubscriptionLevelResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerSharedInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryCustomerSingleViewResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryInstructionWithBankResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CBSCustomerService\InquiryServiceWithBankResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\CBSCustomerService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadFile.ashx.cs">
+      <DependentUpon>DownloadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SaleLead.Master.cs">
+      <DependentUpon>SaleLead.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SaleLead.Master.designer.cs">
+      <DependentUpon>SaleLead.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CARServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSMBranchService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSMSRServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSMUserServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CARService.cs" />
+    <Compile Include="Services\CASService.cs" />
+    <Compile Include="Services\CSMService.cs" />
+    <Compile Include="Shared\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_3.ascx.cs">
+      <DependentUpon>Tab018_3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_3.ascx.designer.cs">
+      <DependentUpon>Tab018_3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_4.ascx.cs">
+      <DependentUpon>Tab018_4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_4.ascx.designer.cs">
+      <DependentUpon>Tab018_4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\TextDateMaskWithEvent.ascx.cs">
+      <DependentUpon>TextDateMaskWithEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\TextDateMaskWithEvent.ascx.designer.cs">
+      <DependentUpon>TextDateMaskWithEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_Act.ascx.cs">
+      <DependentUpon>Lead_Detail_Act.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_Act.ascx.designer.cs">
+      <DependentUpon>Lead_Detail_Act.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_ContinueInsure.ascx.cs">
+      <DependentUpon>Lead_Detail_ContinueInsure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_ContinueInsure.ascx.designer.cs">
+      <DependentUpon>Lead_Detail_ContinueInsure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_Default.ascx.cs">
+      <DependentUpon>Lead_Detail_Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_Default.ascx.designer.cs">
+      <DependentUpon>Lead_Detail_Default.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_KKMotorBox.ascx.cs">
+      <DependentUpon>Lead_Detail_KKMotorBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_KKMotorBox.ascx.designer.cs">
+      <DependentUpon>Lead_Detail_KKMotorBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Detail_Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Share_Common.ascx.cs">
+      <DependentUpon>Lead_Share_Common.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Share_Common.ascx.designer.cs">
+      <DependentUpon>Lead_Share_Common.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Lead_Share_Ins.ascx.cs">
+      <DependentUpon>Lead_Share_Ins.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Lead_Share_Ins.ascx.designer.cs">
+      <DependentUpon>Lead_Share_Ins.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\ActRenewInsureContact.ascx.cs">
+      <DependentUpon>ActRenewInsureContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\ActRenewInsureContact.ascx.designer.cs">
+      <DependentUpon>ActRenewInsureContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\ActRenewInsureSnap.ascx.cs">
+      <DependentUpon>ActRenewInsureSnap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\ActRenewInsureSnap.ascx.designer.cs">
+      <DependentUpon>ActRenewInsureSnap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Prelead_Detail.ascx.cs">
+      <DependentUpon>Prelead_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Prelead_Detail.ascx.designer.cs">
+      <DependentUpon>Prelead_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_055.aspx.cs">
+      <DependentUpon>SLM_SCR_055.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_055.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_055.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_056.aspx.cs">
+      <DependentUpon>SLM_SCR_056.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_056.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_056.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_057.aspx.cs">
+      <DependentUpon>SLM_SCR_057.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_057.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_057.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_058.aspx.cs">
+      <DependentUpon>SLM_SCR_058.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_058.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_058.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_064.aspx.cs">
+      <DependentUpon>SLM_SCR_064.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_064.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_064.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_070.aspx.cs">
+      <DependentUpon>SLM_SCR_070.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_070.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_070.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_010.aspx.cs">
+      <DependentUpon>SLM_SCR_010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_010.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_011.aspx.cs">
+      <DependentUpon>SLM_SCR_011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_011.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_032.aspx.cs">
+      <DependentUpon>SLM_SCR_032.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_032.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_032.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabActRenewInsure.ascx.cs">
+      <DependentUpon>TabActRenewInsure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabActRenewInsure.ascx.designer.cs">
+      <DependentUpon>TabActRenewInsure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabInsureSummary.ascx.cs">
+      <DependentUpon>TabInsureSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabInsureSummary.ascx.designer.cs">
+      <DependentUpon>TabInsureSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabNote.ascx.cs">
+      <DependentUpon>TabNote.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabNote.ascx.designer.cs">
+      <DependentUpon>TabNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_034.aspx.cs">
+      <DependentUpon>SLM_SCR_034.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_034.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_034.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_038.aspx.cs">
+      <DependentUpon>SLM_SCR_038.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_038.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_038.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_039.aspx.cs">
+      <DependentUpon>SLM_SCR_039.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_039.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_039.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_041_Export.aspx.cs">
+      <DependentUpon>SLM_SCR_041_Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_041_Export.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_041_Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_046.aspx.cs">
+      <DependentUpon>SLM_SCR_046.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_046.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_046.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_047.aspx.cs">
+      <DependentUpon>SLM_SCR_047.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_047.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_047.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_035.aspx.cs">
+      <DependentUpon>SLM_SCR_035.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_035.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_035.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabFollowUp.ascx.cs">
+      <DependentUpon>TabFollowUp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabFollowUp.ascx.designer.cs">
+      <DependentUpon>TabFollowUp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabInbound.ascx.cs">
+      <DependentUpon>TabInbound.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabInbound.ascx.designer.cs">
+      <DependentUpon>TabInbound.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Obt\TabOutbound.ascx.cs">
+      <DependentUpon>TabOutbound.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Obt\TabOutbound.ascx.designer.cs">
+      <DependentUpon>TabOutbound.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_030.aspx.cs">
+      <DependentUpon>SLM_SCR_030.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_030.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_030.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_031.aspx.cs">
+      <DependentUpon>SLM_SCR_031.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_031.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_031.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_037.aspx.cs">
+      <DependentUpon>SLM_SCR_037.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_037.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_037.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_041.aspx.cs">
+      <DependentUpon>SLM_SCR_041.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_041.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_041.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_042.aspx.cs">
+      <DependentUpon>SLM_SCR_042.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_042.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_042.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CmtServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LeadServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\RuleServiceProxy.cs" />
+    <Compile Include="Shared\Calendar.ascx.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Calendar.ascx.designer.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\CampaignDesc.aspx.cs">
+      <DependentUpon>CampaignDesc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\CampaignDesc.aspx.designer.cs">
+      <DependentUpon>CampaignDesc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\GridviewPageController.ascx.cs">
+      <DependentUpon>GridviewPageController.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\GridviewPageController.ascx.designer.cs">
+      <DependentUpon>GridviewPageController.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\LeadInfo.ascx.cs">
+      <DependentUpon>LeadInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\LeadInfo.ascx.designer.cs">
+      <DependentUpon>LeadInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\LeadInfoEdit.ascx.cs">
+      <DependentUpon>LeadInfoEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\LeadInfoEdit.ascx.designer.cs">
+      <DependentUpon>LeadInfoEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab004.ascx.cs">
+      <DependentUpon>Tab004.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab004.ascx.designer.cs">
+      <DependentUpon>Tab004.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab005.ascx.cs">
+      <DependentUpon>Tab005.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab005.ascx.designer.cs">
+      <DependentUpon>Tab005.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab006.ascx.cs">
+      <DependentUpon>Tab006.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab006.ascx.designer.cs">
+      <DependentUpon>Tab006.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab007.ascx.cs">
+      <DependentUpon>Tab007.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab007.ascx.designer.cs">
+      <DependentUpon>Tab007.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab008.ascx.cs">
+      <DependentUpon>Tab008.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab008.ascx.designer.cs">
+      <DependentUpon>Tab008.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab009.ascx.cs">
+      <DependentUpon>Tab009.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab009.ascx.designer.cs">
+      <DependentUpon>Tab009.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_1.ascx.cs">
+      <DependentUpon>Tab018_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_1.ascx.designer.cs">
+      <DependentUpon>Tab018_1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_2.ascx.cs">
+      <DependentUpon>Tab018_2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Tabs\Tab018_2.ascx.designer.cs">
+      <DependentUpon>Tab018_2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\TextDateMask.ascx.cs">
+      <DependentUpon>TextDateMask.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\TextDateMask.ascx.designer.cs">
+      <DependentUpon>TextDateMask.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_003.aspx.cs">
+      <DependentUpon>SLM_SCR_003.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_003.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_004.aspx.cs">
+      <DependentUpon>SLM_SCR_004.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_004.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_004.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_010_old.aspx.cs">
+      <DependentUpon>SLM_SCR_010_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_010_old.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_010_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_011_old.aspx.cs">
+      <DependentUpon>SLM_SCR_011_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_011_old.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_011_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_015.aspx.cs">
+      <DependentUpon>SLM_SCR_015.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_015.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_015.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_016.aspx.cs">
+      <DependentUpon>SLM_SCR_016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_016.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_017.aspx.cs">
+      <DependentUpon>SLM_SCR_017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_017.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_018.aspx.cs">
+      <DependentUpon>SLM_SCR_018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_018.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_019.aspx.cs">
+      <DependentUpon>SLM_SCR_019.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_019.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_019.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_020.aspx.cs">
+      <DependentUpon>SLM_SCR_020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_020.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_021.aspx.cs">
+      <DependentUpon>SLM_SCR_021.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_021.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_021.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_022.aspx.cs">
+      <DependentUpon>SLM_SCR_022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_022.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_023.aspx.cs">
+      <DependentUpon>SLM_SCR_023.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_023.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_023.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_024.aspx.cs">
+      <DependentUpon>SLM_SCR_024.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_024.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_024.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_025.aspx.cs">
+      <DependentUpon>SLM_SCR_025.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_025.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_025.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_026.aspx.cs">
+      <DependentUpon>SLM_SCR_026.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_026.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_026.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_027.aspx.cs">
+      <DependentUpon>SLM_SCR_027.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_027.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_027.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_028.aspx.cs">
+      <DependentUpon>SLM_SCR_028.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_028.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_028.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_029.aspx.cs">
+      <DependentUpon>SLM_SCR_029.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_029.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_029.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_033.aspx.cs">
+      <DependentUpon>SLM_SCR_033.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_033.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_033.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_036.aspx.cs">
+      <DependentUpon>SLM_SCR_036.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_036.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_036.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_040.aspx.cs">
+      <DependentUpon>SLM_SCR_040.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_040.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_040.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_043.aspx.cs">
+      <DependentUpon>SLM_SCR_043.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_043.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_043.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_044.aspx.cs">
+      <DependentUpon>SLM_SCR_044.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_044.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_044.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_045.aspx.cs">
+      <DependentUpon>SLM_SCR_045.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_045.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_045.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_048.aspx.cs">
+      <DependentUpon>SLM_SCR_048.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_048.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_048.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_049.aspx.cs">
+      <DependentUpon>SLM_SCR_049.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_049.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_049.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_050.aspx.cs">
+      <DependentUpon>SLM_SCR_050.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_050.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_050.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_051.aspx.cs">
+      <DependentUpon>SLM_SCR_051.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_051.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_051.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_052.aspx.cs">
+      <DependentUpon>SLM_SCR_052.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_052.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_052.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_053.aspx.cs">
+      <DependentUpon>SLM_SCR_053.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_053.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_053.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_054.aspx.cs">
+      <DependentUpon>SLM_SCR_054.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_054.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_054.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_062.aspx.cs">
+      <DependentUpon>SLM_SCR_062.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_062.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_062.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_063.aspx.cs">
+      <DependentUpon>SLM_SCR_063.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_063.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_063.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLM_SCR_999.aspx.cs">
+      <DependentUpon>SLM_SCR_999.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLM_SCR_999.aspx.designer.cs">
+      <DependentUpon>SLM_SCR_999.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\AppConstant.cs" />
+    <Compile Include="Utilities\AppUtil.cs" />
+    <Compile Include="Utilities\ConnectEcm.cs" />
+    <Compile Include="Utilities\ControlExtensions.cs" />
+    <Compile Include="Utilities\StringCipher.cs" />
+    <Compile Include="Web References\CBSCustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileUpload\" />
+    <Folder Include="Publish\" />
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Thumbs.db" />
+    <Content Include="MasterPage\Login.Master" />
+    <Content Include="MasterPage\SaleLead.Master" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Log.config" />
+    <None Include="Service References\LeadServiceProxy\LeadService.wsdl" />
+    <None Include="Service References\LeadServiceProxy\LeadService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LeadServiceProxy\LeadService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LeadServiceProxy\LeadService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LeadServiceProxy\LeadService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLM.Biz\SLM.Biz.csproj">
+      <Project>{4BFBFE99-A34C-4861-A683-413D1CD47A8A}</Project>
+      <Name>SLM.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SLM.Dal\SLM.Dal.csproj">
+      <Project>{eff169e2-2b59-447f-9a38-27898e7af6b7}</Project>
+      <Name>SLM.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SLM.Resource\SLM.Resource.csproj">
+      <Project>{0B58133E-618D-4506-9F57-C76358B87A5D}</Project>
+      <Name>SLM.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CARServiceProxy\" />
+    <WCFMetadataStorage Include="Service References\CmtServiceProxy\" />
+    <WCFMetadataStorage Include="Service References\CSMBranchService\" />
+    <WCFMetadataStorage Include="Service References\CSMSRServiceProxy\" />
+    <WCFMetadataStorage Include="Service References\CSMUserServiceProxy\" />
+    <WCFMetadataStorage Include="Service References\LeadServiceProxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.202.211.166:8088/ws-doc/CBSCustomerService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CBSCustomerService\</RelPath>
+      <UpdateFromURL>http://10.202.211.166:8088/ws-doc/CBSCustomerService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SLM_Application_CBSCustomerService_CBSCustomerService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5606</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="SLM.Application.MasterPage.Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sales Lead Management</title>
+    <link href="../Styles/kk.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function DisplayProcessing() {
+            var modal = $find('mpeProcessing');
+            modal.show();
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <act:ToolkitScriptManager ID="tkManager" runat="server" CombineScripts="false" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true"></act:ToolkitScriptManager>
+    <div style="height:100%;">
+        <table cellpadding="0" cellspacing="0" border="0" class="headerLogo" width="100%">
+            <tr>
+                <td style="height:99px; width:1000px;"></td>
+                <td class="headerLogoBG" ></td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footerLogin">
+        สงวนลิขสิทธิ์ โดย Kiatnakin Bank PLC&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;รองรับการแสดงผลบน Firefox 32.x ขึ้นไป, Resolution 1280 x 1024&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;KK : Sales Lead Management Version <asp:Label ID="lblAssemblyVersion" runat="server"></asp:Label>
+    </div>
+    
+    <!-- Show Processing -->
+    <asp:UpdatePanel runat="server" ID="upProcessing">
+        <ContentTemplate>
+	        <asp:Button runat="server" ID="btnDisplayProcessing" Width="0px" CssClass="Hidden"/>
+	        <asp:Panel runat="server" ID="pnlDisplayProcessing" Width="400" style="display:none" CssClass="modalPopupProcessing">
+		        <table width="100%" style="height:100px" cellpadding="0" cellspacing="0">
+			        <tr>
+				        <td align="center" valign="bottom">
+				        <asp:Image runat="server" ID="imgWait" ImageAlign="AbsMiddle" ImageUrl="~/Images/waiting.gif" />
+				        </td>
+			        </tr>
+			        <tr>
+				        <td align="center" valign="middle">
+				        <asp:Label ID="lblname" runat="server" Text="Processing..." Font-Bold="true" Font-Size="Small">
+				        </asp:Label>
+				        </td>
+			        </tr>
+		        </table>
+	        </asp:Panel>
+	        <act:ModalPopupExtender ID="mpeProcessing" runat="server" TargetControlID="btnDisplayProcessing" PopupControlID="pnlDisplayProcessing" BackgroundCssClass="modalBackground" DropShadow="True">
+	        </act:ModalPopupExtender>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <!-- / Show Processing -->
+    </form>
+</body>
+</html>

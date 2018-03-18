@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.User" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.User" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" />
+  <xs:complexType name="InsertOrUpdateUserRequest">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" minOccurs="0" name="Header" nillable="true" type="q1:WebServiceHeader" />
+      <xs:element minOccurs="0" name="ActionType" type="xs:int" />
+      <xs:element minOccurs="0" name="WindowsUsername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeCodeNew" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeCodeOld" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PositionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleSale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingTeam" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SupervisorEmployeeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelesaleTeam" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsGroup" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+      <xs:element minOccurs="0" name="ActionUsername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingFlag" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertOrUpdateUserRequest" nillable="true" type="tns:InsertOrUpdateUserRequest" />
+  <xs:complexType name="InsertOrUpdateUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNewUser" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertOrUpdateUserResponse" nillable="true" type="tns:InsertOrUpdateUserResponse" />
+</xs:schema>

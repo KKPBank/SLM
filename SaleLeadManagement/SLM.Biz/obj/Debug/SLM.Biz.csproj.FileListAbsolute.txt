@@ -1,0 +1,22 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Biz.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Biz.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\LinqKit.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\log4net.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Dal.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Resource.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Dal.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Resource.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Biz.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Biz.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\LinqKit.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\log4net.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Dal.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Resource.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Dal.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\bin\Debug\SLM.Resource.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Biz\obj\Debug\SLM.Biz.pdb

@@ -1,0 +1,8 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\SLMBatch.Common.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\SLMBatch.Common.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\DocumentFormat.OpenXml.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\SpreadsheetLight.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Release\SpreadsheetLight.xml
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\obj\Release\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\obj\Release\SLMBatch.Common.pdb

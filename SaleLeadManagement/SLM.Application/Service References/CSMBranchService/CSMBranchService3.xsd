@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.kiatnakinbank.com/services/CSM/CSMBranchService" elementFormDefault="qualified" targetNamespace="http://www.kiatnakinbank.com/services/CSM/CSMBranchService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" />
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Calendar" />
+  <xs:element name="InsertOrUpdateBranch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" minOccurs="0" name="request" nillable="true" type="q1:InsertOrUpdateBranchRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateBranchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" minOccurs="0" name="InsertOrUpdateBranchResult" nillable="true" type="q2:CreateBranchResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBranchCalendar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" minOccurs="0" name="request" nillable="true" type="q3:UpdateBranchCalendarRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBranchCalendarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Calendar" minOccurs="0" name="UpdateBranchCalendarResult" nillable="true" type="q4:UpdateCalendarResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

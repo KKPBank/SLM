@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OPERDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="OPERDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="kkslm_ms_campaigninsurance" EntityType="OPERDBModel.kkslm_ms_campaigninsurance" />
+    <EntitySet Name="kkslm_ms_benefit" EntityType="OPERDBModel.kkslm_ms_benefit" />
+    <EntitySet Name="kkslm_ms_ins_com" EntityType="OPERDBModel.kkslm_ms_ins_com" />
+    <EntitySet Name="kkslm_ms_receiveno" EntityType="OPERDBModel.kkslm_ms_receiveno" />
+    <EntitySet Name="kkslm_ms_receivenolist" EntityType="OPERDBModel.kkslm_ms_receivenolist" />
+    <EntitySet Name="kkslm_ms_promotioninsurance" EntityType="OPERDBModel.kkslm_ms_promotioninsurance" />
+  </EntityContainer>
+  <EntityType Name="kkslm_ms_campaigninsurance">
+    <Key>
+      <PropertyRef Name="slm_CampaignInsuranceId" />
+    </Key>
+    <Property Type="Decimal" Name="slm_CampaignInsuranceId" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="slm_CampaignName" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_benefit">
+    <Key>
+      <PropertyRef Name="slm_BenefitId" />
+    </Key>
+    <Property Type="Decimal" Name="slm_BenefitId" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="slm_Product_Id" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_Ins_Com_Id" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="slm_CampaignInsuranceId" Precision="18" Scale="0" />
+    <Property Type="String" Name="slm_ComissionFlag" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="slm_ComissionPercentValue" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="slm_ComissionBathValue" Precision="18" Scale="4" />
+    <Property Type="String" Name="slm_OV1Flag" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="slm_OV1PercentValue" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="slm_OV1BathValue" Precision="18" Scale="4" />
+    <Property Type="String" Name="slm_OV2Flag" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="slm_OV2PercentValue" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="slm_OV2BathValue" Precision="18" Scale="4" />
+    <Property Type="String" Name="slm_VatFlag" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+    <Property Name="slm_BenefitTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="slm_InsurancecarTypeId" Type="Int32" />
+    <Property Name="slm_CoverageTypeId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_ins_com">
+    <Key>
+      <PropertyRef Name="slm_Ins_Com_Id" />
+    </Key>
+    <Property Type="Decimal" Name="slm_Ins_Com_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="slm_InsCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_InsABB" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_InsNameEng" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_InsNameTh" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_InsType" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_InsTax" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Tel" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_TelContact" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_AddressNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Moo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_BuildingName" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Floor" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Soi" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Road" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="slm_ProvinceId" />
+    <Property Type="Int32" Name="slm_AmphurId" />
+    <Property Type="Int32" Name="slm_TambolId" />
+    <Property Type="String" Name="slm_PostCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_receiveno">
+    <Key>
+      <PropertyRef Name="slm_ReceiveNoId" />
+    </Key>
+    <Property Type="Decimal" Name="slm_ReceiveNoId" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="slm_Product_Id" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_Ins_Com_Id" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="slm_Lot" Nullable="false" />
+    <Property Type="String" Name="slm_CodeName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_ReceiveNoStart" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="slm_ReceiveNoEnd" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_receivenolist">
+    <Key>
+      <PropertyRef Name="slm_ReceiveNoListId" />
+    </Key>
+    <Property Type="Decimal" Name="slm_ReceiveNoListId" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="slm_ReceiveNoId" Precision="18" Scale="0" />
+    <Property Type="String" Name="slm_Product_Id" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_Ins_Com_Id" Precision="18" Scale="0" />
+    <Property Type="String" Name="slm_ReceiveNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Status" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="slm_TicketId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="slm_UseDate" Precision="3" />
+    <Property Type="String" Name="slm_UseBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_promotioninsurance">
+    <Key>
+      <PropertyRef Name="slm_PromotionId" />
+    </Key>
+    <Property Type="Decimal" Name="slm_PromotionId" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="slm_Product_Id" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_Ins_Com_Id" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="slm_CampaignInsuranceId" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="slm_DurationYear" />
+    <Property Type="DateTime" Name="slm_EffectiveDateFrom" Precision="3" />
+    <Property Type="DateTime" Name="slm_EffectiveDateTo" Precision="3" />
+    <Property Type="String" Name="slm_Brand_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_Model_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_UseCarType" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="slm_CoverageTypeId" />
+    <Property Type="String" Name="slm_AgeDrivenFlag" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="slm_RepairTypeId" />
+    <Property Type="Int32" Name="slm_AgeCarYear" />
+    <Property Type="String" Name="slm_EngineSize" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_OD" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_FT" Precision="18" Scale="2" />
+    <Property Type="String" Name="slm_DeDuctible" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_GrossPremium" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_Stamp" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_Vat" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_NetGrossPremium" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_Act" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_InjuryDeath" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_TPPD" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="slm_PersonalAccident" Precision="18" Scale="2" />
+    <Property Type="String" Name="slm_PersonalAccidentDriver" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_PersonalAccidentPassenger" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_MedicalFee" Precision="18" Scale="2" />
+    <Property Type="String" Name="slm_MedicalFeeDriver" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="slm_MedicalFeePassenger" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="slm_InsuranceDriver" Precision="18" Scale="2" />
+    <Property Type="String" Name="slm_Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_CreatedDate" Precision="3" />
+    <Property Type="String" Name="slm_CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="slm_UpdatedDate" Precision="3" />
+    <Property Type="String" Name="slm_UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="is_Deleted" Nullable="false" />
+  </EntityType>
+</Schema>

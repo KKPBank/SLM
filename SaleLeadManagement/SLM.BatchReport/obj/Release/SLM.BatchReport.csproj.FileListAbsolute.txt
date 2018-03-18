@@ -1,0 +1,15 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLMBatchReport.exe.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\OBTBatchLog.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLMBatchReport.exe
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLMBatchReport.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\log4net.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Biz.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Dal.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Resource.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\LinqKit.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Biz.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Dal.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\bin\Release\SLM.Resource.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\obj\Release\SLM.BatchReport.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\obj\Release\SLMBatchReport.exe
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.BatchReport\obj\Release\SLMBatchReport.pdb

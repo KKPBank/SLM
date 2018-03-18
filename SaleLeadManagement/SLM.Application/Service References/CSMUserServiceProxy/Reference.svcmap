@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="45c84340-8e8f-4733-ab0b-18798f15a459" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.3.112.51/CSMWS/CSMUserService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CSMUserService.disco" MetadataType="Disco" ID="810176ba-1d3f-428d-836b-19d6ff8ea345" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?disco" />
+    <MetadataFile FileName="CSMUserService1.xsd" MetadataType="Schema" ID="616a5968-d4db-4605-bc4f-b8db8bc254d5" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CSMUserService11.xsd" MetadataType="Schema" ID="19c7a03d-0ada-4414-894e-0031a095e881" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CSMUserService.wsdl" MetadataType="Wsdl" ID="56eb0673-df58-407f-a28d-f9be4814f798" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CSMUserService12.xsd" MetadataType="Schema" ID="44a5646d-336b-4ae1-801f-4d05eb38f0f8" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CSMUserService13.xsd" MetadataType="Schema" ID="d48f2c0c-3032-457a-baa6-d99b12ab14ef" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CSMUserService1.wsdl" MetadataType="Wsdl" ID="2cfaa097-ba96-4a39-9a5b-e4efaf755a6a" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMUserService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

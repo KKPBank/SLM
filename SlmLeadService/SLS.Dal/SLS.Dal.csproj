@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7B74812-1ED5-43BC-A7C6-4BCFF3A65E7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLS.Dal</RootNamespace>
+    <AssemblyName>SLS.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\StaffData.cs" />
+    <Compile Include="DBConnectionExtension.cs" />
+    <Compile Include="DBUtil.cs" />
+    <Compile Include="Models\CocMsMappingStatusModel.cs" />
+    <Compile Include="Models\CocMsSystemModel.cs" />
+    <Compile Include="Models\MasterModel.cs" />
+    <Compile Include="Models\SearchLeadModel.cs" />
+    <Compile Include="Models\SlmMsAccessRightModel.cs" />
+    <Compile Include="Models\SlmMsBranchModel.cs" />
+    <Compile Include="Models\SlmMsChannelModel.cs" />
+    <Compile Include="Models\SlmMsConfigProductScreenModel.cs" />
+    <Compile Include="Models\SlmMsCountryModel.cs" />
+    <Compile Include="Models\SlmMsStaffModel.cs" />
+    <Compile Include="Models\SlmNoteModel.cs" />
+    <Compile Include="Models\SlmTrCampaignFinalModel.cs" />
+    <Compile Include="Models\SlmTrChannelInfoModel.cs" />
+    <Compile Include="Models\SlmTrCusInfoModel.cs" />
+    <Compile Include="Models\SlmTrLeadModel.cs" />
+    <Compile Include="Models\SlmTrProductInfoModel.cs" />
+    <Compile Include="Models\SlmTrRenewInsuranceModel.cs" />
+    <Compile Include="Models\SlmWsConfigModel.cs" />
+    <Compile Include="Models\SlmWsLogModel.cs" />
+    <Compile Include="Models\StoreProcedure.cs" />
+    <Compile Include="Models\UploadLeadModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SLM_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SLM_DB.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="SLM_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SLM_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLS.Resource\SLS.Resource.csproj">
+      <Project>{613EBC71-27FA-42EA-BEA6-F1C662C746D1}</Project>
+      <Name>SLS.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

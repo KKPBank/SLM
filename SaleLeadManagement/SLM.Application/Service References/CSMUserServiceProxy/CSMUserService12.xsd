@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.kiatnakinbank.com/services/CSM/CSMUserService" elementFormDefault="qualified" targetNamespace="http://www.kiatnakinbank.com/services/CSM/CSMUserService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMUserService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.User" />
+  <xs:element name="InsertOrUpdateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.User" minOccurs="0" name="request" nillable="true" type="q1:InsertOrUpdateUserRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.User" minOccurs="0" name="InsertOrUpdateUserResult" nillable="true" type="q2:InsertOrUpdateUserResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

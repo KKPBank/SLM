@@ -1,0 +1,5 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Release\SLMBatch.WebService.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Release\SLMBatch.WebService.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Release\SLMBatch.WebService.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\obj\Release\SLMBatch.WebService.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\obj\Release\SLMBatch.WebService.pdb

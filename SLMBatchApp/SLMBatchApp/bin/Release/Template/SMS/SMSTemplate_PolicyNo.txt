@@ -1,0 +1,1 @@
+﻿ยืนยันการซื้อและจัดส่ง%CoverageType% : ทะเบียน %CarLicenseNo% : ค่าเบี้ย %PolicyPremiumPaid% บาท ติดต่อบริษัทประกัน %InsuranceTelNo%

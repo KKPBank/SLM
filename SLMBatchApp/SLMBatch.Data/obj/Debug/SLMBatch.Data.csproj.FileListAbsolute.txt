@@ -1,0 +1,28 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Entity.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SpreadsheetLight.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Common.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Entity.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Debug\SpreadsheetLight.xml
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.dll.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Data.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Common.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Entity.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SpreadsheetLight.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Common.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SLMBatch.Entity.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\bin\Debug\SpreadsheetLight.xml
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Data\obj\Debug\SLMBatch.Data.pdb

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48c150fd-c41f-4010-b37b-ed80ee9bd837" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.3.112.51/CSMWS/CSMBranchService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CSMBranchService.xsd" MetadataType="Schema" ID="2b13b2f7-b3ba-4c19-a06a-fc65c79f3c6b" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CSMBranchService1.xsd" MetadataType="Schema" ID="258b9b44-9efd-4141-bd45-68f76d582cf8" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CSMBranchService2.xsd" MetadataType="Schema" ID="d48d4c42-9989-487d-9d4f-aa5d8053925a" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CSMBranchService3.xsd" MetadataType="Schema" ID="63a1ebfa-c5c4-4953-b07b-c15958072a1d" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CSMBranchService4.xsd" MetadataType="Schema" ID="3c5b347f-0e08-465f-97d6-311a13576333" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CSMBranchService.disco" MetadataType="Disco" ID="e1d8b97e-e560-4cd9-9bfb-53443ae5b008" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?disco" />
+    <MetadataFile FileName="CSMBranchService.wsdl" MetadataType="Wsdl" ID="fbf80d9e-e1a3-4fde-9865-8d4e91e4f61e" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?wsdl" />
+    <MetadataFile FileName="CSMBranchService1.wsdl" MetadataType="Wsdl" ID="f395e81c-f70a-4eea-b9e5-c34a00d560f6" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CSMBranchService5.xsd" MetadataType="Schema" ID="50047489-54a3-4a07-b538-cc4d2aeb13bd" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

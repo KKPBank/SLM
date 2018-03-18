@@ -1,0 +1,778 @@
+/* Sale Lead */
+html,body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Tahoma;
+	font-size: 13px;
+	height:100%;
+}
+input[readonly] { border:1px solid #7f9db9; background-color:#e5edf5; color:#000; }
+.Textbox 
+{
+    border:1px solid #7f9db9; font-size:13px; font-family:Tahoma;
+}
+.TextboxR 
+{
+    border:1px solid #7f9db9; font-size:13px; font-family:Tahoma;  text-align:right;
+}
+.TextboxView
+{
+    border:1px solid #7f9db9; background-color:#e5edf5; font-size:13px; font-family:Tahoma;
+}
+.TextboxViewR
+{
+    border:1px solid #7f9db9; background-color:#e5edf5; font-size:13px; font-family:Tahoma; text-align:right;
+}
+.TextboxC 
+{
+    border:1px solid #7f9db9; font-size:13px; font-family:Tahoma; text-align:center;
+}
+.LabelC 
+{
+    font-size:13px; font-family:Tahoma; text-align:center;
+}
+.Dropdownlist
+{
+    font-family: Tahoma;
+    font-size: 13px;
+    border:1px solid #7f9db9;
+}
+
+.AutoDropdownlist
+{
+    font-family: Tahoma;
+    font-size: 13px;
+    border:1px solid #7f9db9;
+    height: 100px;
+    overflow: auto;
+}
+.DropdownlistView
+{
+    font-family: Tahoma;
+    font-size: 13px;
+    border:1px solid #7f9db9;
+    background-color:#e5edf5;
+}
+
+/* jQuery AutoComplete UI */
+.AutoDropdownlist-toggle{
+    position: absolute;
+    margin-left: -1px;
+    padding: 0;
+    background-image: url(../Images/hDropdownlist.png);
+    background-repeat: no-repeat;
+}
+.ui-autocomplete  
+{
+    height: 220px; width:400px; overflow-y: scroll; overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 5px;
+}
+/* End jQuery AutoComplete UI */
+
+.Button  
+{
+     height:25px; cursor:pointer;
+}
+
+.Hidden
+{
+    display:none;
+}
+
+font.hilightGreen{
+	color: #009900;
+}
+a:link, a:active, a:visited{
+	color: #066ea4;
+	text-decoration: none;
+}
+.headerLogo{
+	background-image: url(../images/logo_control_New.gif);
+	height: 99px;
+}
+.headerLogoBG{
+	background-image: url(../images/logoBG_New.gif);
+	height: 99px;
+	width:25%;
+}
+
+div.contentAreaControlSheets{
+	width: 1210px;
+	/*border: 1px Solid #FF0000;*/
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: top;
+ 	FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+ 	color: #000000;
+}
+div.headerControlsheet{
+	background-image: url(../images/logo_control.gif);
+	height: 99px;
+    position:relative;
+	float:left;
+    width:40%;
+}
+div.headerControlsheetBG{
+	background-image: url(../images/logoBG.gif);
+	height: 99px;
+	width:100%;
+}
+div.logo{
+	background-position: left;
+	height: 99px;
+	width: 300px;
+	float: right;
+}
+div.logoRight{
+	background-image: url(../images/logoRight.gif);
+	background-repeat: repeat;
+	background-position: right;
+	height: 99px;
+	width: 54px;
+	float: right;
+}
+div.time{
+     background-image: url(../images/iTime.gif);
+     background-position: left;
+     background-repeat: no-repeat;
+     FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     color: #FFFFFF;
+     width: 120px;
+     height: 30px;
+     padding-left: 20px;
+     margin-top:10px;
+     float: right;
+     line-height: 30px;
+}
+div.line{
+     FONT-SIZE: 11px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     color: #FFFFFF;
+     width:1px;
+     height: 30px;
+     float: right;
+     line-height: 30px;
+     margin-left:10px;
+     margin-right:10px;
+     margin-top:10px;
+}
+div.userTopic{
+     background-image: url(../images/iUser.gif);
+     background-position: left;
+     background-repeat: no-repeat;
+     FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     font-weight:bold;
+     color: #FFFFFF;
+     height: 30px;
+     padding-left: 20px;
+     float: right;
+     line-height: 30px;
+     margin-top:10px;
+     text-align:left;
+}
+div.user{
+     FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     color: #FFFFFF;
+     float: right;
+     padding-left: 5px;
+     width: 160px;
+     line-height: 30px;
+     margin-top:10px;
+     text-align:left;
+     height: 30px;
+}
+
+div.branchTopic{
+     background-image: url(../images/iBranch.gif);
+     background-position: left;
+     background-repeat: no-repeat;
+     FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     font-weight:bold;
+     color: #FFFFFF;
+     height: 30px;
+     padding-left: 20px;
+     float: right;
+     line-height: 30px;
+     margin-top:10px;
+}
+div.branch{
+     FONT-SIZE: 12px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+     color: #FFFFFF;
+     width:220px;
+     height: 30px;
+     padding-left: 5px;
+     float: right;
+     line-height: 30px;
+     margin-top:10px;
+}
+div.Notification{
+     FONT-SIZE: 12px;
+     font-family:Tahoma;
+     color: #FFFFFF;
+     width:50px;
+     height: 30px;
+     padding-left: 5px;
+     vertical-align:bottom;
+     float: right;
+     line-height: 30px;
+     margin-top:15px;
+}
+div.logout{
+     float:right;
+     margin-top:15px;
+}
+div.footerLogin
+{
+    position:relative;
+    bottom:5px;
+	left:0px;
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+ 	color: #858585;
+	background-color: #D3D3D3;
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
+	width:99%;
+	z-index:0;  
+}
+div.footer
+{
+    position:relative;
+	left:0px;
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+ 	color: #858585;
+	background-color: #D3D3D3;
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
+	width:99%;
+	height:16px;
+	z-index:0;
+}
+div.topic {
+   background-image: url(../images/topicBG.gif);
+	height: 31px;
+}
+div.topicBullet{
+	background-image: url(../images/topicBullet.gif);
+	width:28px;
+	float: left;
+	height: 31px;
+}
+div.topicText{
+ 	FONT-SIZE: 14px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+ 	color: #FFFFFF;
+	float: left;
+	height: 31px;
+	line-height: 30px;
+	padding-left: 10px;
+	}
+div.topicRight{
+	background-image: url(../images/topicRight.gif);
+	width:11px;
+	float: Right;
+	height: 31px;
+}
+div.pageflow{
+ height: 20px;
+ FONT-SIZE: 11px; FONT-FAMILY: Tahoma, "Microsoft Sans Serif", Arial;
+ color: #C2C2C2;
+ border-bottom: 1px dashed #a3a3a3;
+ padding-left: 38px;
+ line-height: 20px;
+}
+
+/* Modal Popup */
+.modalPopupProcessing
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+}
+.modalBackground
+{
+    /* IE8-10 */
+    background-color: #002346;
+    filter: alpha(opacity=5);
+    
+    /* Firefox, Chrome */
+    background: rgba(0, 35, 70, 0.3);
+    opacity: 0.3;
+}
+.modalBackgroundProcessing
+{     
+    z-index: 500000 !important;
+}
+
+/* modal Popup Tab008 */
+.modalPopupTab008
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:890px;
+    height:530px;
+}
+.modalPopupTab008_Obt
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:890px;
+    height:530px;
+}
+/* modal Popup Tab009 */
+.modalPopupTab009
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:930px;
+    height:370px;
+}
+/* modal Popup Tab018_1 */
+.modalPopupTab018_1
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:630px;
+    height:450px;
+}
+/* modal Popup Tab018_2 */
+.modalPopupTab018_2
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:630px;
+    height:450px;
+}
+.modalPopupCampaignSCR004
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:850px;
+    height:550px;
+}
+.modalPopupOfferCampaignSCR004
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:900px;
+    height:450px;
+}
+.modalPopupMonitoring
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:1000px;
+    height:550px;
+}
+
+.modalPopupMonitoring2
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:980px;
+    height:400px;
+}
+
+.modalPopupSCR016
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:950px;
+    height:370px;
+}
+.modalPopupSCR017Add
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:500px;
+    height:460px;
+}
+.modalBoxlSearchCampaign
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:960px;
+    height:580px;
+}
+.modalBoxlSearchBundleCampaign
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:970px;
+    height:670px;
+}
+.modalPopupAddSuggestion
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:680px;
+    height:320px;
+}
+.modalPopupNoticeAll
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:830px;
+    height:555px;
+}
+.modalPopupNoticeAllInner
+{
+    margin:0px 0px 0px 0px;
+    background-color: #ffffff;
+    border:1px solid Gray;
+    padding: 3px;
+    width:798px;
+    height:460px;
+    padding:0px 0px 0px 0px
+}
+.modalPopupMKTMonitoring
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:950px;
+    height:620px;
+}
+.modalPopupMKTMonitoring2
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:930px;
+    height:410px;
+}
+.modalPopupConfigAssign
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:820px;
+    height:525px;
+}
+.modalPopupNotice
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:690px;
+    height:290px;
+}
+.modalPopupPosition
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:500px;
+    height:270px;
+}
+.modalPopupBranch
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:650px;
+    height:390px;
+}
+
+.modalPopupConfigSla
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:520px;
+    height:360px;
+}
+.modalPopupConditionActivity
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:820px;
+    height:515px;
+}
+.modalPopupConfigAccessData
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:820px;
+    height:525px;
+}
+.modalPopupBranchHoliday
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:820px;
+    height:515px;
+}
+.modalPopupCreateLeadResult
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:440px;
+    height:228px;
+}
+.modalPopupCreateLeadResultList
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:470px;
+    height:400px;
+}
+.modalPopupCreateLeadResultListInner
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:440px;
+    height:285px;
+}
+.modalPopupCreateLeadSuggestCampaign
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:440px;
+    height:205px;
+}
+
+.modalPopupPromotion
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:500px;
+    height:600px;
+}
+
+.modalPopupCancel
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:400px;
+    height:170px;
+}
+.modalPopupReport
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:200px;
+    height:130px;
+}
+.modalPopupBPReport
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:468px;
+    height:470px;
+}
+.modalPopupReceive
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:200px;
+    height:130px;
+}
+
+
+.modalPopupHistoryMain
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:500px;
+    height:380px;
+}
+.modalPopupHistoryDetail{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:1100px;
+    height:500px;
+}
+/* End Modal Popup */
+
+.PanelExistingLead
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:1160px;
+}
+.PanelExistingProduct
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:1160px;
+}
+.PanelPhoneCallHistoty
+{
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width:1160px;
+}
+
+/* Gridview */
+th
+{
+    /* ใช้ Set Header ของ Gridview */
+    border:1px solid #687a94;
+    border-collapse:collapse; 
+}
+.t_tablestyle
+{
+    table-layout: fixed;
+    padding: 2px;
+    border-collapse: collapse;
+}
+.t_rowhead
+{
+    font-weight: bold;
+    color: #000000;
+    background-color: #b3c8e7;
+    height: 24px;
+    border: 1px solid #96b5e2;
+}
+.t_row
+{
+    background-color: #ffffff;
+    height: 25px;
+    border-top-style:none;
+    border-top-width:0px;
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-style:none;
+    border-right-width:0px;
+    border-bottom-style:Dashed;
+    border-bottom-width:1px;
+    border-bottom-color:#b3c8e7;
+    border-collapse:collapse;
+    font-family:Tahoma;
+    font-size:13px;
+}
+.tabHeaderText
+{
+    color: #009900;
+    font-weight:bold;
+    font-size:12px;
+}
+/* End Gridview */
+
+.Line
+{
+    width:1000px;
+    height: 0px;
+    border-bottom: 1px dashed #b3c8e7;
+}
+
+.box-header { border: 1px solid #c2d3ec; border-radius: 5px; display:inline-block; padding: 2px 10px; color: #f7941d; font-weight: bold; box-shadow:rgba(0,0,0,0.4) 1px 1px;  }
+.box-header::before { content: url(../images/bullet1.png); margin-right: 5px;  font-family: Tahoma; padding: 0px; font-weight: bold; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #37a4ec; }
+.require { color: red; }

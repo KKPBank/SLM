@@ -1,0 +1,132 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace SLMBatch.Entity
+{
+    public class CmtObtProductData
+    {
+        public decimal? Cmt_Product_Id { get; set; }
+        public decimal? CmtLot { get; set; }
+        public string Campaign_Id { get; set; }
+        public string Contract_Number { get; set; }
+        public string Branch { get; set; }
+        public string Contract_Year { get; set; }
+        public string Contract_Status { get; set; }
+        public string Car_Category { get; set; }
+        public string Customer_Key { get; set; }
+        public string Thai_Title_Name { get; set; }
+        public string Thai_First_Name { get; set; }
+        public string Thai_Last_Name { get; set; }
+        public string Single_View_Customer { get; set; }
+        public string Marital_Status { get; set; }
+        public string Customer_Type { get; set; }
+        public string Birth_Date { get; set; }
+        public string Tax_ID { get; set; }
+        public string Career_Key { get; set; }
+        public string Career_Desc { get; set; }
+        public string Car_By_Gov_Name { get; set; }
+        public string Brand_Code { get; set; }
+        public string Brand_Name { get; set; }
+        public string Model_Code { get; set; }
+        public string Model_Name { get; set; }
+        public string Engine_No { get; set; }
+        public string Chassis_No { get; set; }
+        public string Model_Year { get; set; }
+        public string License_No { get; set; }
+        public string Register_Province { get; set; }
+        public int? CC { get; set; }
+        public string ExpiryDate { get; set; }
+        public string Voluntary_MKT_ID { get; set; }
+        public string Voluntary_MKT_Title { get; set; }
+        public string Voluntary_MKT_First_Name { get; set; }
+        public string Voluntary_MKT_Last_Name { get; set; }
+        public string Voluntary_Policy_Number { get; set; }
+        public string Voluntary_Type_Key { get; set; }
+        public string Voluntary_Type_Name { get; set; }
+        public string Voluntary_Policy_Year { get; set; }
+        public string Voluntary_Policy_EFF_DATE { get; set; }
+        public string Voluntary_Policy_EXP_DATE { get; set; }
+        public string Voluntary_Policy_EXP_YEAR { get; set; }
+        public string Voluntary_Policy_EXP_MONTH { get; set; }
+        public decimal? Voluntary_COV_AMT { get; set; }
+        public decimal? Voluntary_Gross_Premium { get; set; }
+        public string Voluntary_Channel_Key { get; set; }
+        public string Voluntary_Company_Code { get; set; }
+        public string Voluntary_Company_Name { get; set; }
+        public string Voluntary_First_Create_Date { get; set; }
+        public string Benefit_Title_Name { get; set; }
+        public string Benefit__First_Name { get; set; }
+        public string Benefit_Last_Name { get; set; }
+        public string Benefit_TelNo { get; set; }
+        public string Driver_Title_Name1 { get; set; }
+        public string Driver_First_Name1 { get; set; }
+        public string Driver_Last_Name1 { get; set; }
+        public string Driver_TelNo1 { get; set; }
+        public string Driver_Birth_Date1 { get; set; }
+        public string Driver_Title_Name2 { get; set; }
+        public string Driver_First_Name2 { get; set; }
+        public string Driver_Last_Name2 { get; set; }
+        public string Driver_TelNo2 { get; set; }
+        public string Driver_Birth_Date2 { get; set; }
+        public string Compulsory_Policy_Number { get; set; }
+        public string Compulsory_Policy_Year { get; set; }
+        public string Compulsory_Policy_EFF_DATE { get; set; }
+        public string Compulsory_Policy_EXP_DATE { get; set; }
+        public decimal? Compulsory_COV_AMT { get; set; }
+        public decimal? Compulsory_Gross_Premium { get; set; }
+        public string Compulsory_Company_Code { get; set; }
+        public string Compulsory_Company_Name { get; set; }
+        public string Guarantor_Code1 { get; set; }
+        public string Guarantor_Title_Name1 { get; set; }
+        public string Guarantor_First_Name1 { get; set; }
+        public string Guarantor_Last_Name1 { get; set; }
+        public string Guarantor_Card_ID1 { get; set; }
+        public string Guarantor_Relation1 { get; set; }
+        public string Guarantor_TelNo1 { get; set; }
+        public string Guarantor_Code2 { get; set; }
+        public string Guarantor_Title_Name2 { get; set; }
+        public string Guarantor_First_Name2 { get; set; }
+        public string Guarantor_Last_Name2 { get; set; }
+        public string Guarantor_Card_ID2 { get; set; }
+        public string Guarantor_Relation2 { get; set; }
+        public string Guarantor_TelNo2 { get; set; }
+        public string Guarantor_Code3 { get; set; }
+        public string Guarantor_Title_Name3 { get; set; }
+        public string Guarantor_First_Name3 { get; set; }
+        public string Guarantor_Last_Name3 { get; set; }
+        public string Guarantor_Card_ID3 { get; set; }
+        public string Guarantor_Relation3 { get; set; }
+        public string Guarantor_TelNo3 { get; set; }
+        public string Grade { get; set; }
+        public int? GradeRanking { get; set; }
+        public string UpdateDate { get; set; }
+        public bool? Is_Normal { get; set; }
+        public bool? Obt_Flag { get; set; }
+        public string Reference1 { get; set; }
+        public string Reference2 { get; set; }
+        public string Contract_App_Date { get; set; }
+
+        public string ProductId { get; set; }
+        public int? TitleId { get; set; }
+        public int? OccupationId { get; set; }
+        public int? InsurancecarTypeId { get; set; }
+        public int? RegisProvinceId { get; set; }
+        public string VoluntaryMktId { get; set; }
+        public int? VoluntaryMktTitleId { get; set; }
+        public int? BenefitTitleId { get; set; }
+        public int? DriverTitleId1 { get; set; }
+        public int? DriverTitleId2 { get; set; }
+        public int? GuarantorTitleId1 { get; set; }
+        public int? GuarantorRelationId1 { get; set; }
+        public int? GuarantorTitleId2 { get; set; }
+        public int? GuarantorRelationId2 { get; set; }
+        public int? GuarantorTitleId3 { get; set; }
+        public int? GuarantorRelationId3 { get; set; }
+        public string LicenseNoUpper { get; set; }
+        public string EngineNoUpper { get; set; }
+        public string ChassisNoUpper { get; set; }
+        public string ChassisNoUpperCleaned { get; set; }
+    }
+}

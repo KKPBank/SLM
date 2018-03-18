@@ -1,0 +1,14 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Data.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Data.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Data.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\Oracle.ManagedDataAccess.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Entity.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SpreadsheetLight.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\DocumentFormat.OpenXml.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Common.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SLMBatch.Entity.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\bin\Release\SpreadsheetLight.xml
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Release\SLMBatch.Data.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Release\SLMBatch.Data.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Data\obj\Release\SLMBatch.Data.pdb

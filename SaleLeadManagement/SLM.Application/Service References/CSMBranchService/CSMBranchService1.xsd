@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Branch" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Common" />
+  <xs:import schemaLocation="http://10.3.112.51/CSMWS/CSMBranchService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="InsertOrUpdateBranchRequest">
+    <xs:sequence>
+      <xs:element name="Header" nillable="true" type="tns:WebServiceHeader" />
+      <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChannelCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpperBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartTimeHour" type="xs:int" />
+      <xs:element minOccurs="0" name="StartTimeMinute" type="xs:int" />
+      <xs:element minOccurs="0" name="EndTimeHour" type="xs:int" />
+      <xs:element minOccurs="0" name="EndTimeMinute" type="xs:int" />
+      <xs:element minOccurs="0" name="HomeNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Moo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Building" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Floor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Soi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Amphur" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tambol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zipcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="xs:short" />
+      <xs:element minOccurs="0" name="ActionUsername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Command" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertOrUpdateBranchRequest" nillable="true" type="tns:InsertOrUpdateBranchRequest" />
+  <xs:complexType name="WebServiceHeader">
+    <xs:sequence>
+      <xs:element name="password" nillable="true" type="xs:string" />
+      <xs:element name="reference_no" nillable="true" type="xs:string" />
+      <xs:element name="service_name" nillable="true" type="xs:string" />
+      <xs:element name="system_code" nillable="true" type="xs:string" />
+      <xs:element name="transaction_date" nillable="true" type="xs:string" />
+      <xs:element name="user_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="channel_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceHeader" nillable="true" type="tns:WebServiceHeader" />
+  <xs:complexType name="CreateBranchResponse">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Common" minOccurs="0" name="Header" nillable="true" type="q1:Header" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CSM.Service.Messages.Common" minOccurs="0" name="StatusResponse" nillable="true" type="q2:StatusResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateBranchResponse" nillable="true" type="tns:CreateBranchResponse" />
+  <xs:complexType name="UpdateBranchCalendarRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:WebServiceHeader" />
+      <xs:element minOccurs="0" name="HolidayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HolidayDesc" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BranchCodeList" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="UpdateMode" type="xs:int" />
+      <xs:element minOccurs="0" name="ActionUsername" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateBranchCalendarRequest" nillable="true" type="tns:UpdateBranchCalendarRequest" />
+</xs:schema>

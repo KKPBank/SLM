@@ -1,0 +1,48 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Application.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Application.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Application.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\AjaxControlToolkit.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\DocumentFormat.OpenXml.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\Excel.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\ICSharpCode.SharpZipLib.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\log4net.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\Microsoft.SharePoint.Client.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Biz.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Dal.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Resource.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SpreadsheetLight.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\LinqKit.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Biz.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Dal.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SLM.Resource.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\Excel.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\bin\SpreadsheetLight.xml
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Application.dll.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Application.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Application.XmlSerializers.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Application.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\AjaxControlToolkit.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\DocumentFormat.OpenXml.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\Excel.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\ICSharpCode.SharpZipLib.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\log4net.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\Microsoft.SharePoint.Client.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Biz.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Dal.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Resource.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SpreadsheetLight.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\LinqKit.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Biz.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Dal.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SLM.Resource.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\Excel.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\bin\SpreadsheetLight.xml
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.Application\obj\Release\SLM.Application.XmlSerializers.dll

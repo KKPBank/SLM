@@ -1,0 +1,36 @@
+1. แก้ไขไฟล์ web.config  ใน SaleLeadManagement
+   1.1 เพิ่ม <configSections>  ไว้ภายใต้ <configuration>...</configuration>   ก่อน  <system.web>
+   <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="SLM.Application.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+
+
+
+  1.2 เพิ่ม  CBS Webservice ไว้ ภายใต้  <appSettings>...</appSettings>
+      <!-- CBS Webservice-->
+      <add key="CBSTimeout"  value="10"/> <!-- seconds -->
+      <add key="CBSPageSize"  value="100"/>
+      <add key="CBSInquiryCustomerSingleView"  value="InquiryCustomerSingleView"/>
+      <add key="CBSSystemCode"  value="SLM"/>
+      <add key="CBSChannelID"  value="SLM"/>
+	  <add key="CBSLeadThaiCountryId"  value="220"/>
+
+ 1.3 เพิ่ม <applicationSettings>  ถัดจาก </system.webServer>
+  <applicationSettings>
+    <SLM.Application.Properties.Settings>
+      <setting name="SLM_Application_CBSCustomerService_CBSCustomerService"
+        serializeAs="String">
+        <value>http://10.202.211.166:8088/ws/CBSCustomerService</value>
+      </setting>
+    </SLM.Application.Properties.Settings>
+  </applicationSettings>
+
+
+
+2. แก้ไข web.config ใน SlmLeadService
+   2.2 เพิ่ม  CBS Webservice ไว้ ภายใต้  <appSettings>...</appSettings>
+	<!-- CBS -->
+	<add key="CBSLeadThaiCountryCode"  value="TH"/>
+   

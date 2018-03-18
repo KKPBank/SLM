@@ -1,0 +1,1071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Application\SaleLeadManagement</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>12/12/2017 08:53:32</publishTime>
+    </File>
+    <File Include="bin/Excel.dll">
+      <publishTime>12/12/2017 08:53:32</publishTime>
+    </File>
+    <File Include="bin/Excel.pdb">
+      <publishTime>12/12/2017 08:53:32</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>12/12/2017 08:53:32</publishTime>
+    </File>
+    <File Include="bin/LinqKit.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SharePoint.Client.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SharePoint.Client.Runtime.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="bin/SLM.Application.dll">
+      <publishTime>01/23/2018 16:01:51</publishTime>
+    </File>
+    <File Include="bin/SLM.Application.pdb">
+      <publishTime>01/18/2018 11:35:33</publishTime>
+    </File>
+    <File Include="bin/SLM.Application.XmlSerializers.dll">
+      <publishTime>01/23/2018 16:01:52</publishTime>
+    </File>
+    <File Include="bin/SLM.Biz.dll">
+      <publishTime>01/23/2018 16:01:49</publishTime>
+    </File>
+    <File Include="bin/SLM.Biz.pdb">
+      <publishTime>01/17/2018 22:09:43</publishTime>
+    </File>
+    <File Include="bin/SLM.Dal.dll">
+      <publishTime>01/23/2018 16:01:45</publishTime>
+    </File>
+    <File Include="bin/SLM.Dal.pdb">
+      <publishTime>01/17/2018 22:09:41</publishTime>
+    </File>
+    <File Include="bin/SLM.Resource.dll">
+      <publishTime>01/23/2018 15:27:20</publishTime>
+    </File>
+    <File Include="bin/SLM.Resource.pdb">
+      <publishTime>01/17/2018 21:52:55</publishTime>
+    </File>
+    <File Include="bin/SpreadsheetLight.dll">
+      <publishTime>12/12/2017 08:53:34</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="DownloadFile.ashx">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="ExcelTemplate/TelesalesPerformance_Template.xlsx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="ExcelTemplate/Template-ทวิ50-หักภาษี_ณ_ที่จ่าย1%25%28นิติบุคคล%29.xls">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="ExcelTemplate/Template-ใบเสนอราคาเปรียบเทียบ.xls">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="ExcelTemplate/Template_ฟอร์มบัตรเครดิต.xls">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="ExcelTemplate/Template_แบบฟอร์มแก้ไขใบเสร็จ.xls">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="ExcelTemplate/Template_ใบเสนอราคา_FLEET.xls">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="Images/ActData.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ActPaymentType.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ActPaymentTypeReceipt.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ActReceive.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ActRemark.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/add.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/AddLead.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/AddNotice.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/AddressSendDoc.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/AddUser.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/add_con_field.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow-right.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow_down.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow_down_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow_left_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow_right_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/arrow_top.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Assign.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/attention.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bAdd-EN.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bAdd.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bDelete.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bg.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bLogout.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Branch.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/BranchHoliday.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/bullet1.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Calculator.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/calendar.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/calendar2.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/CampaignData.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/CampaignFinal.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/CancelReason.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/car_detail.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/chat_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/check_user_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/close_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/comment.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/comments.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/compulsory_detail.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ConfigScriptQA.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/customer_detail.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/delete.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/delete_disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/disabled.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Document.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/document_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/document_icon2.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/document_icon3.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/doc_pic.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/doc_small_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/download.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/edit.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/edit_disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/email_pic.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/email_pic2.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/email_pic3.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/enable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/enabled.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/eraser.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/excel_file_small.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/exclamation.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/exclamation_circle_red.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/existinglead_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/existingproduct_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/feed.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/gear.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/gear_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/gear_sidemenu_icon4.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/gift_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/guarantor_detail.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/GurantorList.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAddress.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAddressContract.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAddressDetail.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAddressOrg.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAddressSendDoc.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/HadOffer2.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hAttach.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hCalculateDetail.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hContactDetail.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hDropdownlist.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hFollow.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hGeneral.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hInsurance.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hLeadDetail.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hLicense.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hManageReceive.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hProductOther.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hResult.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/hSearch.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iconClose.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iconHelp.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iconPrinter.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iconPrinter_ต้นฉบับ.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Icon_Delete.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/icon_password.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/icon_pdf.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/icon_username.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iDate.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iDelete.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iDelete_disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iEdit.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iEdit_disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iGo.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iGoDeposit.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iGoWithdrawal.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/info_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/info_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/insurance_sum_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/invalid.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iPDF.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iSearch.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iTime.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iUser.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/iView.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/label_premium.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/loading14.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logoBG.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logoBG_New.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logokk.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logoRight.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logo_control.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logo_control_New.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logo_loginNew.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/logo_slm.bmp">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ManageRecieve.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTab.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTabControl.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTabGift.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTabInfo.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTabKKTouch.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MenuTabScript.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/menu_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MockupNotification.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/MonitoringTitle5.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/newmenu_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/newmessages.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/newtab_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/normal_detail.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/note_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/NoticeAll.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/notice_small.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/OnHand.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/OnHandSR.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Others.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ownerlogging_tab_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/page_copy.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PaymentList.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PhoneCall.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PolicyData.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PolicyPaymentType.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PolicyPaymentTypeReceipt.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PolicyReceive.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/PolicyRemark.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Position.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/preview_file.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/print.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/print_over.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Privilege.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ProblemList.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ProductAll.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ProductOffer.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ReciptList.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/red-enable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ReferHistoryList.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/refresh.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/refresh_disable.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/reload.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/RemarkInstallment.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/ResultContact.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/RevisionReceipt.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/rss_small.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SaveNote.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/script_sidemenu_icon.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SearchBundle.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SearchCampaign.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SearchCampaignAll.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SidebarMenu.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/SLA.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/slide-button-left.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/slide-button-left1.jpg">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/stats.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/Suggesstion.png">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/tab_pane_icon.png">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/tel_tab_icon.png">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/topicBG.gif">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/topicBullet.gif">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/topicRight.gif">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/Transfer.gif">
+      <publishTime>12/12/2017 08:53:20</publishTime>
+    </File>
+    <File Include="Images/triangle.jpg">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/triangleUp.jpg">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/triangle_right.jpg">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/view.gif">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/voluntary_detail.jpg">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/waiting.gif">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Images/warning_icon.png">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Libs/AjaxControlToolkit.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Libs/LinqKit.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Libs/log4net.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Libs/Microsoft.SharePoint.Client.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Libs/Microsoft.SharePoint.Client.Runtime.dll">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="Log.config">
+      <publishTime>12/12/2017 10:23:00</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="MasterPage/Login.Master">
+      <publishTime>12/12/2017 08:53:10</publishTime>
+    </File>
+    <File Include="MasterPage/SaleLead.Master">
+      <publishTime>12/12/2017 08:53:10</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>01/23/2018 16:01:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.2.0.min.js">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.js">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Scripts/SlmScript.js">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Service References/CSMBranchService/SLM.Application.CSMBranchService.CreateBranchResponse.datasource">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Service References/CSMBranchService/SLM.Application.CSMBranchService.UpdateCalendarResponse.datasource">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Shared/Calendar.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/CampaignDesc.aspx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Download.aspx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/GridviewPageController.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/LeadInfo.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/LeadInfoEdit.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Lead_Detail_Act.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Lead_Detail_ContinueInsure.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Lead_Detail_Default.ascx">
+      <publishTime>01/15/2018 10:16:40</publishTime>
+    </File>
+    <File Include="Shared/Lead_Detail_KKMotorBox.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Lead_Share_Common.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Lead_Share_Ins.ascx">
+      <publishTime>01/15/2018 13:15:19</publishTime>
+    </File>
+    <File Include="Shared/Obt/ActRenewInsureContact.ascx">
+      <publishTime>01/15/2018 12:02:29</publishTime>
+    </File>
+    <File Include="Shared/Obt/ActRenewInsureSnap.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabActRenewInsure.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabFollowUp.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabInbound.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabInsureSummary.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabNote.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Obt/TabOutbound.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Prelead_Detail.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab004.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab005.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab006.ascx">
+      <publishTime>01/17/2018 21:19:20</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab007.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab008.ascx">
+      <publishTime>01/15/2018 11:36:20</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab009.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab018_1.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab018_2.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab018_3.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/Tabs/Tab018_4.ascx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="Shared/TextDateMask.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="Shared/TextDateMaskWithEvent.ascx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="SLM_SCR_003.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_004.aspx">
+      <publishTime>01/17/2018 21:34:05</publishTime>
+    </File>
+    <File Include="SLM_SCR_010.aspx">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="SLM_SCR_010_old.aspx">
+      <publishTime>12/12/2017 08:53:22</publishTime>
+    </File>
+    <File Include="SLM_SCR_011.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_011_old.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_015.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_016.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_017.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_018.aspx">
+      <publishTime>12/12/2017 08:53:12</publishTime>
+    </File>
+    <File Include="SLM_SCR_019.aspx">
+      <publishTime>12/12/2017 08:53:14</publishTime>
+    </File>
+    <File Include="SLM_SCR_020.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_021.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_022.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_023.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_024.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_025.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_026.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_027.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_028.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_029.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_030.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_031.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_032.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_033.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_034.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_035.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_036.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_037.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_038.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_039.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_040.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_041.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_041_Export.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_042.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_043.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_044.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_045.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_046.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_047.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_048.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_049.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_050.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_051.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_052.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_053.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_054.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_055.aspx">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="SLM_SCR_056.aspx">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="SLM_SCR_057.aspx">
+      <publishTime>12/12/2017 08:53:18</publishTime>
+    </File>
+    <File Include="SLM_SCR_058.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_062.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_063.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_064.aspx">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="SLM_SCR_070.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="SLM_SCR_999.aspx">
+      <publishTime>12/12/2017 08:53:24</publishTime>
+    </File>
+    <File Include="Styles/jquery-ui.css">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="Styles/kk.css">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="Styles/Menu.css">
+      <publishTime>12/12/2017 08:53:16</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryC2ARelationshipResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryC2CRelationshipResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerAddressResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerByAccountResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerByContactResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerByIDResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerByInformationResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerByNameResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerContactResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerDetailResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerOtherRelationResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerProfileSubscriptionLevelResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerSharedInformationResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryCustomerSingleViewResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryInstructionWithBankResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web References/CBSCustomerService/InquiryServiceWithBankResponse.datasource">
+      <publishTime>01/17/2018 15:57:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/23/2018 15:27:33</publishTime>
+    </File>
+    <File Include="Web.sitemap">
+      <publishTime>12/12/2017 08:53:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

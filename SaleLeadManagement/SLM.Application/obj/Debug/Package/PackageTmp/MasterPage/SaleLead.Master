@@ -1,0 +1,365 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SaleLead.master.cs" Inherits="SLM.Application.MasterPage.SaleLead" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sales Lead Management</title>
+    <link href="../Styles/kk.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Styles/jquery-ui.css" />
+
+    <script language="javascript" type="text/javascript">
+        function onMenuOver() {
+            document.getElementById('menuwrapper').style.display = 'block';
+        }
+        function onMenuOut() {
+            document.getElementById('menuwrapper').style.display = 'none';
+        }
+        function DisplayProcessing() {
+            var modal = $find('mpeProcessing');
+            modal.show();
+        }
+
+        function GetClock() {
+            d = new Date();
+            nday = d.getDay();
+            nmonth = d.getMonth();
+            ndate = d.getDate();
+            nyear = d.getYear();
+            nhour = d.getHours();
+            nmin = d.getMinutes();
+            nsec = d.getSeconds();
+            if (nyear < 1000) nyear = nyear + 1900;
+
+            if (nmin <= 9) { nmin = "0" + nmin }
+            if (nsec <= 9) { nsec = "0" + nsec }
+
+            document.getElementById('clockbox').innerHTML = "" + ndate + "/" + (nmonth + 1) + "/" + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
+            setTimeout("GetClock()", 1000);
+        }
+        window.onload = GetClock;
+
+        function SeeAll()
+        {
+            window.open('./SLM_SCR_070.aspx', '_self');
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     
+</head>
+<body>
+    <form id="form1" runat="server" onmouseup="onMenuOut();">
+    <act:ToolkitScriptManager ID="tkManager" runat="server" AsyncPostBackTimeout="1200" CombineScripts="false" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery-2.2.0.min.js" />
+            <asp:ScriptReference Path="~/Scripts/jquery-ui.js" />
+            <asp:ScriptReference Path="~/Scripts/SlmScript.js" />
+            <asp:ScriptReference Path="~/Scripts/moment.js" />
+        </Scripts>
+    </act:ToolkitScriptManager>
+    <div>
+        <div style="position:absolute; top:0px; right:0px; float:right; width:100%; ">
+
+            <div class="logout">
+                &nbsp;
+                <asp:ImageButton ID="imbLogout" runat="server" ImageUrl="~/Images/bLogout.gif" BorderStyle="None" 
+                    onclick="imbLogout_Click" OnClientClick="return confirm('ต้องการ Logout ใช่หรือไม่?')" />&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="line">|</div>
+            <div class="Notification">
+                <asp:UpdatePanel ID="upNotification" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <div>
+                            <asp:UpdatePanel ID="upImbNotification" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <asp:ImageButton ID="imbNotification" runat="server" ImageAlign="Bottom" 
+                                        ImageUrl="~/Images/notice_small.png" onclick="imbNotification_Click"  />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <div style="position:relative; top:-38px; left:18px; ">
+                                <asp:Label ID="lblNotification" runat="server" Visible="false"
+                                    Font-Names="Tahoma" Font-Size="12px" Text="" ForeColor="White"  BackColor="#f61414" ></asp:Label>
+                            </div>
+                        </div>
+                        <asp:UpdateProgress ID="upgTest" runat="server" AssociatedUpdatePanelID="upImbNotification" >
+                            <ProgressTemplate>
+                                <div style=" height:30px; width:94px; position:absolute; top:56px; right:130px; background-color:White; border:1px solid #d7d9dc; border-radius:8px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); "  >
+                                    <span style="color:Gray;">
+                                        &nbsp;&nbsp;<asp:Image ID="imgLoading2" runat="server" ImageUrl="~/Images/waiting.gif" ImageAlign="AbsMiddle" />&nbsp;Loading...
+                                    </span>
+                                </div>
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+                        <asp:Timer ID="tmNotification" runat="server" OnTick="tmNotification_Tick" ></asp:Timer>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+            <div class="line">|</div>
+            <%--<div class="logout">
+                 <asp:UpdatePanel ID="upSuggestionButton" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:ImageButton ID="imbSuggesstion" runat="server" ImageUrl="~/Images/comments.png" Height="20px" Width="20px" 
+                            BorderStyle="None" ToolTip="ข้อเสนอแนะ" onclick="imbSuggesstion_Click" />
+                    </ContentTemplate>
+                 </asp:UpdatePanel>
+            </div>
+            <div class="line">|</div>--%>
+            <div class="branch"><asp:Label ID="lblBranchName" runat="server"></asp:Label></div>
+            <div class="branchTopic">สาขา: </div>
+            <div class="line">|</div>
+            <div class="user"><asp:Label ID="lblUserFullname" runat="server"></asp:Label></div>
+            <div class="userTopic">User: </div>
+            <div class="line">|</div>
+            <div class="time" id="clockbox">
+                <asp:TextBox ID="txtUsername" runat="server" Visible="false"></asp:TextBox>
+                <asp:TextBox ID="txtStaffTypeId" runat="server" Visible="false"></asp:TextBox>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0" class="headerLogo" width="100%">
+            <tr>
+                <td style="height:99px; width:1000px;"></td>
+                <td class="headerLogoBG" >
+                    
+                </td>
+            </tr>
+        </table>
+        <div class="pageflow">&#8226;
+            <font class="hilightGreen">
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" ParentLevelsDisplayed="10" ></asp:SiteMapPath>
+            </font>
+            <div style="float:right; color:Black;">
+                <asp:UpdatePanel ID="upStatus" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="width:25px">
+                                    <asp:Image ID="imgAvailable" runat="server" ImageUrl="~/Images/enable.gif" ImageAlign="AbsMiddle" />
+                                    <asp:Image ID="imgNotAvailable" runat="server" ImageUrl="~/Images/disable.gif" ImageAlign="AbsMiddle" Visible="false" />
+                                </td>
+                                <td style="width:190px">
+                                    <asp:Label ID="lblStatusDesc" runat="server" Text="พร้อมทำงาน (Available)"></asp:Label>
+                                </td>
+                                <td style="width:110px">
+                                    <asp:Button ID="btnNotAvailable" runat="server" Text="ไม่พร้อมทำงาน" Width="100px" onclick="btnNotAvailable_Click" OnClientClick="return confirm('ต้องการเปลี่ยนสถานะเป็น ไม่พร้อมทำงาน?')" />
+                                    <asp:Button ID="btnAvailable" runat="server" Text="พร้อมทำงาน" Width="100px" Visible="false" onclick="btnAvailable_Click" OnClientClick="return confirm('ต้องการเปลี่ยนสถานะเป็น พร้อมทำงาน?')" />
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+        <div class="contentAreaControlSheets">
+            <div class="topic">
+                <div class="topicBullet"></div>
+                <div class="topicText"><asp:Label id="lblTopic" runat="server"></asp:Label></div>
+                <div class="topicRight"></div>
+            </div>
+        </div>
+        <div style="width:30px; position:absolute; top:155px; left:0px;" onmouseover="onMenuOver();" >
+            <div style="width:27px;">
+                <asp:Image ID="imgMenu" runat="server" ImageUrl="~/Images/SideBarMenu.jpg"  />
+            </div>
+            <div id="menuwrapper" style="display:none; position:relative; top:-130px; left:28px;z-index:10000" >
+                <ul runat="server" id="ulMainMenu">
+                    <li style="width:190px;"><asp:LinkButton ID="lbSearchLead" runat="server" onclick="lbSearchLead_Click">ค้นหา Lead</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuSearchObt" runat="server"><asp:LinkButton ID="lbSearchObt" runat="server" onclick="lbSearchObt_Click">ค้นหา OBT</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuUserMonitoring" runat="server"><asp:LinkButton ID="lbUserMonitoring" runat="server" onclick="lbUserMonitoring_Click">User Monitoring</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuUserMonitoringReInsurance" runat="server"><asp:LinkButton ID="lbUserMonitoringReInsurance" runat="server" onclick="lbUserMonitoringReInsurance_Click" Width="190px">User Monitoring Re-Insurance</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuTeamTelesales" runat="server"><asp:LinkButton ID="lbTeamTelesales" runat="server" onclick="lbTeamTelesales_Click">จัดการข้อมูล Team Telesales</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuCarType" runat="server"><asp:LinkButton ID="lbCarType" runat="server" onclick="lbCarType_Click">กำหนดประเภทการใช้งานรถ</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuCampaignRecommend" runat="server"><asp:LinkButton ID="lbCampaignRecommend" runat="server" onclick="lbCampaignRecommend_Click">แนะนำแคมเปญ</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuUserManagement" runat="server"><asp:LinkButton ID="lbUserManagement" runat="server" onclick="lbUserManagement_Click">User Management</asp:LinkButton></li>
+                    <%--<li style="width:170px;" id="menuSuggesstion" runat="server"><asp:LinkButton ID="lbSuggesstion" runat="server" onclick="lbSuggesstiont_Click">ค้นหาข้อมูลข้อเสนอแนะ</asp:LinkButton></li>--%>
+                    <li style="width:190px;" id="menuNotice" runat="server"><asp:LinkButton ID="lbNotice" runat="server" onclick="lbNotice_Click">ข้อมูลประกาศ</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuPosition" runat="server"><asp:LinkButton ID="lbPosition" runat="server" onclick="lbPosition_Click">ข้อมูลตำแหน่ง</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuSLA" runat="server"><asp:LinkButton ID="lbSLA" runat="server" onclick="lbSLA_Click">กำหนดข้อมูล SLA</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuAssign" runat="server"><asp:LinkButton ID="lbAssign" runat="server" onclick="lbAssign_Click">กำหนดค่าจ่ายงาน</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuPrivilege" runat="server"><asp:LinkButton ID="lbPrivilege" runat="server" onclick="lbPrivilege_Click">กำหนดสิทธิ์การเข้าถึงข้อมูล</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuActivityPrivilege" runat="server"><asp:LinkButton ID="lbActivityPrivilege" runat="server" onclick="lbActivityPrivilege_Click">กำหนดเงื่อนไขผลการติดต่อ</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuBranchHoliday" runat="server"><asp:LinkButton ID="lbBranchHoliday" runat="server" onclick="lbBranchHoliday_Click">กำหนดวันหยุดสาขา</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuBranch" runat="server"><asp:LinkButton ID="lbBranch" runat="server" onclick="lbBranch_Click">ข้อมูลสาขา</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuConfigRule" runat="server"><asp:LinkButton ID="lbConfigRule" runat="server" onclick="lbConfigRule_Click">กำหนดเงื่อนไขการจ่ายงาน</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuReceiveNo" runat="server"><asp:LinkButton ID="lbReceiveNo" runat="server" onclick="lbReceiveNo_Click">จัดการข้อมูลเลขรับแจ้ง</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuCheckRuleAssign" runat="server"><asp:LinkButton ID="lbCheckRuleAssign" runat="server" onclick="lbCheckRuleAssign_Click">ตรวจสอบการจ่ายงาน</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuPromotion" runat="server"><asp:LinkButton ID="lbPromotion" runat="server" onclick="lbPromotion_Click">นำเข้าข้อมูลโปรโมชั่น</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuImportProblem" runat="server"><asp:LinkButton ID="lbImportProblem" runat="server" onclick="lbImportProblem_Click">นำเข้างานติดปัญหา</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuBenefit" runat="server"><asp:LinkButton ID="lbBenefit" runat="server" onclick="lbBenefit_Click">ข้อมูลผลประโยชน์</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuScriptQA" runat="server"><asp:LinkButton ID="lbScriptQA" runat="server" onclick="lbScriptQA_Click">ข้อมูล Script และ Q&A</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuNotifyPremium" runat="server"><asp:LinkButton ID="lbNotifyPremium" runat="server" onclick="lbNotifyPremium_Click">นำเข้าข้อมูลแจ้งเบี้ย</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuTelesalesPerformance" runat="server"><asp:LinkButton ID="lbTelesalesPerformance" runat="server" onclick="lbTelesalesPerformance_Click">นำเข้าข้อมูลผลงาน Telesales</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuInsurCom" runat="server"><asp:LinkButton ID="lbInsurCom" runat="server" onclick="lbInsurCom_Click">ข้อมูลบริษัทประกันภัย</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuPremium" runat="server"><asp:LinkButton ID="lbPremium" runat="server" onclick="lbPremium_Click">ข้อมูล Premium</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuReport" runat="server"><asp:LinkButton ID="lbReport" runat="server" onclick="lbReport_Click">รายงาน</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuRoleDiscount" runat="server"><asp:LinkButton ID="lbRoleDiscount" runat="server" onclick="lbRoleDiscount_Click">ข้อมูลกำหนดส่วนลดตาม Role</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuPremiumCar" runat="server"><asp:LinkButton ID="lbPremiumCar" runat="server" onclick="lbPremiumCar_Click">ข้อมูลกำหนดรถ Premium</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuUploadLead" runat="server"><asp:LinkButton ID="lbUploadLead" runat="server" onclick="lbUploadLead_Click">นำเข้า Lead</asp:LinkButton></li>
+                    <li style="width:190px;" id="menuReassignLead" runat="server"><asp:LinkButton ID="lbReassignLead" runat="server" onclick="lbReassignLead_Click">ReAssign Lead</asp:LinkButton></li>
+                </ul>
+                <ul runat="server" id="ulReportMenu" visible="false">
+                <asp:Repeater runat="server" ID="rptMain">
+                    <ItemTemplate>
+                        <li style="width:250px">
+                            <asp:HyperLink runat="server" ID="hpReport" NavigateUrl='<%# Eval("slm_ReportMenuUrl") %>' Text='<%# Eval("slm_ReportMenuName") %>'></asp:HyperLink>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+                </ul>
+            </div>
+        </div>
+        <div style="padding-left:40px; min-height:700px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <div class="footer">
+            สงวนลิขสิทธิ์ โดย Kiatnakin Bank PLC&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;รองรับการแสดงผลบน Firefox 32.x ขึ้นไป, Resolution 1280 x 1024&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;KK : Sales Lead Management Version <asp:Label ID="lblAssemblyVersion" runat="server"></asp:Label>
+        </div>
+    
+    <!-- Show Processing -->
+    <asp:UpdatePanel runat="server" ID="upProcessing">
+        <ContentTemplate>
+	        <asp:Button runat="server" ID="btnDisplayProcessing" Width="0px" CssClass="Hidden"/>
+	        <asp:Panel runat="server" ID="pnlDisplayProcessing" Width="400" style="display:none; z-index:15000" CssClass="modalPopupProcessing" >
+		        <table width="100%" style="height:100px" cellpadding="0" cellspacing="0">
+			        <tr>
+				        <td align="center" valign="bottom">
+				        <asp:Image runat="server" ID="imgWait" ImageAlign="AbsMiddle" ImageUrl="~/Images/waiting.gif" />
+				        </td>
+			        </tr>
+			        <tr>
+				        <td align="center" valign="middle">
+				        <asp:Label ID="lblname" runat="server" Text="Processing..." Font-Bold="true" Font-Size="Small">
+				        </asp:Label>
+				        </td>
+			        </tr>
+		        </table>
+	        </asp:Panel>
+	        <act:ModalPopupExtender ID="mpeProcessing" runat="server" TargetControlID="btnDisplayProcessing" PopupControlID="pnlDisplayProcessing" BackgroundCssClass="modalBackground modalBackgroundProcessing" DropShadow="True">
+	        </act:ModalPopupExtender>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <!-- / Show Processing -->
+
+    <asp:UpdatePanel ID="upNotificationList" runat="server"  UpdateMode="Conditional">
+        <ContentTemplate>
+            <div id="divNotification" runat="server" visible="false" style="width:40px; position:absolute; top:12px; right:125px; z-index:100010 " >
+                <div style="position:absolute; top:45px; right:7px; background-color:White; border:1px solid #d7d9dc; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); "  >
+                    <table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                                    <tr>
+                                        <td style="height:24px; border-bottom: 1px solid lightgray; vertical-align:middle; font-weight:bold; font-size:12px; ">&nbsp;&nbsp;Notifications</td>
+                                        <td style="height:24px; border-bottom: 1px solid lightgray; vertical-align:middle; font-weight:bold; font-size:12px; text-align:right; color:blue;"><font style="cursor:pointer;" onclick="javascript:SeeAll();"><u>See All</u></fon>&nbsp;&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Panel ID="pnlSaleScript" runat="server" Width="380px" Height="390px" ScrollBars="Auto">
+                                <asp:UpdatePanel ID="upRptNotification" runat="server" UpdateMode="Conditional">
+                                    <ContentTemplate>
+                                        <asp:Repeater ID="rptNotification" runat="server" ClientIDMode="AutoID" onitemdatabound="rptNotification_ItemDataBound">
+                                        <HeaderTemplate>
+                                            <table cellpadding="2" cellspacing="0" border="0" width="100%">
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <tr id="trNotice" runat="server">
+                                                <td align="center" style="width:50px; border-bottom: 1px solid lightgray; vertical-align:top;">
+                                                    <asp:Image ID="imgNoticeIcon" runat="server" Width="28px"  />
+                                                </td>
+                                                <td style="height:53px; border-bottom: 1px solid lightgray; vertical-align:top; padding-right:10px; font-size:12px;">
+                                                    <asp:LinkButton ID="lbNoticeTitle" runat="server" Text='<%# Eval("Title") %>' CommandArgument='<%# Container.ItemIndex %>' ForeColor="Black" OnClick="lbNoticeTitle_Click" OnClientClick="DisplayProcessing()"></asp:LinkButton>
+                                                    <div style="height:4px"></div>
+                                                    <asp:Image ID="lblFeed" runat="server" ImageUrl="~/Images/rss_small.png" Width="10px" ImageAlign="AbsMiddle" />
+                                                    <asp:Label ID="lblNotificationDate" runat="server" ForeColor="Gray" Font-Size="11px" Text='<%# Eval("NotificationDate") != null ? (Convert.ToDateTime(Eval("NotificationDate")).ToString("dd/MM/") + Convert.ToDateTime(Eval("NotificationDate")).Year.ToString()) + " at " + Convert.ToDateTime(Eval("NotificationDate")).ToString("HH:mm:ss") + " น." : "" %>'></asp:Label>
+                                                    <asp:Label ID="lblNoticeType" runat="server" Text='<%# Eval("NotificationType") %>' Visible="false"></asp:Label>
+                                                    <asp:Label ID="lblNoticeStatus" runat="server" Text='<%# Eval("Status") %>' Visible="false"></asp:Label>
+                                                    <asp:Label ID="lblTicketId" runat="server" Text='<%# Eval("TicketId") %>' Visible="false"></asp:Label>
+                                                    <asp:Label ID="lblNotificationId" runat="server" Text='<%# Eval("NotificationId") %>' Visible="false"></asp:Label>
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </table>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="height:20px; border-top: 1px solid lightgray; vertical-align:middle; font-weight:bold; font-size:12px; ">
+                                <%--<asp:LinkButton ID="lbNotificationSeeAll" runat="server" Text="See All"  ></asp:LinkButton>--%>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+                <div style="position:relative; top:37px; right:22px;">
+                    <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/triangleup.jpg" />
+                </div>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+    
+    
+
+    <%--<asp:UpdatePanel ID="upSuggestion" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
+            <asp:Panel runat="server" ID="pnlSuggestion" CssClass="modalPopupAddSuggestion" >
+                <asp:Button ID="btnPopupSuggestion" runat="server" CssClass="Hidden" />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Suggesstion.png" />
+                <table cellpadding="2" cellspacing="0" border="0">
+                    <tr><td colspan="3" style="height:5px;"></td></tr>
+                    <tr>
+                        <td style="width:20px"></td>
+                        <td style="font-weight:bold; width:100px;">หัวข้อ<span style="color:Red;">*</span></td>
+                        <td style="width:300px;">
+                            <asp:TextBox ID="txtSuggestionTopic" runat="server" CssClass="Textbox" Width="510px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20px"></td>
+                        <td style="font-weight:bold; width:100px;">ประเภท<span style="color:Red;">*</span></td>
+                        <td style="width:300px;">
+                            <asp:DropDownList ID="cmbSuggestionType" runat="server" CssClass="Dropdownlist" Width="200px">
+                                <asp:ListItem Value="" Text=""></asp:ListItem>
+                                <asp:ListItem Value="1" Text="ข้อเสนอแนะ"></asp:ListItem>
+                                <asp:ListItem Value="2" Text="แจ้งปัญหาการใช้งาน"></asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20px"></td>
+                        <td style="font-weight:bold; width:100px;" valign="top" >รายละเอียด<span style="color:Red;">*</span></td>
+                        <td style="width:300px;">
+                           <asp:TextBox ID="txtSuggestionDetail" runat="server" TextMode="MultiLine" Width="510px" Rows="9" MaxLength="2000" ></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20px"></td>
+                        <td style="font-weight:bold; width:100px;" valign="top" ></td>
+                        <td style="width:300px;">
+                            <asp:Button ID="btnSaveSuggestion" runat="server" Text="บันทึก" Width="100px" CssClass="Button" /> &nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="btnCancelSuggestion" runat="server" Text="ยกเลิก" Width="100px" 
+                                CssClass="Button" onclick="btnCancelSuggestion_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+             <act:ModalPopupExtender ID="mpeSuggestion" runat="server" TargetControlID="btnPopupSuggestion" PopupControlID="pnlSuggestion" BackgroundCssClass="modalBackground" DropShadow="True">
+	         </act:ModalPopupExtender>
+        </ContentTemplate>
+    </asp:UpdatePanel>--%>
+    </form>
+</body>
+</html>

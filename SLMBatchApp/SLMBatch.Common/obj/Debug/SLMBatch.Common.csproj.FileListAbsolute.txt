@@ -1,0 +1,17 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\SpreadsheetLight.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\bin\Debug\SpreadsheetLight.xml
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\obj\Debug\SLMBatch.Common.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Common\obj\Debug\SLMBatch.Common.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.dll.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\SLMBatch.Common.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\SpreadsheetLight.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\bin\Debug\SpreadsheetLight.xml
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\obj\Debug\SLMBatch.Common.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\obj\Debug\SLMBatch.Common.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Common\obj\Debug\SLMBatch.Common.pdb

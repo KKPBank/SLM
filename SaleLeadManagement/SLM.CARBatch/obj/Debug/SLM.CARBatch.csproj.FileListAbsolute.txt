@@ -1,0 +1,30 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\CARBatchLog.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.exe.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.exe
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\log4net.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Biz.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Dal.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Resource.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\LinqKit.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Biz.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Dal.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Resource.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLM.CARBatch.csprojResolveAssemblyReference.cache
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLMCARBatch.exe
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Application\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLMCARBatch.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\CARBatchLog.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.exe.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.exe
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLMCARBatch.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\log4net.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Biz.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Dal.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Resource.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\LinqKit.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Biz.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Dal.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\bin\Debug\SLM.Resource.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLM.CARBatch.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLMCARBatch.exe
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SaleLeadManagement\SLM.CARBatch\obj\Debug\SLMCARBatch.pdb

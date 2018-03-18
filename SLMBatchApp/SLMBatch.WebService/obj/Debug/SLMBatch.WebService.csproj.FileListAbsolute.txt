@@ -1,0 +1,11 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.dll.config
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\obj\Debug\SLMBatch.WebService.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.WebService\obj\Debug\SLMBatch.WebService.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.dll.config
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\bin\Debug\SLMBatch.WebService.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\obj\Debug\SLMBatch.WebService.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\obj\Debug\SLMBatch.WebService.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.WebService\obj\Debug\SLMBatch.WebService.pdb

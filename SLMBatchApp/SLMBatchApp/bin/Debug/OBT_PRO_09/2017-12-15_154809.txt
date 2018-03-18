@@ -1,0 +1,2 @@
+Data from BDW 1/1 (Total/To be Processed) records, Data to process from Pending 0/0 (Total/To be Processed) records
+ContractNo : 0064550010291, TicketId : 170464851301, GoToPending, Error : ไม่พบข้อมูลการซื้อพรบ. แต่มีเลขพรบ.เข้าระบบ

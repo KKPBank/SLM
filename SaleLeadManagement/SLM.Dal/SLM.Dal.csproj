@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFF169E2-2B59-447F-9A38-27898E7AF6B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLM.Dal</RootNamespace>
+    <AssemblyName>SLM.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBUtil.cs" />
+    <Compile Include="Models\KKSlmMsAccountStatusModel.cs" />
+    <Compile Include="Models\ActivityPreLeadModel.cs" />
+    <Compile Include="Models\BeneficiaryModel.cs" />
+    <Compile Include="Models\CmtCampaignProductModel.cs" />
+    <Compile Include="Models\CmtMappingProductModel.cs" />
+    <Compile Include="Models\CmtMsProductGroupModel.cs" />
+    <Compile Include="Models\ActivityLeadModel.cs" />
+    <Compile Include="Models\CsmMCrmServiceRoleModel.cs" />
+    <Compile Include="Models\HistoryLeadModel.cs" />
+    <Compile Include="Models\KKSlmMsBankModel.cs" />
+    <Compile Include="Models\KKSlmMsCountryModel.cs" />
+    <Compile Include="Models\KKSlmMsInsuranceCarTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsPaymentOptionModel.cs" />
+    <Compile Include="Models\KKSlmMsPaymentMethodModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\KKSlmMsRepairTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsCoverageTypeModel.cs" />
+    <Compile Include="Models\KKCocMsAolModel.cs" />
+    <Compile Include="Models\KKSlmMsAccessRightModel.cs" />
+    <Compile Include="Models\KKSlmMsAmphurModel.cs" />
+    <Compile Include="Models\KKSlmMsBranchModel.cs" />
+    <Compile Include="Models\KKSlmMsBrandModel.cs" />
+    <Compile Include="Models\KKSlmMsCalendarBranchModel.cs" />
+    <Compile Include="Models\KKSlmMsCampaignModel.cs" />
+    <Compile Include="Models\KKSlmMsCardTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsChannelModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigActivityModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigBranchPrivilegeModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigCloseJobModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigProductScreenModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigProductSubstatusModel.cs" />
+    <Compile Include="Models\KKSlmMsConfigProductTabModel.cs" />
+    <Compile Include="Models\KKSlmMsDepartmentModel.cs" />
+    <Compile Include="Models\KKSlmMsModelModel.cs" />
+    <Compile Include="Models\KKSlmMsModuleModel.cs" />
+    <Compile Include="Models\KKSlmMsOccupationModel.cs" />
+    <Compile Include="Models\KKSlmMsOptionModel.cs" />
+    <Compile Include="Models\KKSlmMsPaymentTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsPlanBancModel.cs" />
+    <Compile Include="Models\KKSlmMsPositionModel.cs" />
+    <Compile Include="Models\KKSlmMsPrivilegeOwnerModel.cs" />
+    <Compile Include="Models\KKSlmMsPromotionModel.cs" />
+    <Compile Include="Models\KKSlmMsProvinceModel.cs" />
+    <Compile Include="Models\KKSlmMsSlaModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffGroupModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffModel.cs" />
+    <Compile Include="Models\KKSlmMsStaffTypeModel.cs" />
+    <Compile Include="Models\KKSlmMsSubmodelModel.cs" />
+    <Compile Include="Models\KKSlmMsSystemAssignModel.cs" />
+    <Compile Include="Models\KKSlmMsTambolModel.cs" />
+    <Compile Include="Models\KKSlmMsTeamtelesalesModel.cs" />
+    <Compile Include="Models\KKSlmMsTitleNameModel.cs" />
+    <Compile Include="Models\KKSlmNoteModel.cs" />
+    <Compile Include="Models\KKSlmPhoneCallModel.cs" />
+    <Compile Include="Models\KKSlmPreleadNoteModel.cs" />
+    <Compile Include="Models\KKSlmProductBundleConfigModel.cs" />
+    <Compile Include="Models\KKSlmScreenModel.cs" />
+    <Compile Include="Models\KKSlmTmpUploadLeadModel.cs" />
+    <Compile Include="Models\KKSlmTrActivityModel.cs" />
+    <Compile Include="Models\KKSlmTrActModel.cs" />
+    <Compile Include="Models\KKSlmTrAddressModel.cs" />
+    <Compile Include="Models\KKSLMTrCampaignFinalModel.cs" />
+    <Compile Include="Models\KKSlmTrChannelInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrCusInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrHistoryModel.cs" />
+    <Compile Include="Models\KKSlmTrLeadModel.cs" />
+    <Compile Include="Models\KKSlmTrNoticeModel.cs" />
+    <Compile Include="Models\KKSlmTrPreleadInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrPreleadModel.cs" />
+    <Compile Include="Models\KKSlmTrPreleadPhoneCallModel.cs" />
+    <Compile Include="Models\KKSlmTrProductInfoModel.cs" />
+    <Compile Include="Models\KKSlmTrRenewinsuranceModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\KKSlmTrSuretyModel.cs" />
+    <Compile Include="Models\OperKKSlmMsInsComModel.cs" />
+    <Compile Include="Models\PreleadModel.cs" />
+    <Compile Include="Models\SearchLeadModel.cs" />
+    <Compile Include="Models\SearchObtModel.cs" />
+    <Compile Include="Models\StoreProcedure.cs" />
+    <Compile Include="OPER_DB.Designer.cs">
+      <DependentUpon>OPER_DB.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SLM_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SLM_DB.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLM.Resource\SLM.Resource.csproj">
+      <Project>{0B58133E-618D-4506-9F57-C76358B87A5D}</Project>
+      <Name>SLM.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="OPER_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OPER_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="SLM_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SLM_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\OPERDBEntities.datasource" />
+    <None Include="Properties\DataSources\SLM_DBEntities.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

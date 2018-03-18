@@ -1,0 +1,9 @@
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Entity\bin\Debug\SLMBatch.Entity.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Entity\bin\Debug\SLMBatch.Entity.pdb
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Entity\obj\Debug\SLMBatch.Entity.dll
+D:\Projects\SLM\SVN_SLM\7_SourceCode\Branch\SLM\I-032961_P-023965\Batch\SLMBatchApp\SLMBatch.Entity\obj\Debug\SLMBatch.Entity.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Entity\bin\Debug\SLMBatch.Entity.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Entity\bin\Debug\SLMBatch.Entity.pdb
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Entity\obj\Debug\SLMBatch.Entity.csprojResolveAssemblyReference.cache
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Entity\obj\Debug\SLMBatch.Entity.dll
+D:\MyProject\KiatnakinBank\SLM\Source Code\SR5910-400 SLM Newcorebank\SLMBatchApp\SLMBatch.Entity\obj\Debug\SLMBatch.Entity.pdb

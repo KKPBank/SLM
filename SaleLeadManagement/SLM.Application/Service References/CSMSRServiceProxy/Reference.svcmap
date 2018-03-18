@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="200134eb-199e-48fd-8cd5-ff873277f195" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.3.112.51/CSMWS/CSMSRService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CSMSRService.wsdl" MetadataType="Wsdl" ID="9cd10e3e-ede8-433b-90ce-4a4d2b2d4200" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?wsdl" />
+    <MetadataFile FileName="CSMSRService1.wsdl" MetadataType="Wsdl" ID="a3423045-0f1a-45fe-9f10-e72bbda01517" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CSMSRService.xsd" MetadataType="Schema" ID="b98ff802-69de-454c-b777-90a602993a2d" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CSMSRService.disco" MetadataType="Disco" ID="94470fa3-1fdf-49df-8a96-15323be55adc" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?disco" />
+    <MetadataFile FileName="CSMSRService1.xsd" MetadataType="Schema" ID="0e4ac124-3e7d-4562-a261-43cdd6105117" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CSMSRService2.xsd" MetadataType="Schema" ID="c07283d3-4e50-4996-8888-a7a6e6e10555" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CSMSRService3.xsd" MetadataType="Schema" ID="24b60e23-954d-4ab1-b4e0-3343d8215e08" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CSMSRService4.xsd" MetadataType="Schema" ID="cec815a9-cf6b-4c70-98f9-1f1123f55315" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CSMSRService5.xsd" MetadataType="Schema" ID="6c591066-c9b3-4e8e-a014-6889e17aaf10" SourceId="1" SourceUrl="http://10.3.112.51/CSMWS/CSMSRService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

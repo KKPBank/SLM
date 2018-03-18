@@ -1,0 +1,2348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SLMDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="CMT_OBT_ADDRESS">
+    <Key>
+      <PropertyRef Name="Cmt_Address_Id" />
+    </Key>
+    <Property Name="Cmt_Address_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_Key" Type="varchar" MaxLength="20" />
+    <Property Name="Address_Type" Type="char" MaxLength="1" />
+    <Property Name="Contract_Address" Type="varchar" MaxLength="100" />
+    <Property Name="House_No" Type="varchar" MaxLength="100" />
+    <Property Name="Moo" Type="varchar" MaxLength="100" />
+    <Property Name="Building" Type="varchar" MaxLength="100" />
+    <Property Name="Village" Type="varchar" MaxLength="100" />
+    <Property Name="Soi" Type="varchar" MaxLength="100" />
+    <Property Name="Street" Type="varchar" MaxLength="100" />
+    <Property Name="Tambon" Type="varchar" MaxLength="100" />
+    <Property Name="Amphur" Type="varchar" MaxLength="100" />
+    <Property Name="Province" Type="varchar" MaxLength="100" />
+    <Property Name="ZipCode" Type="char" MaxLength="5" />
+    <Property Name="Home_Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile_Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Is_Normal" Type="bit" />
+    <Property Name="OBT_Flag" Type="bit" />
+    <Property Name="Running_seq" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Contract_No" Type="varchar" MaxLength="60" />
+    <Property Name="Send_Flag" Type="bit" />
+    <Property Name="Receipt_Flag" Type="bit" />
+    <Property Name="Vat_Flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="CMT_OBT_PRODUCT">
+    <Key>
+      <PropertyRef Name="Cmt_Product_Id" />
+    </Key>
+    <Property Name="Cmt_Product_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Campaign_Id" Type="varchar" MaxLength="20" />
+    <Property Name="Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="10" />
+    <Property Name="Contract_Year" Type="char" MaxLength="6" />
+    <Property Name="Contract_Status" Type="char" MaxLength="2" />
+    <Property Name="Car_Category" Type="char" MaxLength="1" />
+    <Property Name="Customer_Key" Type="varchar" MaxLength="50" />
+    <Property Name="Thai_Title_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Thai_First_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Thai_Last_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Single_View_Customer" Type="varchar" MaxLength="50" />
+    <Property Name="Marital_Status" Type="varchar" MaxLength="100" />
+    <Property Name="Customer_Type" Type="char" MaxLength="1" />
+    <Property Name="Birth_Date" Type="varchar" MaxLength="10" />
+    <Property Name="Tax_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Career_Key" Type="varchar" MaxLength="10" />
+    <Property Name="Career_Desc" Type="varchar" MaxLength="1000" />
+    <Property Name="Car_By_Gov_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Brand_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Brand_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Model_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Model_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Engine_No" Type="varchar" MaxLength="100" />
+    <Property Name="Chassis_No" Type="varchar" MaxLength="100" />
+    <Property Name="Model_Year" Type="varchar" MaxLength="4" />
+    <Property Name="License_No" Type="varchar" MaxLength="50" />
+    <Property Name="Register_Province" Type="varchar" MaxLength="100" />
+    <Property Name="CC" Type="int" />
+    <Property Name="ExpiryDate" Type="varchar" MaxLength="10" />
+    <Property Name="Voluntary_MKT_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Voluntary_MKT_Title" Type="varchar" MaxLength="50" />
+    <Property Name="Voluntary_MKT_First_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Voluntary_MKT_Last_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Voluntary_Policy_Number" Type="varchar" MaxLength="100" />
+    <Property Name="Voluntary_Type_Key" Type="varchar" MaxLength="50" />
+    <Property Name="Voluntary_Type_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Voluntary_Policy_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Voluntary_Policy_EFF_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="Voluntary_Policy_EXP_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="Voluntary_Policy_EXP_YEAR" Type="varchar" MaxLength="4" />
+    <Property Name="Voluntary_Policy_EXP_MONTH" Type="varchar" MaxLength="2" />
+    <Property Name="Voluntary_COV_AMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Voluntary_Gross_Premium" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Voluntary_Channel_Key" Type="char" MaxLength="1" />
+    <Property Name="Voluntary_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Voluntary_Company_Name" Type="varchar" MaxLength="500" />
+    <Property Name="Voluntary_First_Create_Date" Type="varchar" MaxLength="10" />
+    <Property Name="Benefit_Title_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Benefit__First_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Benefit_Last_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Benefit_TelNo" Type="varchar" MaxLength="50" />
+    <Property Name="Driver_Title_Name1" Type="varchar" MaxLength="50" />
+    <Property Name="Driver_First_Name1" Type="varchar" MaxLength="100" />
+    <Property Name="Driver_Last_Name1" Type="varchar" MaxLength="100" />
+    <Property Name="Driver_TelNo1" Type="varchar" MaxLength="50" />
+    <Property Name="Driver_Birth_Date1" Type="varchar" MaxLength="10" />
+    <Property Name="Driver_Title_Name2" Type="varchar" MaxLength="50" />
+    <Property Name="Driver_First_Name2" Type="varchar" MaxLength="100" />
+    <Property Name="Driver_Last_Name2" Type="varchar" MaxLength="100" />
+    <Property Name="Driver_TelNo2" Type="varchar" MaxLength="50" />
+    <Property Name="Driver_Birth_Date2" Type="varchar" MaxLength="10" />
+    <Property Name="Compulsory_Policy_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Compulsory_Policy_Year" Type="varchar" MaxLength="4" />
+    <Property Name="Compulsory_Policy_EFF_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="Compulsory_Policy_EXP_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="Compulsory_COV_AMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Compulsory_Gross_Premium" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Compulsory_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Compulsory_Company_Name" Type="varchar" MaxLength="500" />
+    <Property Name="Guarantor_Code1" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Title_Name1" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_First_Name1" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Last_Name1" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Card_ID1" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Relation1" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_TelNo1" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Code2" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Title_Name2" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_First_Name2" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Last_Name2" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Card_ID2" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Relation2" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_TelNo2" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Code3" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Title_Name3" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_First_Name3" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Last_Name3" Type="varchar" MaxLength="100" />
+    <Property Name="Guarantor_Card_ID3" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_Relation3" Type="varchar" MaxLength="50" />
+    <Property Name="Guarantor_TelNo3" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="2" />
+    <Property Name="UpdateDate" Type="varchar" MaxLength="10" />
+    <Property Name="Is_Normal" Type="bit" />
+    <Property Name="OBT_Flag" Type="bit" />
+    <Property Name="Running_seq" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Reference1" Type="varchar" MaxLength="500" />
+    <Property Name="Reference2" Type="varchar" MaxLength="500" />
+    <Property Name="Contract_App_Date" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_amphur">
+    <Key>
+      <PropertyRef Name="slm_AmphurId" />
+    </Key>
+    <Property Name="slm_AmphurId" Type="int" Nullable="false" />
+    <Property Name="slm_AmphurCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_ProvinceCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_AmphurNameTH" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AmphurNameEN" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AmphurStatus" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_batch">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_BatchCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BatchName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_Group" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BatchDescription" Type="varchar" MaxLength="500" />
+    <Property Name="slm_StartTime" Type="datetime" />
+    <Property Name="slm_EndTime" Type="datetime" />
+    <Property Name="slm_Status" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ProcessTime" Type="int" />
+    <Property Name="slm_ActionBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Type" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BatchDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_system" Type="varchar" MaxLength="50" />
+    <Property Name="slm_IsReRun" Type="bit" />
+    <Property Name="slm_ReRunStartTime" Type="char" MaxLength="5" />
+    <Property Name="slm_ReRunEndTime" Type="char" MaxLength="5" />
+    <Property Name="slm_PreRequisite" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BatchPath" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_branch">
+    <Key>
+      <PropertyRef Name="slm_BranchCode" />
+    </Key>
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_Branch_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_BranchName" Type="nvarchar" MaxLength="500" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_StartTime_Hour" Type="varchar" MaxLength="2" />
+    <Property Name="slm_StartTime_Minute" Type="varchar" MaxLength="2" />
+    <Property Name="slm_EndTime_Hour" Type="varchar" MaxLength="2" />
+    <Property Name="slm_EndTime_Minute" Type="varchar" MaxLength="2" />
+    <Property Name="slm_ChannelId" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_House_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Building" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Village" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Street" Type="varchar" MaxLength="500" />
+    <Property Name="slm_TambolId" Type="int" />
+    <Property Name="slm_AmphurId" Type="int" />
+    <Property Name="slm_ProvinceId" Type="int" />
+    <Property Name="slm_Zipcode" Type="varchar" MaxLength="10" />
+    <Property Name="slm_BranchCodeNew" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_UpperBranch" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_calendar_branch">
+    <Key>
+      <PropertyRef Name="slm_Calendar_Branch_Id" />
+    </Key>
+    <Property Name="slm_Calendar_Branch_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_HolidayDate" Type="date" Nullable="false" />
+    <Property Name="slm_HolidayDesc" Type="varchar" MaxLength="500" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_campaign">
+    <Key>
+      <PropertyRef Name="slm_CampaignId" />
+    </Key>
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="slm_CampaignName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_StartDate" Type="date" />
+    <Property Name="slm_EndDate" Type="date" />
+    <Property Name="slm_Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_Offer" Type="varchar" MaxLength="250" />
+    <Property Name="slm_criteria" Type="varchar" MaxLength="1000" />
+    <Property Name="slm_channel" Type="varchar" MaxLength="4000" />
+    <Property Name="slm_score" Type="int" />
+    <Property Name="slm_ListCount" Type="varchar" MaxLength="10" />
+    <Property Name="slm_product" Type="varchar" MaxLength="3" />
+    <Property Name="slm_url" Type="varchar" MaxLength="250" />
+    <Property Name="slm_log" Type="varchar" MaxLength="1000" />
+    <Property Name="slm_html" Type="text" />
+    <Property Name="slm_HaveList" Type="varchar" MaxLength="1" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_flag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_sla" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CampaignType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Desc_For_Customer" Type="varchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_blacklist">
+    <Key>
+      <PropertyRef Name="slm_cp_blacklist_id" />
+    </Key>
+    <Property Name="slm_cp_blacklist_id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_Prelead_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_ticketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_LastName" Type="nvarchar" MaxLength="120" />
+    <Property Name="slm_CardType" Type="int" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_StartDate" Type="datetime" />
+    <Property Name="slm_EndDate" Type="datetime" />
+    <Property Name="slm_IsActive" Type="bit" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_day">
+    <Key>
+      <PropertyRef Name="slm_CPId" />
+    </Key>
+    <Property Name="slm_CPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_Type" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Days" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_dedup">
+    <Key>
+      <PropertyRef Name="slm_cp_DedupId" />
+    </Key>
+    <Property Name="slm_cp_DedupId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CmtLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_Engine_No" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Chassis_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_StartDate" Type="datetime" />
+    <Property Name="slm_EndDate" Type="datetime" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_payment">
+    <Key>
+      <PropertyRef Name="slm_id" />
+    </Key>
+    <Property Name="slm_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_PaymentCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_screen">
+    <Key>
+      <PropertyRef Name="slm_cp_screen_id" />
+    </Key>
+    <Property Name="slm_cp_screen_id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" />
+    <Property Name="slm_ActionType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="slm_ScreenCode" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="slm_TableName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_Type" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_product_substatus">
+    <Key>
+      <PropertyRef Name="slm_cp_substatus_id" />
+    </Key>
+    <Property Name="slm_cp_substatus_id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" />
+    <Property Name="slm_OptionCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_SubStatusCode" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="slm_SubStatusName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="slm_IsFollowup" Type="bit" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_SubStatusType" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_config_purge_day">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_BatchCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Type" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TypeDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="slm_NumOfDay" Type="int" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_coveragetype">
+    <Key>
+      <PropertyRef Name="slm_CoverageTypeId" />
+    </Key>
+    <Property Name="slm_CoverageTypeId" Type="int" Nullable="false" />
+    <Property Name="slm_ConverageTypeName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_current_year">
+    <Key>
+      <PropertyRef Name="slm_id" />
+    </Key>
+    <Property Name="slm_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_year" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_customer_grade">
+    <Key>
+      <PropertyRef Name="slm_Customer_Grade_Id" />
+    </Key>
+    <Property Name="slm_Customer_Grade_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Customer_Grade_Name" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_Ranking" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_discount">
+    <Key>
+      <PropertyRef Name="slm_Discount_Id" />
+    </Key>
+    <Property Name="slm_Discount_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_StaffTypeId" Type="numeric" Precision="19" Scale="0" />
+    <Property Name="slm_DiscountPercent" Type="int" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_DiscountBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_InsuranceTypeCode" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_insurancecartype">
+    <Key>
+      <PropertyRef Name="slm_InsurancecarTypeId" />
+    </Key>
+    <Property Name="slm_InsurancecarTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_InsurancecarTypeName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_mapping_status">
+    <Key>
+      <PropertyRef Name="slm_Mapping_Status_ID" />
+    </Key>
+    <Property Name="slm_Mapping_Status_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_System" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Status_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Mapping_Status_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Mapping_Status_Desc" Type="varchar" MaxLength="500" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_Mapping_SubStatus_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Batch_View" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_occupation">
+    <Key>
+      <PropertyRef Name="slm_OccupationId" />
+    </Key>
+    <Property Name="slm_OccupationId" Type="int" Nullable="false" />
+    <Property Name="slm_OccupationCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_OccupationNameTH" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OccupationNameEN" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OccupationStatus" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_option">
+    <Key>
+      <PropertyRef Name="slm_OptionId" />
+    </Key>
+    <Property Name="slm_OptionId" Type="numeric" Precision="19" Scale="0" Nullable="false" />
+    <Property Name="slm_Option_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_OptionCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OptionDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OptionType" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_SystemView" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_OptionSubCode" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_payment">
+    <Key>
+      <PropertyRef Name="slm_PaymentId" />
+    </Key>
+    <Property Name="slm_PaymentId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_PaymentCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PaymentDesc" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_prelead_assign_type">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_AssignTypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AssignTypeName" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_province">
+    <Key>
+      <PropertyRef Name="slm_ProvinceId" />
+    </Key>
+    <Property Name="slm_ProvinceId" Type="int" Nullable="false" />
+    <Property Name="slm_ProvinceCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_ProvinceNameTH" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_ProvinceNameEN" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_ProvinceStatus" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_redbook_brand">
+    <Key>
+      <PropertyRef Name="slm_BrandId" />
+    </Key>
+    <Property Name="slm_BrandId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_BrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BrandName" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_redbook_model">
+    <Key>
+      <PropertyRef Name="slm_ModelId" />
+    </Key>
+    <Property Name="slm_ModelId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_BrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ModelCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ModelName" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_redbook_submodel">
+    <Key>
+      <PropertyRef Name="slm_KKKey" />
+    </Key>
+    <Property Name="slm_KKKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_VehicleKey" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BrandName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_ModelCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ModelName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_YearGroup" Type="int" />
+    <Property Name="slm_MonthGroup" Type="int" />
+    <Property Name="slm_Description" Type="varchar(max)" />
+    <Property Name="slm_AutoType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_SubAutoType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_GearTypeDescription" Type="varchar" MaxLength="500" />
+    <Property Name="slm_EngineDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_relate">
+    <Key>
+      <PropertyRef Name="slm_RelateId" />
+    </Key>
+    <Property Name="slm_RelateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RelateDesc" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_repairtype">
+    <Key>
+      <PropertyRef Name="slm_RepairTypeId" />
+    </Key>
+    <Property Name="slm_RepairTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RepairTypeName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_staff">
+    <Key>
+      <PropertyRef Name="slm_StaffId" />
+    </Key>
+    <Property Name="slm_StaffId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UserStatus" Type="nvarchar" MaxLength="25" />
+    <Property Name="slm_StaffNameTH" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_StaffNameEN" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_PositionName" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_EmpCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="slm_StaffTypeId" Type="numeric" Precision="19" Scale="0" Nullable="false" />
+    <Property Name="slm_StaffEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_TellNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AttemptTime" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="slm_ExpireDate" Type="datetime" />
+    <Property Name="slm_IsActive" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_IsLocked" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_Sex" Type="nchar" MaxLength="1" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_MarketingCode" Type="nvarchar" MaxLength="6" />
+    <Property Name="slm_Team" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_DepartmentId" Type="int" />
+    <Property Name="slm_HeadStaffId" Type="int" />
+    <Property Name="slm_UpdateStatusDate" Type="datetime" />
+    <Property Name="slm_UpdateStatusBy" Type="varchar" MaxLength="50" />
+    <Property Name="coc_Team" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_JobOnHand" Type="int" />
+    <Property Name="slm_Collapse" Type="bit" />
+    <Property Name="slm_Position_id" Type="int" />
+    <Property Name="slm_TeamTelesales_Id" Type="int" />
+    <Property Name="slm_Level" Type="int" />
+    <Property Name="slm_Staff_Category" Type="int" />
+    <Property Name="slm_Staff_Categroy_Host" Type="int" />
+    <Property Name="slm_InternalPhone" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UserType" Type="nvarchar" MaxLength="1" />
+    <Property Name="slm_telNo2" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_telNo3" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_marketing" Type="bit" />
+    <Property Name="crm_role_id" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_tambol">
+    <Key>
+      <PropertyRef Name="slm_TambolId" />
+    </Key>
+    <Property Name="slm_TambolId" Type="int" Nullable="false" />
+    <Property Name="slm_TambolCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_AmphurCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_ProvinceCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_TambolNameTH" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_TambolNameEN" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_TambolStatus" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_title">
+    <Key>
+      <PropertyRef Name="slm_TitleId" />
+    </Key>
+    <Property Name="slm_TitleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TitleName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_note">
+    <Key>
+      <PropertyRef Name="slm_NoteId" />
+    </Key>
+    <Property Name="slm_NoteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CreateBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreateDate" Type="datetime" />
+    <Property Name="slm_NoteDetail" Type="nvarchar" MaxLength="4000" />
+    <Property Name="slm_NoteFlag" Type="nchar" MaxLength="1" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_SendEmailFlag" Type="bit" />
+    <Property Name="slm_EmailSubject" Type="nvarchar" MaxLength="500" />
+    <Property Name="slm_CreatedBy_Position" Type="int" />
+    <Property Name="slm_CAS_Flag" Type="char" MaxLength="1" />
+    <Property Name="slm_CAS_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_phone_call">
+    <Key>
+      <PropertyRef Name="slm_PhoneCallId" />
+    </Key>
+    <Property Name="slm_PhoneCallId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_ContactDetail" Type="varchar" MaxLength="4000" />
+    <Property Name="slm_ContactPhone" Type="varchar" MaxLength="20" />
+    <Property Name="slm_CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreateDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Status" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Owner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Owner_Position" Type="int" />
+    <Property Name="slm_CreatedBy_Position" Type="int" />
+    <Property Name="slm_SubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_SubStatusName" Type="varchar" MaxLength="200" />
+    <Property Name="slm_CreditFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreditFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_CreditFileSize" Type="int" />
+    <Property Name="slm_50TawiFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_50TawiFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_50TawiFileSize" Type="int" />
+    <Property Name="slm_DriverLicenseiFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_DriverLicenseFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_DriverLicenseFileSize" Type="int" />
+    <Property Name="slm_Need_CompulsoryFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_CompulsoryFlagDate" Type="datetime" />
+    <Property Name="slm_Need_PolicyFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_PolicyFlagDate" Type="datetime" />
+    <Property Name="slm_CAS_Flag" Type="char" MaxLength="1" />
+    <Property Name="slm_CAS_Date" Type="datetime" />
+    <Property Name="slm_InvoiceFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_InvoiceFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_InvoiceFileSize" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_prepare_email">
+    <Key>
+      <PropertyRef Name="slm_Seq" />
+    </Key>
+    <Property Name="slm_Seq" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_EmailAddress" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_EmailContent" Type="nvarchar(max)" />
+    <Property Name="slm_Email_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_EmailSender" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_EmailSubject" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_ticketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_RuleActivityId" Type="numeric" Precision="19" Scale="0" />
+    <Property Name="slm_ExportStatus" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_activity">
+    <Key>
+      <PropertyRef Name="slm_ActivityId" />
+    </Key>
+    <Property Name="slm_ActivityId" Type="numeric" Precision="19" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_NewOwner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_NewStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_OldOwner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OldStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Type" Type="nvarchar" MaxLength="8" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_WorkId" Type="numeric" Precision="19" Scale="0" />
+    <Property Name="slm_WorkDesc" Type="varchar" MaxLength="25" />
+    <Property Name="slm_NewCounting" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="slm_OldCounting" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="slm_OldDelegate" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_NewDelegate" Type="nvarchar" MaxLength="100" />
+    <Property Name="Activity_Flag" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_Team" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_NewSubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_OldSubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_Seq" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_SystemAction" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_SystemActionBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_NewOwner_Position" Type="int" />
+    <Property Name="slm_OldOwner_Position" Type="int" />
+    <Property Name="slm_NewDelegate_Position" Type="int" />
+    <Property Name="slm_OldDelegate_Position" Type="int" />
+    <Property Name="slm_CreatedBy_Position" Type="int" />
+    <Property Name="slm_ExternalStatus_Old" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ExternalSubStatus_Old" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ExternalSubStatusDesc_Old" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ExternalSystem_Old" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ExternalStatus_New" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ExternalSubStatus_New" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ExternalSubStatusDesc_New" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ExternalSystem_New" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ThisAlert" Type="int" />
+    <Property Name="slm_ThisWork" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_batchlog">
+    <Key>
+      <PropertyRef Name="slm_BacthLogId" />
+    </Key>
+    <Property Name="slm_BacthLogId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_BatchMonitor_Id" Type="bigint" Nullable="false" />
+    <Property Name="slm_TicketId" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ErrorDetail" Type="varchar(max)" />
+    <Property Name="slm_EmpCode" Type="varchar" MaxLength="20" />
+    <Property Name="slm_WorkDetailId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_batchmonitor_overview">
+    <Key>
+      <PropertyRef Name="slm_BatchMonitor_Id" />
+    </Key>
+    <Property Name="slm_BatchMonitor_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_DateStart" Type="datetime" />
+    <Property Name="slm_DateEnd" Type="datetime" />
+    <Property Name="slm_BatchCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Total" Type="int" />
+    <Property Name="slm_Success" Type="int" />
+    <Property Name="slm_Fail" Type="int" />
+    <Property Name="slm_ActionBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BatchDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_cas_resend">
+    <Key>
+      <PropertyRef Name="slm_CasLogId" />
+    </Key>
+    <Property Name="slm_CasLogId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CasReferenceNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CasSystemCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CasServiceName" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CasLogType" Type="char" MaxLength="1" />
+    <Property Name="slm_CasResponse" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CasErrorMessage" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CasDetail" Type="varchar(max)" />
+    <Property Name="slm_LogStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="slm_LogDate" Type="datetime" />
+    <Property Name="slm_ResendDate" Type="datetime" />
+    <Property Name="slm_LastResendDate" Type="datetime" />
+    <Property Name="slm_ResendCount" Type="int" />
+    <Property Name="slm_BatchVersion" Type="varchar" MaxLength="50" />
+    <Property Name="slm_LastResendRespone" Type="varchar" MaxLength="10" />
+    <Property Name="slm_LastResendMessage" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_cusinfo">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_CusCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_LastName" Type="nvarchar" MaxLength="120" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Birthdate" Type="date" />
+    <Property Name="slm_Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_TelNo_2" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Ext_2" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_TelNo_3" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Ext_3" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_BuildingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AddressNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Floor" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Soi" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Street" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Tambon" Type="int" />
+    <Property Name="slm_Amphur" Type="int" />
+    <Property Name="slm_Province" Type="int" />
+    <Property Name="slm_PostalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Occupation" Type="int" />
+    <Property Name="slm_BaseSalary" Type="decimal" Precision="17" Scale="2" />
+    <Property Name="slm_IsCustomer" Type="char" MaxLength="1" />
+    <Property Name="slm_Topic" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Detail" Type="nvarchar" MaxLength="4000" />
+    <Property Name="slm_Note" Type="nvarchar" MaxLength="500" />
+    <Property Name="slm_PathLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_TelesaleId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_TelesaleName" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_ContactTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_ContactBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_CardType" Type="int" />
+    <Property Name="slm_MaritalStatus" Type="char" MaxLength="1" />
+    <Property Name="slm_TelNoSms" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_lead">
+    <Key>
+      <PropertyRef Name="slm_ticketId" />
+    </Key>
+    <Property Name="slm_ticketId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_LastName" Type="nvarchar" MaxLength="120" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" />
+    <Property Name="slm_TelNo_1" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Ext_1" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Status" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_ChannelId" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Owner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OldOwner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Delegate" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AssignedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_AssignedDate" Type="datetime" />
+    <Property Name="slm_AssignedFlag" Type="nvarchar" MaxLength="1" />
+    <Property Name="slm_AvailableTime" Type="nvarchar" MaxLength="6" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CurrentRuleState" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_StatusBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_StatusDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_StaffId" Type="int" />
+    <Property Name="slm_LastworkId" Type="numeric" Precision="19" Scale="0" />
+    <Property Name="slm_Counting" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_EmailFlag" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_SmsFlag" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Delegate_Flag" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_OldCounting" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_NoteFlag" Type="nchar" MaxLength="1" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_TransferDate" Type="datetime" />
+    <Property Name="slm_DelegateDate" Type="datetime" />
+    <Property Name="slm_Owner_Branch" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Delegate_Branch" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedBy_Branch" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_DealerCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_DealerName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="slm_Reference" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Product_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Product_Group_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_NextSLA" Type="datetime" />
+    <Property Name="coc_System" Type="nvarchar" MaxLength="100" />
+    <Property Name="coc_LastOwner" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_OldLastOwner" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_Delegate" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_OldDelegate" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_AssignedBy" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_AssignedDate" Type="datetime" />
+    <Property Name="coc_AssignedFlag" Type="nvarchar" MaxLength="1" />
+    <Property Name="coc_AssignedType" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_FirstAssign" Type="datetime" />
+    <Property Name="coc_FirstTeamAssign" Type="datetime" />
+    <Property Name="coc_CurrentRuleState" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_StatusBy" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_StatusDate" Type="datetime" />
+    <Property Name="coc_Counting" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="coc_EmailFlag" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_NextSLA" Type="datetime" />
+    <Property Name="coc_CurrentTeam" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_Appno" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_FlowType" Type="nvarchar" MaxLength="1" />
+    <Property Name="coc_Type" Type="nvarchar" MaxLength="1" />
+    <Property Name="coc_RouteBackTeam" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_RouteBackEmpCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_Status" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_SubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="coc_Action" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_MarketingOwner" Type="nvarchar" MaxLength="20" />
+    <Property Name="coc_RoutingId" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc_IsCOC" Type="bit" />
+    <Property Name="coc_IsCOCDate" Type="datetime" />
+    <Property Name="slm_Owner_Position" Type="int" />
+    <Property Name="slm_Delegate_Position" Type="int" />
+    <Property Name="slm_CreatedBy_Position" Type="int" />
+    <Property Name="slm_ContractNoRefer" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AssignType" Type="varchar" MaxLength="50" />
+    <Property Name="coc_LastOwner_Position" Type="int" />
+    <Property Name="coc_MarketingOwner_Position" Type="int" />
+    <Property Name="slm_ExternalStatus" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ExternalSubStatus" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ExternalSubStatusDesc" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ExternalSystem" Type="varchar" MaxLength="50" />
+    <Property Name="slm_StatusDateSource" Type="datetime" />
+    <Property Name="slm_NextContactDate" Type="datetime" />
+    <Property Name="slm_TitleId" Type="int" />
+    <Property Name="slm_SubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_ThisWork" Type="int" />
+    <Property Name="slm_TotalAlert" Type="int" />
+    <Property Name="slm_TotalWork" Type="int" />
+    <Property Name="slm_CurrentSLA" Type="datetime" />
+    <Property Name="slm_OldSubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_TicketIdRefer" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_notification">
+    <Key>
+      <PropertyRef Name="slm_NotificationId" />
+    </Key>
+    <Property Name="slm_NotificationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TicketId" Type="varchar" MaxLength="50" />
+    <Property Name="slm_NotificationType" Type="int" />
+    <Property Name="slm_NotificationDate" Type="datetime" />
+    <Property Name="slm_Title" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Detail" Type="varchar" MaxLength="4000" />
+    <Property Name="slm_Username" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ViewDate" Type="datetime" />
+    <Property Name="slm_ReadDate" Type="datetime" />
+    <Property Name="slm_Status" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_notify_act_report">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_ActNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TitleId" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_BrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Owner" Type="varchar" MaxLength="100" />
+    <Property Name="slm_EngineNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_NetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetPremiumIncludeVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_StartDateAct" Type="datetime" />
+    <Property Name="slm_EndDateAct" Type="datetime" />
+    <Property Name="slm_House_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Village" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Building" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Street" Type="varchar" MaxLength="500" />
+    <Property Name="slm_TambolId" Type="int" />
+    <Property Name="slm_AmphurId" Type="int" />
+    <Property Name="slm_ProvinceId" Type="int" />
+    <Property Name="slm_Zipcode" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Remark" Type="varchar(max)" />
+    <Property Name="slm_TelNoContact" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_TitleId_Committee1" Type="int" />
+    <Property Name="slm_Name_Committee1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe1" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_TitleId_Committee2" Type="int" />
+    <Property Name="slm_Name_Committee2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe2" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_TitleId_Committee3" Type="int" />
+    <Property Name="slm_Name_Committee3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe3" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Export_Flag" Type="bit" />
+    <Property Name="slm_Export_Date" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_notify_premium">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_PolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Title_Id" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Claim_Center" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Claim_Garage" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsExpireDate" Type="datetime" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Brand" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Model" Type="varchar" MaxLength="100" />
+    <Property Name="slm_VIN" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsuranceCarTypeId" Type="int" />
+    <Property Name="slm_Sum_Insure" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Discount_Percent" Type="int" />
+    <Property Name="slm_Discount_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Stamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_GrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Remark" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_InsuranceComId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_PeriodMonth" Type="varchar" MaxLength="2" />
+    <Property Name="slm_PeriodYear" Type="varchar" MaxLength="4" />
+    <Property Name="slm_RunNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActNetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActVat_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DriverFlag" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_notify_premium_temp">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_PolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Title_Id" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Claim_Center" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Claim_Garage" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsExpireDate" Type="datetime" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Brand" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Model" Type="varchar" MaxLength="100" />
+    <Property Name="slm_VIN" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsuranceCarTypeId" Type="int" />
+    <Property Name="slm_Sum_Insure" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Discount_Percent" Type="int" />
+    <Property Name="slm_Discount_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Stamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_GrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Remark" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_InsuranceComId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_PeriodMonth" Type="varchar" MaxLength="2" />
+    <Property Name="slm_PeriodYear" Type="varchar" MaxLength="4" />
+    <Property Name="slm_RunNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActNetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActVat_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DriverFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_Filename" Type="varchar" MaxLength="1000" />
+    <Property Name="slm_ImportFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_ImportDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_notify_renewinsurance_report">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_InsReceiveDate" Type="datetime" />
+    <Property Name="slm_InsPayDate" Type="datetime" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicyNoOld" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_InsReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CampaignName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_SubCampaignName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CardTypeId" Type="int" />
+    <Property Name="slm_Title_Id" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_House_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Village" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Building" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Street" Type="varchar" MaxLength="500" />
+    <Property Name="slm_TambolId" Type="int" />
+    <Property Name="slm_AmphurId" Type="int" />
+    <Property Name="slm_ProvinceId" Type="int" />
+    <Property Name="slm_Zipcode" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CoverageTypeId" Type="int" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_CoverageStartDate" Type="datetime" />
+    <Property Name="slm_CoverageEndDate" Type="datetime" />
+    <Property Name="slm_VehicleNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsuranceCarTypeId" Type="int" />
+    <Property Name="slm_BrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ModelCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Cartype" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_VIN" Type="varchar" MaxLength="50" />
+    <Property Name="slm_EngineNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ModelYearId" Type="int" />
+    <Property Name="slm_Cc" Type="varchar" MaxLength="50" />
+    <Property Name="slm_WeightPerTon" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_SumInsured_Year1" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetPremium_Year1" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_SumInsured_Year2" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetPremium_Year2" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Owner" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Remark" Type="varchar(max)" />
+    <Property Name="slm_Birthdate_Driver1" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Birthdate_Driver2" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Title_Id_Receipt" Type="int" />
+    <Property Name="slm_Name_Receipt" Type="varchar" MaxLength="250" />
+    <Property Name="slm_House_No_Receipt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Village_Receipt" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Building_Receipt" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Soi_Receipt" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Street_Receipt" Type="varchar" MaxLength="500" />
+    <Property Name="slm_TambolId_Receipt" Type="int" />
+    <Property Name="slm_AmphurId_Receipt" Type="int" />
+    <Property Name="slm_ProvinceId_Receipt" Type="int" />
+    <Property Name="slm_Zipcode_Receipt" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Discouont_Good_History" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Discount_Fleet" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TelNo_1" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Birthdate" Type="datetime" />
+    <Property Name="slm_Occupation" Type="int" />
+    <Property Name="slm_MaritalStatus" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TaxNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Title_Id_Committee1" Type="int" />
+    <Property Name="slm_Name_Committee1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe1" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Title_Id_Committee2" Type="int" />
+    <Property Name="slm_Name_Committee2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe2" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Title_Id_Committee3" Type="int" />
+    <Property Name="slm_Name_Committee3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName_Committee3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId_Committe3" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Export_Flag" Type="bit" />
+    <Property Name="slm_Export_Date" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_KKKey" Type="varchar" MaxLength="50" />
+    <Property Name="slm_SumInsured_Year2_FT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_performance">
+    <Key>
+      <PropertyRef Name="slm_Performance_Id" />
+    </Key>
+    <Property Name="slm_Performance_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TeamTelesales_Code" Type="varchar" MaxLength="100" />
+    <Property Name="slm_EmpCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="slm_EmpName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Performance" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Month" Type="varchar" MaxLength="2" />
+    <Property Name="slm_Level" Type="int" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_PolicyActPremiumTotal" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Discount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CountPolicy" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CountAct" Type="numeric" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead">
+    <Key>
+      <PropertyRef Name="slm_Prelead_Id" />
+    </Key>
+    <Property Name="slm_Prelead_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TempId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Cmt_Product_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_CmtLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Contract_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Contract_Status" Type="varchar" MaxLength="3" />
+    <Property Name="slm_Car_Category" Type="varchar" MaxLength="3" />
+    <Property Name="slm_Customer_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TitleId" Type="int" />
+    <Property Name="slm_Title_Name_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Marital_Status" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CardTypeId" Type="int" />
+    <Property Name="slm_CardType_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Birthdate" Type="datetime" />
+    <Property Name="slm_Tax_Id" Type="varchar" MaxLength="50" />
+    <Property Name="slm_OccupationId" Type="int" />
+    <Property Name="slm_Career_Key_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Career_Desc_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Car_By_Gov_Id" Type="int" />
+    <Property Name="slm_Car_By_Gov_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Brand_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Brand_Code_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Brand_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Model_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_Code_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Engine_No" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Chassis_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Car_License_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ProvinceRegis" Type="int" />
+    <Property Name="slm_ProvinceRegis_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Cc" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Expire_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Mkt_Id" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_Id_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_TitleId" Type="int" />
+    <Property Name="slm_Voluntary_Mkt_Title_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_First_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Mkt_Last_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Policy_Number" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Type_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Type_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Policy_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Voluntary_Policy_Eff_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Policy_Exp_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Policy_Exp_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Voluntary_Policy_Exp_Month" Type="varchar" MaxLength="2" />
+    <Property Name="slm_Voluntary_Cov_Amt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Voluntary_Gross_Premium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Voluntary_Channel_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Company_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_TitleId" Type="int" />
+    <Property Name="slm_Benefit_Title_Name_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Benefit_First_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_Last_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_Telno" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_TitleId1" Type="int" />
+    <Property Name="slm_Driver_Title_Name1_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Telno1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_Birthdate1" Type="datetime" />
+    <Property Name="slm_Driver_TitleId2" Type="int" />
+    <Property Name="slm_Driver_Title_Name2_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Telno2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_Birthdate2" Type="datetime" />
+    <Property Name="slm_Compulsory_Policy_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Policy_Year" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Policy_Eff_Date" Type="datetime" />
+    <Property Name="slm_Compulsory_Policy_Exp_Date" Type="datetime" />
+    <Property Name="slm_Compulsory_Cov_Amt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Compulsory_Gross_Premium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Compulsory_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Company_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Code1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId1" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name1_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId1" Type="int" />
+    <Property Name="slm_Guarantor_Relation1_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_Code2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId2" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name2_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId2" Type="int" />
+    <Property Name="slm_Guarantor_Relation2_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_Code3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId3" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name3_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId3" Type="int" />
+    <Property Name="slm_Guarantor_Relation3_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Grade" Type="varchar" MaxLength="50" />
+    <Property Name="slm_View_UpdateDate" Type="datetime" />
+    <Property Name="slm_Email" Type="varchar" MaxLength="50" />
+    <Property Name="slm_sms" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Owner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OwnerBranch" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Owner_Position" Type="int" />
+    <Property Name="slm_Owner_Team" Type="int" />
+    <Property Name="slm_AssignDate" Type="datetime" />
+    <Property Name="slm_AssignFlag" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AssignType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AssignDescription" Type="varchar" MaxLength="4000" />
+    <Property Name="slm_Assign_Status" Type="varchar" MaxLength="2" />
+    <Property Name="slm_Status" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_SubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Counting" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_NextSLA" Type="datetime" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_NextContactDate" Type="datetime" />
+    <Property Name="slm_ObtPro03Flag" Type="bit" />
+    <Property Name="slm_AssignBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Current_Status" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Curent_Substatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Voluntary_First_Create_Date" Type="datetime" />
+    <Property Name="slm_Type" Type="varchar" MaxLength="3" />
+    <Property Name="slm_RemarkPayment" Type="varchar(max)" />
+    <Property Name="slm_ThisWork" Type="int" />
+    <Property Name="slm_TotalAlert" Type="int" />
+    <Property Name="slm_TotalWork" Type="int" />
+    <Property Name="slm_CurrentSLA" Type="datetime" />
+    <Property Name="slm_SendDocFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_SendDocBrandCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Receiver" Type="varchar" MaxLength="500" />
+    <Property Name="slm_OldOwner" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_OldStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_OldSubStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_ObtPro03FlagDate" Type="datetime" />
+    <Property Name="slm_StatusDate" Type="datetime" />
+    <Property Name="slm_RemarkPolicy" Type="varchar(max)" />
+    <Property Name="slm_RemarkAct" Type="varchar(max)" />
+    <Property Name="slm_IsExportExpired" Type="bit" />
+    <Property Name="slm_IsExportExpiredDate" Type="datetime" />
+    <Property Name="slm_PeriodMonth" Type="varchar" MaxLength="2" />
+    <Property Name="slm_PeriodYear" Type="varchar" MaxLength="4" />
+    <Property Name="slm_IsExportTKS" Type="bit" />
+    <Property Name="slm_IsExportTKSDate" Type="datetime" />
+    <Property Name="slm_Reference1" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Reference2" Type="varchar" MaxLength="500" />
+    <Property Name="slm_IsSMS70" Type="bit" />
+    <Property Name="slm_IsSMS8" Type="bit" />
+    <Property Name="slm_Contract_App_Date" Type="datetime" />
+    <Property Name="slm_TelNoSms" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead_address">
+    <Key>
+      <PropertyRef Name="slm_Prelead_Address_Id" />
+    </Key>
+    <Property Name="slm_Prelead_Address_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CmtLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Prelead_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_Customer_Key" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_Address_Type" Type="varchar" MaxLength="3" />
+    <Property Name="slm_Contract_Adrress" Type="varchar" MaxLength="500" />
+    <Property Name="slm_House_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Building" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Village" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Street" Type="varchar" MaxLength="500" />
+    <Property Name="slm_TambolId" Type="int" />
+    <Property Name="slm_Tambon_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Amphur_Id" Type="int" />
+    <Property Name="slm_Amphur_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Province_Id" Type="int" />
+    <Property Name="slm_Province_name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Zipcode" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Home_Phone" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Mobile_Phone" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_Contract_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Send_Flag" Type="bit" />
+    <Property Name="slm_Receipt_Flag" Type="bit" />
+    <Property Name="slm_Vat_Flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead_assign_log">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Cmt_Product_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_CmtLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_OldAssignType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_NewAssignType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Remark" Type="varchar" MaxLength="4000" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ContractNo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead_compare">
+    <Key>
+      <PropertyRef Name="slm_PreLeadCompareId" />
+    </Key>
+    <Property Name="slm_PreLeadCompareId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Prelead_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_NotifyPremiumId" Type="bigint" />
+    <Property Name="slm_PromotionId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_CoverageTypeId" Type="int" Nullable="false" />
+    <Property Name="slm_InjuryDeath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TPPD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_OD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_FT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DeDuctible" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccident" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccidentMan" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFee" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_MedicalFeeMan" Type="varchar" MaxLength="3" />
+    <Property Name="slm_InsuranceDriver" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremiumPay" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CostSave" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Selected" Type="bit" />
+    <Property Name="slm_OldPolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_DriverFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_Driver_TitleId1" Type="int" />
+    <Property Name="slm_Driver_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Birthdate1" Type="datetime" />
+    <Property Name="slm_Driver_TitleId2" Type="int" />
+    <Property Name="slm_Driver_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Birthdate2" Type="datetime" />
+    <Property Name="slm_OldReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicyStartCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyEndCoverDate" Type="datetime" />
+    <Property Name="slm_Vat1Percent" Type="bit" />
+    <Property Name="slm_DiscountPercent" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DiscountBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat1PercentBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccidentPassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_PersonalAccidentDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFeeDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFeePassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_DeDuctibleFlag" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead_prepare_sms">
+    <Key>
+      <PropertyRef Name="slm_Seq" />
+    </Key>
+    <Property Name="slm_Seq" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Prelead_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_Message" Type="nvarchar" MaxLength="500" />
+    <Property Name="slm_Message_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_MessageStatusId" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_PhoneNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_QueueId" Type="nvarchar" MaxLength="6" />
+    <Property Name="slm_RequestDate" Type="datetime" />
+    <Property Name="slm_ticketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_RuleActivityId" Type="numeric" Precision="19" Scale="0" />
+    <Property Name="slm_ExportStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_RefId" Type="varchar" MaxLength="500" />
+    <Property Name="slm_SendingStatusCode" Type="varchar" MaxLength="500" />
+    <Property Name="slm_SendingStatus" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ErrorCode" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ErrorReason" Type="varchar(max)" />
+    <Property Name="slm_CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CAS_Flag" Type="char" MaxLength="1" />
+    <Property Name="slm_CAS_Date" Type="datetime" />
+    <Property Name="slm_FlagType" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_prelead_temp">
+    <Key>
+      <PropertyRef Name="slm_TempId" />
+    </Key>
+    <Property Name="slm_TempId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Cmt_Product_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_CmtLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="slm_BranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Contract_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Contract_Status" Type="varchar" MaxLength="3" />
+    <Property Name="slm_Car_Category" Type="varchar" MaxLength="3" />
+    <Property Name="slm_Customer_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TitleId" Type="int" />
+    <Property Name="slm_Title_Name_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CitizenId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_Marital_Status" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CardTypeId" Type="int" />
+    <Property Name="slm_CardType_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Birthdate" Type="datetime" />
+    <Property Name="slm_Tax_Id" Type="varchar" MaxLength="50" />
+    <Property Name="slm_OccupationId" Type="int" />
+    <Property Name="slm_Career_Key_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Career_Desc_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Car_By_Gov_Id" Type="int" />
+    <Property Name="slm_Car_By_Gov_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Brand_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Brand_Code_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Brand_Name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Model_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_Code_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_name_Org" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Engine_No" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Chassis_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Car_License_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ProvinceRegis" Type="int" />
+    <Property Name="slm_ProvinceRegis_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Cc" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Expire_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Mkt_Id" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_Id_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_TitleId" Type="int" />
+    <Property Name="slm_Voluntary_Mkt_Title_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Mkt_First_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Mkt_Last_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Policy_Number" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Type_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Type_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Voluntary_Policy_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Voluntary_Policy_Eff_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Policy_Exp_Date" Type="datetime" />
+    <Property Name="slm_Voluntary_Policy_Exp_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Voluntary_Policy_Exp_Month" Type="varchar" MaxLength="2" />
+    <Property Name="slm_Voluntary_Cov_Amt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Voluntary_Gross_Premium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Voluntary_Channel_Key" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Voluntary_Company_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_TitleId" Type="int" />
+    <Property Name="slm_Benefit_Title_Name_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Benefit_First_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_Last_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Benefit_Telno" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_TitleId1" Type="int" />
+    <Property Name="slm_Driver_Title_Name1_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Telno1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_Birthdate1" Type="datetime" />
+    <Property Name="slm_Driver_TitleId2" Type="int" />
+    <Property Name="slm_Driver_Title_Name2_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Telno2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Driver_Birthdate2" Type="datetime" />
+    <Property Name="slm_Compulsory_Policy_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Policy_Year" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Policy_Eff_Date" Type="datetime" />
+    <Property Name="slm_Compulsory_Policy_Exp_Date" Type="datetime" />
+    <Property Name="slm_Compulsory_Cov_Amt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Compulsory_Gross_Premium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Compulsory_Company_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Compulsory_Company_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Code1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId1" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name1_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId1" Type="int" />
+    <Property Name="slm_Guarantor_Relation1_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno1" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_Code2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId2" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name2_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId2" Type="int" />
+    <Property Name="slm_Guarantor_Relation2_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno2" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_Code3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_TitleId3" Type="int" />
+    <Property Name="slm_Guarantor_Title_Name3_Org" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_First_Name3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Last_Name3" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Card_Id3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Guarantor_RelationId3" Type="int" />
+    <Property Name="slm_Guarantor_Relation3_Org" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Guarantor_Telno3" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Grade" Type="varchar" MaxLength="50" />
+    <Property Name="slm_View_UpdateDate" Type="datetime" />
+    <Property Name="slm_Type" Type="varchar" MaxLength="3" />
+    <Property Name="slm_IsForce" Type="bit" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_Voluntary_First_Create_Date" Type="datetime" />
+    <Property Name="slm_Reference1" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Reference2" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Contract_App_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_preleadportmonitor">
+    <Key>
+      <PropertyRef Name="slm_PreleadMonitorId" />
+    </Key>
+    <Property Name="slm_PreleadMonitorId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CMTLot" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_TotalPort" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Success" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_DeDup" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Blaklist" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Exceptional" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_PortStatus" Type="char" MaxLength="1" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_PeriodMonth" Type="varchar" MaxLength="2" />
+    <Property Name="slm_PeriodYear" Type="varchar" MaxLength="4" />
+    <Property Name="slm_TKSFlag" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_productinfo">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_InterestedProd" Type="varchar" MaxLength="500" />
+    <Property Name="slm_LicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_YearOfCar" Type="varchar" MaxLength="4" />
+    <Property Name="slm_YearOfCarRegis" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Brand" Type="int" />
+    <Property Name="slm_Model" Type="int" />
+    <Property Name="slm_Submodel" Type="int" />
+    <Property Name="slm_DownPayment" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="slm_DownPercent" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="slm_CarPrice" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="slm_FinanceAmt" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="slm_PaymentTerm" Type="varchar" MaxLength="4" />
+    <Property Name="slm_PaymentType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BalloonAmt" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="slm_BalloonPercent" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="slm_CoverageDate" Type="varchar" MaxLength="20" />
+    <Property Name="slm_ProvinceRegis" Type="int" />
+    <Property Name="slm_PlanType" Type="varchar" MaxLength="20" />
+    <Property Name="slm_AccType" Type="int" />
+    <Property Name="slm_AccPromotion" Type="int" />
+    <Property Name="slm_AccTerm" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Interest" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Invest" Type="varchar" MaxLength="100" />
+    <Property Name="slm_LoanOd" Type="varchar" MaxLength="100" />
+    <Property Name="slm_LoanOdTerm" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Ebank" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Atm" Type="varchar" MaxLength="100" />
+    <Property Name="slm_OtherDetail_1" Type="varchar" MaxLength="100" />
+    <Property Name="slm_OtherDetail_2" Type="varchar" MaxLength="100" />
+    <Property Name="slm_OtherDetail_3" Type="varchar" MaxLength="100" />
+    <Property Name="slm_OtherDetail_4" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="slm_CarType" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_RedbookBrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookBrandCodeExt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookModelCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookModelCodeExt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookYearGroup" Type="int" />
+    <Property Name="slm_RedbookYearGroupExt" Type="int" />
+    <Property Name="slm_RedbookKKKey" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookKKKeyExt" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance">
+    <Key>
+      <PropertyRef Name="slm_RenewInsureId" />
+    </Key>
+    <Property Name="slm_RenewInsureId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_PolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicySaleType" Type="char" MaxLength="1" />
+    <Property Name="slm_PolicyStartCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyEndCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyIssuePlace" Type="int" />
+    <Property Name="slm_PolicyIssueBranch" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActPurchaseFlag" Type="bit" />
+    <Property Name="slm_ActNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActStartCoverDate" Type="datetime" />
+    <Property Name="slm_ActEndCoverDate" Type="datetime" />
+    <Property Name="slm_ActIssuePlace" Type="int" />
+    <Property Name="slm_ActIssueBranch" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ContractNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CC" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookBrandCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookModelCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookYearGroup" Type="int" />
+    <Property Name="slm_RedbookKKKey" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookBrandCodeExt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookModelCodeExt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_RedbookYearGroupExt" Type="int" />
+    <Property Name="slm_RedbookKKKeyExt" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CoverageTypeId" Type="int" />
+    <Property Name="slm_LicenseNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ChassisNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_EngineNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_ReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ReceiveDate" Type="datetime" />
+    <Property Name="slm_InsuranceComId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_PolicyDiscountAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremiumTotal" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyNetGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_PolicyPayMethodId" Type="int" />
+    <Property Name="slm_PolicyAmountPeriod" Type="int" />
+    <Property Name="slm_ActGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActComId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_ActNetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActPayMethodId" Type="int" />
+    <Property Name="slm_ActamountPeriod" Type="int" />
+    <Property Name="slm_ObtPro08Flag" Type="bit" />
+    <Property Name="slm_IncentiveFlag" Type="bit" />
+    <Property Name="slm_IncentiveDate" Type="datetime" />
+    <Property Name="slm_Need_CreditFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_50TawiFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_DriverLicenseFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_CreditFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreditFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_CreditFileSize" Type="int" />
+    <Property Name="slm_50TawiFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_50TawiFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_50TawiFileSize" Type="int" />
+    <Property Name="slm_DriverLicenseiFileName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_DriverLicenseFilePath" Type="varchar" MaxLength="2000" />
+    <Property Name="slm_DriverLicenseFileSize" Type="int" />
+    <Property Name="slm_Need_CompulsoryFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_CompulsoryFlagDate" Type="datetime" />
+    <Property Name="slm_Need_PolicyFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_Need_PolicyFlagDate" Type="datetime" />
+    <Property Name="slm_RemarkPayment" Type="varchar(max)" />
+    <Property Name="slm_Voluntary_First_Create_Date" Type="datetime" />
+    <Property Name="slm_PolicyCostSave" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat1Percent" Type="bit" />
+    <Property Name="slm_DiscountPercent" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat1PercentBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Grade" Type="varchar" MaxLength="50" />
+    <Property Name="slm_SendDocFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_SendDocBrandCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_Receiver" Type="varchar" MaxLength="500" />
+    <Property Name="slm_PayOptionId" Type="int" />
+    <Property Name="slm_PayBranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_RemarkPolicy" Type="varchar(max)" />
+    <Property Name="slm_RemarkAct" Type="varchar(max)" />
+    <Property Name="slm_ActPayOptionId" Type="int" />
+    <Property Name="slm_ActPayBranchCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_ActIncentiveFlag" Type="bit" />
+    <Property Name="slm_ActIncentiveDate" Type="datetime" />
+    <Property Name="slm_PolicyComBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyComBathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyComBathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV1Bath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV1BathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV1BathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV2Bath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV2BathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyOV2BathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyIncentiveAmount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActComBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActComBathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActComBathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV1Bath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV1BathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV1BathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV2Bath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV2BathVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActOV2BathIncentive" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActIncentiveAmount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ClaimFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_ActSendDate" Type="datetime" />
+    <Property Name="slm_ActVat1Percent" Type="bit" />
+    <Property Name="slm_ActVat1PercentBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActDiscountPercent" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActDiscountAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_IncentiveCancelDate" Type="datetime" />
+    <Property Name="slm_ActIncentiveCancelDate" Type="datetime" />
+    <Property Name="slm_PolicyCancelId" Type="int" />
+    <Property Name="slm_PolicyCancelDate" Type="datetime" />
+    <Property Name="slm_ActCancelId" Type="int" />
+    <Property Name="slm_ActCancelDate" Type="datetime" />
+    <Property Name="slm_ObtPro08FlagDate" Type="datetime" />
+    <Property Name="slm_PolicyReferenceNote" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ActReferenceNote" Type="varchar" MaxLength="500" />
+    <Property Name="slm_GenSMSReceiveNo" Type="bit" />
+    <Property Name="slm_GenSMSReceiveNoDate" Type="datetime" />
+    <Property Name="slm_InsurancecarTypeId" Type="int" />
+    <Property Name="slm_PeriodMonth" Type="varchar" MaxLength="2" />
+    <Property Name="slm_PeriodYear" Type="varchar" MaxLength="4" />
+    <Property Name="slm_IsSMS70" Type="bit" />
+    <Property Name="slm_IsSMS8" Type="bit" />
+    <Property Name="slm_Reference1" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Reference2" Type="varchar" MaxLength="500" />
+    <Property Name="slm_BeneficiaryId" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_address">
+    <Key>
+      <PropertyRef Name="slm_RenewInsureAddressId" />
+    </Key>
+    <Property Name="slm_RenewInsureAddressId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RenewInsureId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_AddressType" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AddressNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_BuildingName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Floor" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Street" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Tambon" Type="int" />
+    <Property Name="slm_Amphur" Type="int" />
+    <Property Name="slm_Province" Type="int" />
+    <Property Name="slm_PostalCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_House_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Village" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_compare">
+    <Key>
+      <PropertyRef Name="slm_RenewInsureCompareId" />
+    </Key>
+    <Property Name="slm_RenewInsureCompareId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RenewInsureId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_NotifyPremiumId" Type="bigint" />
+    <Property Name="slm_PromotionId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_CoverageTypeId" Type="int" Nullable="false" />
+    <Property Name="slm_InjuryDeath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TPPD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_OD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_FT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DeDuctible" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccident" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccidentMan" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFee" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_MedicalFeeMan" Type="varchar" MaxLength="3" />
+    <Property Name="slm_InsuranceDriver" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremiumPay" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CostSave" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Selected" Type="bit" />
+    <Property Name="slm_OldPolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_DriverFlag" Type="varchar" MaxLength="1" />
+    <Property Name="slm_Driver_TitleId1" Type="int" />
+    <Property Name="slm_Driver_First_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name1" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Birthdate1" Type="datetime" />
+    <Property Name="slm_Driver_TitleId2" Type="int" />
+    <Property Name="slm_Driver_First_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Last_Name2" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Driver_Birthdate2" Type="datetime" />
+    <Property Name="slm_OldReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicyStartCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyEndCoverDate" Type="datetime" />
+    <Property Name="slm_Vat1Percent" Type="bit" />
+    <Property Name="slm_DiscountPercent" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DiscountBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat1PercentBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_PersonalAccidentPassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_PersonalAccidentDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFeeDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFeePassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_DeDuctibleFlag" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_compare_act">
+    <Key>
+      <PropertyRef Name="slm_RenewInsureCompareActId" />
+    </Key>
+    <Property Name="slm_RenewInsureCompareActId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RenewInsureId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_PromotionId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Seq" Type="int" />
+    <Property Name="slm_Year" Type="varchar" MaxLength="4" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_ActIssuePlace" Type="int" />
+    <Property Name="slm_SendDocType" Type="int" />
+    <Property Name="slm_ActNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActStartCoverDate" Type="datetime" />
+    <Property Name="slm_ActEndCoverDate" Type="datetime" />
+    <Property Name="slm_ActIssueBranch" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CarTaxExpiredDate" Type="datetime" />
+    <Property Name="slm_ActGrossStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActGrossVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActGrossPremium" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="slm_ActNetGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActGrossPremiumPay" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_ActPurchaseFlag" Type="bit" />
+    <Property Name="slm_DiscountPercent" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DiscountBath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActSignNo" Type="varchar" MaxLength="250" />
+    <Property Name="slm_ActNetGrossPremiumFull" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat1Percent" Type="bit" />
+    <Property Name="slm_Vat1PercentBath" Type="numeric" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_hp_payment_pending">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Tran_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Ins_No_Desc" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Inst_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_by" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Tran_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Update_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_Type" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_hp_payment_snap">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Tran_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Ins_No_Desc" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Inst_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_by" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Tran_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Update_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Source" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_hp_payment_temp">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Tran_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Ins_No_Desc" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Inst_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_by" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_No" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Rec_Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Tran_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Update_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_hp_policyno_actno_pending">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_Year" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_Type" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_No" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Main_By" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Main_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Main_Time" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_By" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_Time" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="slm_Type" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_hp_policyno_actno_snap">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_Year" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_Type" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Policy_No" Type="varchar" MaxLength="250" />
+    <Property Name="slm_Main_By" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Main_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Main_Time" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_By" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_Date" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Create_Time" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Source" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_receipt">
+    <Key>
+      <PropertyRef Name="slm_RenewInsuranceReceiptId" />
+    </Key>
+    <Property Name="slm_RenewInsuranceReceiptId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_ticketId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_RecNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Status" Type="char" MaxLength="2" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_receipt_detail">
+    <Key>
+      <PropertyRef Name="slm_RenewInsuranceReceiptDetailId" />
+    </Key>
+    <Property Name="slm_RenewInsuranceReceiptDetailId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_RenewInsuranceReceiptId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_PaymentCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsNoDesc" Type="varchar" MaxLength="100" />
+    <Property Name="slm_InstNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_RecBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_RecNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_RecAmount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TransDate" Type="datetime" />
+    <Property Name="slm_Status" Type="char" MaxLength="2" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_renewinsurance_view">
+    <Key>
+      <PropertyRef Name="slm_TicketId" />
+    </Key>
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_CampaignId" Type="nvarchar" MaxLength="11" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="50" />
+    <Property Name="slm_TitleName" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="100" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="120" />
+    <Property Name="slm_TelNo_1" Type="varchar" MaxLength="10" />
+    <Property Name="slm_CardTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CitizenId" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Birthdate" Type="datetime" />
+    <Property Name="slm_MaritalStatus" Type="varchar" MaxLength="50" />
+    <Property Name="slm_OccupationNameTH" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ContractNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicyNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_PolicyStartCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyEndCoverDate" Type="datetime" />
+    <Property Name="slm_PolicyCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PolicyDiscountAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_ActStartCoverDate" Type="datetime" />
+    <Property Name="slm_ActEndCoverDate" Type="datetime" />
+    <Property Name="slm_ActGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActVat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActStamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_ActNetPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_setle_claim">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_InsReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_InsReceiveDate" Type="datetime" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Title_Id" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CoverageStartDate" Type="datetime" />
+    <Property Name="slm_CoverageEndDate" Type="datetime" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Owner" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Export_Flag" Type="bit" />
+    <Property Name="slm_Export_Date" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_tr_setle_claim_cancel_report">
+    <Key>
+      <PropertyRef Name="slm_Id" />
+    </Key>
+    <Property Name="slm_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_InsReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_InsReceiveDate" Type="datetime" />
+    <Property Name="slm_Contract_Number" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Title_Id" Type="int" />
+    <Property Name="slm_Name" Type="varchar" MaxLength="250" />
+    <Property Name="slm_LastName" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CoverageStartDate" Type="datetime" />
+    <Property Name="slm_CoverageEndDate" Type="datetime" />
+    <Property Name="slm_CarLicenseNo" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Owner" Type="varchar" MaxLength="100" />
+    <Property Name="slm_Export_Flag" Type="bit" />
+    <Property Name="slm_Export_Date" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kkslm_ws_log">
+    <Key>
+      <PropertyRef Name="slm_ws_LogId" />
+    </Key>
+    <Property Name="slm_ws_LogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_OperationDate" Type="datetime" />
+    <Property Name="slm_Operation" Type="nvarchar" MaxLength="250" />
+    <Property Name="slm_ChannelId" Type="nvarchar" MaxLength="10" />
+    <Property Name="slm_Username" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_InputXml" Type="nvarchar(max)" />
+    <Property Name="slm_OutputXml" Type="nvarchar(max)" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_ResponseCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_ResponseDesc" Type="nvarchar(max)" />
+    <Property Name="slm_ResponseDate" Type="datetime" />
+    <Property Name="slm_ResponseTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_CauseError" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_kkslm_tr_cusinfo_kkslm_ms_branch">
+    <End Role="kkslm_ms_branch" Type="Self.kkslm_ms_branch" Multiplicity="0..1" />
+    <End Role="kkslm_tr_cusinfo" Type="Self.kkslm_tr_cusinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kkslm_ms_branch">
+        <PropertyRef Name="slm_BranchCode" />
+      </Principal>
+      <Dependent Role="kkslm_tr_cusinfo">
+        <PropertyRef Name="slm_ContactBranch" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kkslm_tr_cusinfo_kkslm_ms_occupation">
+    <End Role="kkslm_ms_occupation" Type="Self.kkslm_ms_occupation" Multiplicity="0..1" />
+    <End Role="kkslm_tr_cusinfo" Type="Self.kkslm_tr_cusinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kkslm_ms_occupation">
+        <PropertyRef Name="slm_OccupationId" />
+      </Principal>
+      <Dependent Role="kkslm_tr_cusinfo">
+        <PropertyRef Name="slm_Occupation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kkslm_tr_cusinfo_kkslm_ms_province">
+    <End Role="kkslm_ms_province" Type="Self.kkslm_ms_province" Multiplicity="0..1" />
+    <End Role="kkslm_tr_cusinfo" Type="Self.kkslm_tr_cusinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kkslm_ms_province">
+        <PropertyRef Name="slm_ProvinceId" />
+      </Principal>
+      <Dependent Role="kkslm_tr_cusinfo">
+        <PropertyRef Name="slm_Province" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kkslm_tr_cusinfo_kkslm_ms_tambol">
+    <End Role="kkslm_ms_tambol" Type="Self.kkslm_ms_tambol" Multiplicity="0..1" />
+    <End Role="kkslm_tr_cusinfo" Type="Self.kkslm_tr_cusinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kkslm_ms_tambol">
+        <PropertyRef Name="slm_TambolId" />
+      </Principal>
+      <Dependent Role="kkslm_tr_cusinfo">
+        <PropertyRef Name="slm_Tambon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kkslm_tr_productinfo_kkslm_ms_province">
+    <End Role="kkslm_ms_province" Type="Self.kkslm_ms_province" Multiplicity="0..1" />
+    <End Role="kkslm_tr_productinfo" Type="Self.kkslm_tr_productinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kkslm_ms_province">
+        <PropertyRef Name="slm_ProvinceId" />
+      </Principal>
+      <Dependent Role="kkslm_tr_productinfo">
+        <PropertyRef Name="slm_ProvinceRegis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="SP_SLMBatch_OBT_PRO_10_TelesalesPerformance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_SLMBatch_OBT_PRO_26_LoadPaymentPending" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="SLMDBModelStoreContainer">
+    <EntitySet Name="CMT_OBT_ADDRESS" EntityType="Self.CMT_OBT_ADDRESS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMT_OBT_PRODUCT" EntityType="Self.CMT_OBT_PRODUCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_amphur" EntityType="Self.kkslm_ms_amphur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_batch" EntityType="Self.kkslm_ms_batch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_branch" EntityType="Self.kkslm_ms_branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_calendar_branch" EntityType="Self.kkslm_ms_calendar_branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_campaign" EntityType="Self.kkslm_ms_campaign" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_blacklist" EntityType="Self.kkslm_ms_config_product_blacklist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_day" EntityType="Self.kkslm_ms_config_product_day" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_dedup" EntityType="Self.kkslm_ms_config_product_dedup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_payment" EntityType="Self.kkslm_ms_config_product_payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_screen" EntityType="Self.kkslm_ms_config_product_screen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_product_substatus" EntityType="Self.kkslm_ms_config_product_substatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_config_purge_day" EntityType="Self.kkslm_ms_config_purge_day" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_coveragetype" EntityType="Self.kkslm_ms_coveragetype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_current_year" EntityType="Self.kkslm_ms_current_year" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_customer_grade" EntityType="Self.kkslm_ms_customer_grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_discount" EntityType="Self.kkslm_ms_discount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_insurancecartype" EntityType="Self.kkslm_ms_insurancecartype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_mapping_status" EntityType="Self.kkslm_ms_mapping_status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_occupation" EntityType="Self.kkslm_ms_occupation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_option" EntityType="Self.kkslm_ms_option" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_payment" EntityType="Self.kkslm_ms_payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_prelead_assign_type" EntityType="Self.kkslm_ms_prelead_assign_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_province" EntityType="Self.kkslm_ms_province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_redbook_brand" EntityType="Self.kkslm_ms_redbook_brand" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_redbook_model" EntityType="Self.kkslm_ms_redbook_model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_redbook_submodel" EntityType="Self.kkslm_ms_redbook_submodel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_relate" EntityType="Self.kkslm_ms_relate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_repairtype" EntityType="Self.kkslm_ms_repairtype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_staff" EntityType="Self.kkslm_ms_staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_tambol" EntityType="Self.kkslm_ms_tambol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_title" EntityType="Self.kkslm_ms_title" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_note" EntityType="Self.kkslm_note" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_phone_call" EntityType="Self.kkslm_phone_call" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_prepare_email" EntityType="Self.kkslm_prepare_email" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_activity" EntityType="Self.kkslm_tr_activity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_batchlog" EntityType="Self.kkslm_tr_batchlog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_batchmonitor_overview" EntityType="Self.kkslm_tr_batchmonitor_overview" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_cas_resend" EntityType="Self.kkslm_tr_cas_resend" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_cusinfo" EntityType="Self.kkslm_tr_cusinfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_lead" EntityType="Self.kkslm_tr_lead" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_notification" EntityType="Self.kkslm_tr_notification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_notify_act_report" EntityType="Self.kkslm_tr_notify_act_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_notify_premium" EntityType="Self.kkslm_tr_notify_premium" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_notify_premium_temp" EntityType="Self.kkslm_tr_notify_premium_temp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_notify_renewinsurance_report" EntityType="Self.kkslm_tr_notify_renewinsurance_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_performance" EntityType="Self.kkslm_tr_performance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead" EntityType="Self.kkslm_tr_prelead" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead_address" EntityType="Self.kkslm_tr_prelead_address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead_assign_log" EntityType="Self.kkslm_tr_prelead_assign_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead_compare" EntityType="Self.kkslm_tr_prelead_compare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead_prepare_sms" EntityType="Self.kkslm_tr_prelead_prepare_sms" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_prelead_temp" EntityType="Self.kkslm_tr_prelead_temp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_preleadportmonitor" EntityType="Self.kkslm_tr_preleadportmonitor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_productinfo" EntityType="Self.kkslm_tr_productinfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance" EntityType="Self.kkslm_tr_renewinsurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_address" EntityType="Self.kkslm_tr_renewinsurance_address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_compare" EntityType="Self.kkslm_tr_renewinsurance_compare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_compare_act" EntityType="Self.kkslm_tr_renewinsurance_compare_act" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_hp_payment_pending" EntityType="Self.kkslm_tr_renewinsurance_hp_payment_pending" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_hp_payment_snap" EntityType="Self.kkslm_tr_renewinsurance_hp_payment_snap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_hp_payment_temp" EntityType="Self.kkslm_tr_renewinsurance_hp_payment_temp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_hp_policyno_actno_pending" EntityType="Self.kkslm_tr_renewinsurance_hp_policyno_actno_pending" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_hp_policyno_actno_snap" EntityType="Self.kkslm_tr_renewinsurance_hp_policyno_actno_snap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_receipt" EntityType="Self.kkslm_tr_renewinsurance_receipt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_receipt_detail" EntityType="Self.kkslm_tr_renewinsurance_receipt_detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_renewinsurance_view" EntityType="Self.kkslm_tr_renewinsurance_view" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_setle_claim" EntityType="Self.kkslm_tr_setle_claim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_tr_setle_claim_cancel_report" EntityType="Self.kkslm_tr_setle_claim_cancel_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ws_log" EntityType="Self.kkslm_ws_log" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_kkslm_tr_cusinfo_kkslm_ms_branch" Association="Self.FK_kkslm_tr_cusinfo_kkslm_ms_branch">
+      <End Role="kkslm_ms_branch" EntitySet="kkslm_ms_branch" />
+      <End Role="kkslm_tr_cusinfo" EntitySet="kkslm_tr_cusinfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kkslm_tr_cusinfo_kkslm_ms_occupation" Association="Self.FK_kkslm_tr_cusinfo_kkslm_ms_occupation">
+      <End Role="kkslm_ms_occupation" EntitySet="kkslm_ms_occupation" />
+      <End Role="kkslm_tr_cusinfo" EntitySet="kkslm_tr_cusinfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kkslm_tr_cusinfo_kkslm_ms_province" Association="Self.FK_kkslm_tr_cusinfo_kkslm_ms_province">
+      <End Role="kkslm_ms_province" EntitySet="kkslm_ms_province" />
+      <End Role="kkslm_tr_cusinfo" EntitySet="kkslm_tr_cusinfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kkslm_tr_cusinfo_kkslm_ms_tambol" Association="Self.FK_kkslm_tr_cusinfo_kkslm_ms_tambol">
+      <End Role="kkslm_ms_tambol" EntitySet="kkslm_ms_tambol" />
+      <End Role="kkslm_tr_cusinfo" EntitySet="kkslm_tr_cusinfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kkslm_tr_productinfo_kkslm_ms_province" Association="Self.FK_kkslm_tr_productinfo_kkslm_ms_province">
+      <End Role="kkslm_ms_province" EntitySet="kkslm_ms_province" />
+      <End Role="kkslm_tr_productinfo" EntitySet="kkslm_tr_productinfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

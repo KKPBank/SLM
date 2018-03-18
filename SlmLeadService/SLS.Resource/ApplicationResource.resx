@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CAMPAIGNTYPE_MASS" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="INS_CALL_AOL_TIMEOUT_CODE" xml:space="preserve">
+    <value>10012</value>
+  </data>
+  <data name="INS_CALL_AOL_TIMEOUT_DESC" xml:space="preserve">
+    <value>Get Marketing Code Timeout</value>
+  </data>
+  <data name="INS_CAMPAIGNDETAIL_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>10017</value>
+  </data>
+  <data name="INS_CAMPAIGNDETAIL_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Campaign Detail Length exceeds limitation. Please contact CMT administrator to revise campaign detail</value>
+  </data>
+  <data name="INS_CAMPAIGN_EXPIRED_CODE" xml:space="preserve">
+    <value>10014</value>
+  </data>
+  <data name="INS_CAMPAIGN_EXPIRED_DESC" xml:space="preserve">
+    <value>Campaign expired</value>
+  </data>
+  <data name="INS_CAMPAIGN_INVALID_CODE" xml:space="preserve">
+    <value>10015</value>
+  </data>
+  <data name="INS_CAMPAIGN_INVALID_DESC" xml:space="preserve">
+    <value>Campaign invalid</value>
+  </data>
+  <data name="INS_CAMPAIGN_NOTFOUND_CODE" xml:space="preserve">
+    <value>10013</value>
+  </data>
+  <data name="INS_CAMPAIGN_NOTFOUND_DESC" xml:space="preserve">
+    <value>Campaign not found</value>
+  </data>
+  <data name="INS_DEALERCODE_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>10020</value>
+  </data>
+  <data name="INS_DEALERCODE_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Dealer Code Length exceeds limitation</value>
+  </data>
+  <data name="INS_DEALERNAME_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>10018</value>
+  </data>
+  <data name="INS_DEALERNAME_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Dealer Name Length exceeds limitation</value>
+  </data>
+  <data name="INS_ERROR_FROM_DB_CODE" xml:space="preserve">
+    <value>10003</value>
+  </data>
+  <data name="INS_ERROR_FROM_DB_DESC" xml:space="preserve">
+    <value>Error from DB</value>
+  </data>
+  <data name="INS_INSERT_FAIL_CODE" xml:space="preserve">
+    <value>10001</value>
+  </data>
+  <data name="INS_INSERT_FAIL_DESC" xml:space="preserve">
+    <value>Insert Data Fail</value>
+  </data>
+  <data name="INS_INTERNAL_TIMEOUT_CODE" xml:space="preserve">
+    <value>10005</value>
+  </data>
+  <data name="INS_INTERNAL_TIMEOUT_DESC" xml:space="preserve">
+    <value>System Internal Timeout</value>
+  </data>
+  <data name="INS_INVALID_DEALERCODE_CODE" xml:space="preserve">
+    <value>10009</value>
+  </data>
+  <data name="INS_INVALID_DEALERCODE_DESC" xml:space="preserve">
+    <value>Invalid Dealer Code</value>
+  </data>
+  <data name="INS_INVALID_ID_PASSWORD_CODE" xml:space="preserve">
+    <value>10007</value>
+  </data>
+  <data name="INS_INVALID_ID_PASSWORD_DESC" xml:space="preserve">
+    <value>Invalid System ID or Password</value>
+  </data>
+  <data name="INS_INVALID_PARAMETERS_CODE" xml:space="preserve">
+    <value>10006</value>
+  </data>
+  <data name="INS_INVALID_PARAMETERS_DESC" xml:space="preserve">
+    <value>Invalid Parameters</value>
+  </data>
+  <data name="INS_INVALID_TELESALENAME_CODE" xml:space="preserve">
+    <value>10019</value>
+  </data>
+  <data name="INS_INVALID_TELESALENAME_DESC" xml:space="preserve">
+    <value>Invalid Telesales Name</value>
+  </data>
+  <data name="INS_LEADDETAIL_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>10016</value>
+  </data>
+  <data name="INS_LEADDETAIL_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Lead Detail Length exceeds limitation</value>
+  </data>
+  <data name="INS_MARKETINGCODE_MISMATCH_CODE" xml:space="preserve">
+    <value>10011</value>
+  </data>
+  <data name="INS_MARKETINGCODE_MISMATCH_DESC" xml:space="preserve">
+    <value>Marketing Code miss Match</value>
+  </data>
+  <data name="INS_NO_MARKETINGCODE_FOUND_CODE" xml:space="preserve">
+    <value>10010</value>
+  </data>
+  <data name="INS_NO_MARKETINGCODE_FOUND_DESC" xml:space="preserve">
+    <value>Marketing Code not found</value>
+  </data>
+  <data name="INS_NO_RECORD_FOUND_CODE" xml:space="preserve">
+    <value>10002</value>
+  </data>
+  <data name="INS_NO_RECORD_FOUND_DESC" xml:space="preserve">
+    <value>No Record Found</value>
+  </data>
+  <data name="INS_OPERATION" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="INS_OTHER_CONDITION_ERROR_CODE" xml:space="preserve">
+    <value>10004</value>
+  </data>
+  <data name="INS_OTHER_CONDITION_ERROR_DESC" xml:space="preserve">
+    <value>Other condition error</value>
+  </data>
+  <data name="INS_REQUIRED_CARDID_CODE" xml:space="preserve">
+    <value>10021</value>
+  </data>
+  <data name="INS_REQUIRED_CARDID_DESC" xml:space="preserve">
+    <value>Both card type and card number are required</value>
+  </data>
+  <data name="INS_REQUIRED_FIELDS_CODE" xml:space="preserve">
+    <value>10008</value>
+  </data>
+  <data name="INS_REQUIRED_FIELDS_DESC" xml:space="preserve">
+    <value>Required Fields</value>
+  </data>
+  <data name="INS_SUCCESS_CODE" xml:space="preserve">
+    <value>10000</value>
+  </data>
+  <data name="INS_SUCCESS_DESC" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="SEARCH_ERROR_FROM_DB_CODE" xml:space="preserve">
+    <value>30003</value>
+  </data>
+  <data name="SEARCH_ERROR_FROM_DB_DESC" xml:space="preserve">
+    <value>Error from DB</value>
+  </data>
+  <data name="SEARCH_INTERNAL_TIMEOUT_CODE" xml:space="preserve">
+    <value>30005</value>
+  </data>
+  <data name="SEARCH_INTERNAL_TIMEOUT_DESC" xml:space="preserve">
+    <value>System Internal Timeout</value>
+  </data>
+  <data name="SEARCH_INVALID_ID_PASSWORD_CODE" xml:space="preserve">
+    <value>30007</value>
+  </data>
+  <data name="SEARCH_INVALID_ID_PASSWORD_DESC" xml:space="preserve">
+    <value>Invalid System ID or Password</value>
+  </data>
+  <data name="SEARCH_NO_RECORD_FOUND_CODE" xml:space="preserve">
+    <value>30002</value>
+  </data>
+  <data name="SEARCH_NO_RECORD_FOUND_DESC" xml:space="preserve">
+    <value>No Record Found</value>
+  </data>
+  <data name="SEARCH_OPERATION" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SEARCH_OTHER_CONDITION_ERROR_CODE" xml:space="preserve">
+    <value>30004</value>
+  </data>
+  <data name="SEARCH_OTHER_CONDITION_ERROR_DESC" xml:space="preserve">
+    <value>Other condition error</value>
+  </data>
+  <data name="SEARCH_REQUIRED_FIELDS_CODE" xml:space="preserve">
+    <value>30008</value>
+  </data>
+  <data name="SEARCH_REQUIRED_FIELDS_DESC" xml:space="preserve">
+    <value>Required Fields</value>
+  </data>
+  <data name="SEARCH_SEARCH_FAIL_CODE" xml:space="preserve">
+    <value>30001</value>
+  </data>
+  <data name="SEARCH_SEARCH_FAIL_DESC" xml:space="preserve">
+    <value>Search Data Fail</value>
+  </data>
+  <data name="SEARCH_SUCCESS_CODE" xml:space="preserve">
+    <value>30000</value>
+  </data>
+  <data name="SEARCH_SUCCESS_DESC" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="UPD_CONTACTDETAIL_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>20013</value>
+  </data>
+  <data name="UPD_CONTACTDETAIL_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Contact Detail Length exceeds limitation</value>
+  </data>
+  <data name="UPD_DEALERCODE_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>20020</value>
+  </data>
+  <data name="UPD_DEALERCODE_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Dealer Code Length exceeds limitation</value>
+  </data>
+  <data name="UPD_DEALERNAME_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>20018</value>
+  </data>
+  <data name="UPD_DEALERNAME_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Dealer Name Length exceeds limitation</value>
+  </data>
+  <data name="UPD_ERROR_FROM_DB_CODE" xml:space="preserve">
+    <value>20003</value>
+  </data>
+  <data name="UPD_ERROR_FROM_DB_DESC" xml:space="preserve">
+    <value>Error from DB</value>
+  </data>
+  <data name="UPD_INTERNAL_TIMEOUT_CODE" xml:space="preserve">
+    <value>20005</value>
+  </data>
+  <data name="UPD_INTERNAL_TIMEOUT_DESC" xml:space="preserve">
+    <value>System Internal Timeout</value>
+  </data>
+  <data name="UPD_INVALID_ID_PASSWORD_CODE" xml:space="preserve">
+    <value>20007</value>
+  </data>
+  <data name="UPD_INVALID_ID_PASSWORD_DESC" xml:space="preserve">
+    <value>Invalid System ID or Password</value>
+  </data>
+  <data name="UPD_INVALID_PARAMETERS_CODE" xml:space="preserve">
+    <value>20006</value>
+  </data>
+  <data name="UPD_INVALID_PARAMETERS_DESC" xml:space="preserve">
+    <value>Invalid Parameters</value>
+  </data>
+  <data name="UPD_INVALID_SENDEMAILPERSON_CODE" xml:space="preserve">
+    <value>20011</value>
+  </data>
+  <data name="UPD_INVALID_SENDEMAILPERSON_DESC" xml:space="preserve">
+    <value>Invalid sendEmailPerson</value>
+  </data>
+  <data name="UPD_INVALID_TICKET_ID_CODE" xml:space="preserve">
+    <value>20009</value>
+  </data>
+  <data name="UPD_INVALID_TICKET_ID_DESC" xml:space="preserve">
+    <value>Invalid Ticket ID</value>
+  </data>
+  <data name="UPD_MARKETINGCODE_MISMATCH_CODE" xml:space="preserve">
+    <value>20012</value>
+  </data>
+  <data name="UPD_MARKETINGCODE_MISMATCH_DESC" xml:space="preserve">
+    <value>Marketing Code miss Match</value>
+  </data>
+  <data name="UPD_NOTE_EXCEED_MAX_LENGTH_CODE" xml:space="preserve">
+    <value>20010</value>
+  </data>
+  <data name="UPD_NOTE_EXCEED_MAX_LENGTH_DESC" xml:space="preserve">
+    <value>Note Length exceeds limitation</value>
+  </data>
+  <data name="UPD_NO_RECORD_FOUND_CODE" xml:space="preserve">
+    <value>20002</value>
+  </data>
+  <data name="UPD_NO_RECORD_FOUND_DESC" xml:space="preserve">
+    <value>No Record Found</value>
+  </data>
+  <data name="UPD_OPERATION" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UPD_OTHER_CONDITION_ERROR_CODE" xml:space="preserve">
+    <value>20004</value>
+  </data>
+  <data name="UPD_OTHER_CONDITION_ERROR_DESC" xml:space="preserve">
+    <value>Other condition error</value>
+  </data>
+  <data name="UPD_REQUIRED_CARDID_CODE" xml:space="preserve">
+    <value>20021</value>
+  </data>
+  <data name="UPD_REQUIRED_CARDID_DESC" xml:space="preserve">
+    <value>Both card type and card number are required</value>
+  </data>
+  <data name="UPD_REQUIRED_FIELDS_CODE" xml:space="preserve">
+    <value>20008</value>
+  </data>
+  <data name="UPD_REQUIRED_FIELDS_DESC" xml:space="preserve">
+    <value>Required Fields</value>
+  </data>
+  <data name="UPD_SUCCESS_CODE" xml:space="preserve">
+    <value>20000</value>
+  </data>
+  <data name="UPD_SUCCESS_DESC" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="UPD_UPDATE_FAIL_CODE" xml:space="preserve">
+    <value>20001</value>
+  </data>
+  <data name="UPD_UPDATE_FAIL_DESC" xml:space="preserve">
+    <value>Update Data Fail</value>
+  </data>
+  <data name="VAL_INVALID_TICKET_ID_CODE" xml:space="preserve">
+    <value>40009</value>
+  </data>
+  <data name="VAL_INVALID_TICKET_ID_DESC" xml:space="preserve">
+    <value>Invalid Ticket ID</value>
+  </data>
+  <data name="VAL_PER_ERROR_FROM_DB_CODE" xml:space="preserve">
+    <value>40003</value>
+  </data>
+  <data name="VAL_PER_ERROR_FROM_DB_DESC" xml:space="preserve">
+    <value>Error from DB</value>
+  </data>
+  <data name="VAL_PER_FAIL_CODE" xml:space="preserve">
+    <value>40001</value>
+  </data>
+  <data name="VAL_PER_FAIL_DESC" xml:space="preserve">
+    <value>Verify Data Fail</value>
+  </data>
+  <data name="VAL_PER_INTERNAL_TIMEOUT_CODE" xml:space="preserve">
+    <value>40005</value>
+  </data>
+  <data name="VAL_PER_INTERNAL_TIMEOUT_DESC" xml:space="preserve">
+    <value>System Internal Timeout</value>
+  </data>
+  <data name="VAL_PER_INVALID_ID_PASSWORD_CODE" xml:space="preserve">
+    <value>40007</value>
+  </data>
+  <data name="VAL_PER_INVALID_ID_PASSWORD_DESC" xml:space="preserve">
+    <value>Invalid System ID or Password</value>
+  </data>
+  <data name="VAL_PER_NO_PERMISSON_CODE" xml:space="preserve">
+    <value>40002</value>
+  </data>
+  <data name="VAL_PER_NO_PERMISSON_DESC" xml:space="preserve">
+    <value>No Permission</value>
+  </data>
+  <data name="VAL_PER_OPERATION" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="VAL_PER_OTHER_CONDITION_ERROR_CODE" xml:space="preserve">
+    <value>40004</value>
+  </data>
+  <data name="VAL_PER_OTHER_CONDITION_ERROR_DESC" xml:space="preserve">
+    <value>Other condition error</value>
+  </data>
+  <data name="VAL_PER_REQUIRED_FIELDS_CODE" xml:space="preserve">
+    <value>40008</value>
+  </data>
+  <data name="VAL_PER_REQUIRED_FIELDS_DESC" xml:space="preserve">
+    <value>Required Fields</value>
+  </data>
+  <data name="VAL_PER_SUCCESS_CODE" xml:space="preserve">
+    <value>40000</value>
+  </data>
+  <data name="VAL_PER_SUCCESS_DESC" xml:space="preserve">
+    <value>Success</value>
+  </data>
+</root>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KK.HPAOFL.Services.OnlineServices.Objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KK.HPAOFL.Services.OnlineServices.Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CreateAOLApplicationNoRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="tns:RequestDetail" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateAOLApplicationNoRequest" nillable="true" type="tns:CreateAOLApplicationNoRequest" />
+  <xs:complexType name="RequestDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BalloonPct" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CarBrandCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarModelCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CarRegistration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarRemarks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarShieldFlg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarVehicleKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustCompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustIdentNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustMobileNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayDownAmt" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayInterestRate" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayTerm" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TicketID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestDetail" nillable="true" type="tns:RequestDetail" />
+  <xs:complexType name="Header">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Header" nillable="true" type="tns:Header" />
+  <xs:complexType name="CreateAOLApplicationNoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="tns:ResponseDetail" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:status" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateAOLApplicationNoResponse" nillable="true" type="tns:CreateAOLApplicationNoResponse" />
+  <xs:complexType name="ResponseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AppStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MktCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MktName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplyTimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseDetail" nillable="true" type="tns:ResponseDetail" />
+  <xs:complexType name="status">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="status" nillable="true" type="tns:status" />
+  <xs:complexType name="GetMainMarketingByDealerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="tns:GetMainMarketingByDealerRequestDetail" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMainMarketingByDealerRequest" nillable="true" type="tns:GetMainMarketingByDealerRequest" />
+  <xs:complexType name="GetMainMarketingByDealerRequestDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealerCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMainMarketingByDealerRequestDetail" nillable="true" type="tns:GetMainMarketingByDealerRequestDetail" />
+  <xs:complexType name="GetMainMarketingByDealerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="tns:GetMainMarketingByDealerReponseDetail" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:status" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMainMarketingByDealerResponse" nillable="true" type="tns:GetMainMarketingByDealerResponse" />
+  <xs:complexType name="GetMainMarketingByDealerReponseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MktCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MktName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplyTimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMainMarketingByDealerReponseDetail" nillable="true" type="tns:GetMainMarketingByDealerReponseDetail" />
+</xs:schema>

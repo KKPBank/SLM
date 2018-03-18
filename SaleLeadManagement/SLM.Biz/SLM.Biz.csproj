@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BFBFE99-A34C-4861-A683-413D1CD47A8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLM.Biz</RootNamespace>
+    <AssemblyName>SLM.Biz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LinqKit">
+      <HintPath>..\SLM.Application\Libs\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRightBiz.cs" />
+    <Compile Include="AccountStatusBiz.cs" />
+    <Compile Include="ActivityConfigBiz.cs" />
+    <Compile Include="ActivityLeadBiz.cs" />
+    <Compile Include="ActivityPreLeadBiz.cs" />
+    <Compile Include="AssignConditionCustomerBiz.cs" />
+    <Compile Include="AssignConditionStaffBiz.cs" />
+    <Compile Include="AssignTypeBiz.cs" />
+    <Compile Include="BankBiz.cs" />
+    <Compile Include="BeneficiaryBiz.cs" />
+    <Compile Include="BranchBiz.cs" />
+    <Compile Include="BrandCarBiz.cs" />
+    <Compile Include="CalendarBranchBiz.cs" />
+    <Compile Include="CampaignBiz.cs" />
+    <Compile Include="CardTypeBiz.cs" />
+    <Compile Include="CARServiceBiz.cs" />
+    <Compile Include="ChannelBiz.cs" />
+    <Compile Include="ConditionFieldBiz.cs" />
+    <Compile Include="ConfigBranchPrivilegeBiz.cs" />
+    <Compile Include="ConfigProductPremiumBiz.cs" />
+    <Compile Include="ConfigProductQuestionairBiz.cs" />
+    <Compile Include="ConfigProductScreenBiz.cs" />
+    <Compile Include="ConfigProductSideMenuBiz.cs" />
+    <Compile Include="ConfigProductSubStatusBiz.cs" />
+    <Compile Include="ConfigProductTabBiz.cs" />
+    <Compile Include="ConfigScriptBiz.cs" />
+    <Compile Include="CountryBiz.cs" />
+    <Compile Include="ExcelExportBiz.cs" />
+    <Compile Include="HistoryLeadBiz.cs" />
+    <Compile Include="InsuranceCarTypeBiz.cs" />
+    <Compile Include="MonthBiz.cs" />
+    <Compile Include="PaymentOptionBiz.cs" />
+    <Compile Include="ReAssignLeadBiz.cs" />
+    <Compile Include="RenewInsureBiz.cs" />
+    <Compile Include="RepairTypeBiz.cs" />
+    <Compile Include="ExcelTemplateBiz.cs" />
+    <Compile Include="PaymentMethodBiz.cs" />
+    <Compile Include="InsComBiz.cs" />
+    <Compile Include="CoverageTypeBiz.cs" />
+    <Compile Include="CustomerGradeBiz.cs" />
+    <Compile Include="LeadInfoBiz.cs" />
+    <Compile Include="NoticeBiz.cs" />
+    <Compile Include="OBTBatchBiz.cs" />
+    <Compile Include="ObtScr002Biz.cs" />
+    <Compile Include="PreleadBiz.cs" />
+    <Compile Include="PreleadPhoneCallBiz.cs" />
+    <Compile Include="PromotionBiz.cs" />
+    <Compile Include="SlmScr038Biz.cs" />
+    <Compile Include="SlmScr039Biz.cs" />
+    <Compile Include="SlmScr040Biz.cs" />
+    <Compile Include="SlmScr041Biz.cs" />
+    <Compile Include="SlmScr046Biz.cs" />
+    <Compile Include="SlmScr048Biz.cs" />
+    <Compile Include="SlmScr049Biz.cs" />
+    <Compile Include="SlmScr050Biz.cs" />
+    <Compile Include="SlmScr053Biz.cs" />
+    <Compile Include="SlmScr052Biz.cs" />
+    <Compile Include="SlmScr051Biz.cs" />
+    <Compile Include="SlmScr032Biz.cs" />
+    <Compile Include="SlmScr047Biz.cs" />
+    <Compile Include="SlmScr033Biz.cs" />
+    <Compile Include="SlmScr034Biz.cs" />
+    <Compile Include="SlmScr035Biz.cs" />
+    <Compile Include="ObtScr019Biz.cs" />
+    <Compile Include="NotificationBiz.cs" />
+    <Compile Include="OptionBiz.cs" />
+    <Compile Include="PositionBiz.cs" />
+    <Compile Include="ProductBiz.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportMenuBiz.cs" />
+    <Compile Include="RoleBiz.cs" />
+    <Compile Include="SlaBiz.cs" />
+    <Compile Include="SlmMasterBiz.cs" />
+    <Compile Include="SlmScr003Biz.cs" />
+    <Compile Include="SlmScr004Biz.cs" />
+    <Compile Include="SlmScr005Biz.cs" />
+    <Compile Include="SlmScr006Biz.cs" />
+    <Compile Include="SlmScr007Biz.cs" />
+    <Compile Include="SlmScr008Biz.cs" />
+    <Compile Include="SlmScr009Biz.cs" />
+    <Compile Include="SlmScr010Biz.cs" />
+    <Compile Include="SlmScr011Biz.cs" />
+    <Compile Include="SlmScr015Biz.cs" />
+    <Compile Include="SlmScr016Biz.cs" />
+    <Compile Include="SlmScr017Biz.cs" />
+    <Compile Include="SlmScr018Biz.cs" />
+    <Compile Include="SlmScr019Biz.cs" />
+    <Compile Include="SlmScr029Biz.cs" />
+    <Compile Include="SlmScr037Biz.cs" />
+    <Compile Include="SlmScr062Biz.cs" />
+    <Compile Include="SlmScr063Biz.cs" />
+    <Compile Include="SlmScr064Biz.cs" />
+    <Compile Include="SlmScr999Biz.cs" />
+    <Compile Include="SortConditionCustomerBiz.cs" />
+    <Compile Include="SortConditionStaffBiz.cs" />
+    <Compile Include="StaffBiz.cs" />
+    <Compile Include="SystemAssignBiz.cs" />
+    <Compile Include="TeamTelesalesBiz.cs" />
+    <Compile Include="TitleNameBiz.cs" />
+    <Compile Include="UploadLeadBiz.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLM.Dal\SLM.Dal.csproj">
+      <Project>{EFF169E2-2B59-447F-9A38-27898E7AF6B7}</Project>
+      <Name>SLM.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SLM.Resource\SLM.Resource.csproj">
+      <Project>{0B58133E-618D-4506-9F57-C76358B87A5D}</Project>
+      <Name>SLM.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\log4net.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

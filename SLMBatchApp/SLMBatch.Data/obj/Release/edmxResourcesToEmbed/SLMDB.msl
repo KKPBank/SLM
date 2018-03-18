@@ -1,0 +1,2338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SLMDBModelStoreContainer" CdmEntityContainer="SLMDBEntities">
+    <EntitySetMapping Name="kkslm_tr_batchlog">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_batchlog">
+        <MappingFragment StoreEntitySet="kkslm_tr_batchlog">
+          <ScalarProperty Name="slm_WorkDetailId" ColumnName="slm_WorkDetailId" />
+          <ScalarProperty Name="slm_EmpCode" ColumnName="slm_EmpCode" />
+          <ScalarProperty Name="slm_ErrorDetail" ColumnName="slm_ErrorDetail" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_BatchMonitor_Id" ColumnName="slm_BatchMonitor_Id" />
+          <ScalarProperty Name="slm_BacthLogId" ColumnName="slm_BacthLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_batchmonitor_overview">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_batchmonitor_overview">
+        <MappingFragment StoreEntitySet="kkslm_tr_batchmonitor_overview">
+          <ScalarProperty Name="slm_BatchDate" ColumnName="slm_BatchDate" />
+          <ScalarProperty Name="slm_ActionBy" ColumnName="slm_ActionBy" />
+          <ScalarProperty Name="slm_Fail" ColumnName="slm_Fail" />
+          <ScalarProperty Name="slm_Success" ColumnName="slm_Success" />
+          <ScalarProperty Name="slm_Total" ColumnName="slm_Total" />
+          <ScalarProperty Name="slm_BatchCode" ColumnName="slm_BatchCode" />
+          <ScalarProperty Name="slm_DateEnd" ColumnName="slm_DateEnd" />
+          <ScalarProperty Name="slm_DateStart" ColumnName="slm_DateStart" />
+          <ScalarProperty Name="slm_BatchMonitor_Id" ColumnName="slm_BatchMonitor_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_option">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_option">
+        <MappingFragment StoreEntitySet="kkslm_ms_option">
+          <ScalarProperty Name="slm_OptionSubCode" ColumnName="slm_OptionSubCode" />
+          <ScalarProperty Name="slm_SystemView" ColumnName="slm_SystemView" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_OptionType" ColumnName="slm_OptionType" />
+          <ScalarProperty Name="slm_OptionDesc" ColumnName="slm_OptionDesc" />
+          <ScalarProperty Name="slm_OptionCode" ColumnName="slm_OptionCode" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Option_CreatedBy" ColumnName="slm_Option_CreatedBy" />
+          <ScalarProperty Name="slm_OptionId" ColumnName="slm_OptionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_staff">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_staff">
+        <MappingFragment StoreEntitySet="kkslm_ms_staff">
+          <ScalarProperty Name="crm_role_id" ColumnName="crm_role_id" />
+          <ScalarProperty Name="slm_marketing" ColumnName="slm_marketing" />
+          <ScalarProperty Name="slm_telNo3" ColumnName="slm_telNo3" />
+          <ScalarProperty Name="slm_telNo2" ColumnName="slm_telNo2" />
+          <ScalarProperty Name="slm_UserType" ColumnName="slm_UserType" />
+          <ScalarProperty Name="slm_InternalPhone" ColumnName="slm_InternalPhone" />
+          <ScalarProperty Name="slm_Staff_Categroy_Host" ColumnName="slm_Staff_Categroy_Host" />
+          <ScalarProperty Name="slm_Staff_Category" ColumnName="slm_Staff_Category" />
+          <ScalarProperty Name="slm_Level" ColumnName="slm_Level" />
+          <ScalarProperty Name="slm_TeamTelesales_Id" ColumnName="slm_TeamTelesales_Id" />
+          <ScalarProperty Name="slm_Position_id" ColumnName="slm_Position_id" />
+          <ScalarProperty Name="slm_Collapse" ColumnName="slm_Collapse" />
+          <ScalarProperty Name="slm_JobOnHand" ColumnName="slm_JobOnHand" />
+          <ScalarProperty Name="coc_Team" ColumnName="coc_Team" />
+          <ScalarProperty Name="slm_UpdateStatusBy" ColumnName="slm_UpdateStatusBy" />
+          <ScalarProperty Name="slm_UpdateStatusDate" ColumnName="slm_UpdateStatusDate" />
+          <ScalarProperty Name="slm_HeadStaffId" ColumnName="slm_HeadStaffId" />
+          <ScalarProperty Name="slm_DepartmentId" ColumnName="slm_DepartmentId" />
+          <ScalarProperty Name="slm_Team" ColumnName="slm_Team" />
+          <ScalarProperty Name="slm_MarketingCode" ColumnName="slm_MarketingCode" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Sex" ColumnName="slm_Sex" />
+          <ScalarProperty Name="slm_IsLocked" ColumnName="slm_IsLocked" />
+          <ScalarProperty Name="slm_IsActive" ColumnName="slm_IsActive" />
+          <ScalarProperty Name="slm_ExpireDate" ColumnName="slm_ExpireDate" />
+          <ScalarProperty Name="slm_AttemptTime" ColumnName="slm_AttemptTime" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_TellNo" ColumnName="slm_TellNo" />
+          <ScalarProperty Name="slm_StaffEmail" ColumnName="slm_StaffEmail" />
+          <ScalarProperty Name="slm_StaffTypeId" ColumnName="slm_StaffTypeId" />
+          <ScalarProperty Name="slm_EmpCode" ColumnName="slm_EmpCode" />
+          <ScalarProperty Name="slm_PositionName" ColumnName="slm_PositionName" />
+          <ScalarProperty Name="slm_StaffNameEN" ColumnName="slm_StaffNameEN" />
+          <ScalarProperty Name="slm_StaffNameTH" ColumnName="slm_StaffNameTH" />
+          <ScalarProperty Name="slm_UserStatus" ColumnName="slm_UserStatus" />
+          <ScalarProperty Name="slm_UserName" ColumnName="slm_UserName" />
+          <ScalarProperty Name="slm_StaffId" ColumnName="slm_StaffId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_mapping_status">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_mapping_status">
+        <MappingFragment StoreEntitySet="kkslm_ms_mapping_status">
+          <ScalarProperty Name="slm_Batch_View" ColumnName="slm_Batch_View" />
+          <ScalarProperty Name="slm_Mapping_SubStatus_Code" ColumnName="slm_Mapping_SubStatus_Code" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_Mapping_Status_Desc" ColumnName="slm_Mapping_Status_Desc" />
+          <ScalarProperty Name="slm_Mapping_Status_Code" ColumnName="slm_Mapping_Status_Code" />
+          <ScalarProperty Name="slm_Status_Code" ColumnName="slm_Status_Code" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_System" ColumnName="slm_System" />
+          <ScalarProperty Name="slm_Mapping_Status_ID" ColumnName="slm_Mapping_Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_coveragetype">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_coveragetype">
+        <MappingFragment StoreEntitySet="kkslm_ms_coveragetype">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_ConverageTypeName" ColumnName="slm_ConverageTypeName" />
+          <ScalarProperty Name="slm_CoverageTypeId" ColumnName="slm_CoverageTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_title">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_title">
+        <MappingFragment StoreEntitySet="kkslm_ms_title">
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_TitleName" ColumnName="slm_TitleName" />
+          <ScalarProperty Name="slm_TitleId" ColumnName="slm_TitleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_occupation">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_occupation">
+        <MappingFragment StoreEntitySet="kkslm_ms_occupation">
+          <ScalarProperty Name="slm_OccupationStatus" ColumnName="slm_OccupationStatus" />
+          <ScalarProperty Name="slm_OccupationNameEN" ColumnName="slm_OccupationNameEN" />
+          <ScalarProperty Name="slm_OccupationNameTH" ColumnName="slm_OccupationNameTH" />
+          <ScalarProperty Name="slm_OccupationCode" ColumnName="slm_OccupationCode" />
+          <ScalarProperty Name="slm_OccupationId" ColumnName="slm_OccupationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_insurancecartype">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_insurancecartype">
+        <MappingFragment StoreEntitySet="kkslm_ms_insurancecartype">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_InsurancecarTypeName" ColumnName="slm_InsurancecarTypeName" />
+          <ScalarProperty Name="slm_InsurancecarTypeId" ColumnName="slm_InsurancecarTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_redbook_model">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_redbook_model">
+        <MappingFragment StoreEntitySet="kkslm_ms_redbook_model">
+          <ScalarProperty Name="slm_ModelName" ColumnName="slm_ModelName" />
+          <ScalarProperty Name="slm_ModelCode" ColumnName="slm_ModelCode" />
+          <ScalarProperty Name="slm_BrandCode" ColumnName="slm_BrandCode" />
+          <ScalarProperty Name="slm_ModelId" ColumnName="slm_ModelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_redbook_brand">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_redbook_brand">
+        <MappingFragment StoreEntitySet="kkslm_ms_redbook_brand">
+          <ScalarProperty Name="slm_BrandName" ColumnName="slm_BrandName" />
+          <ScalarProperty Name="slm_BrandCode" ColumnName="slm_BrandCode" />
+          <ScalarProperty Name="slm_BrandId" ColumnName="slm_BrandId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_province">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_province">
+        <MappingFragment StoreEntitySet="kkslm_ms_province">
+          <ScalarProperty Name="slm_ProvinceStatus" ColumnName="slm_ProvinceStatus" />
+          <ScalarProperty Name="slm_ProvinceNameEN" ColumnName="slm_ProvinceNameEN" />
+          <ScalarProperty Name="slm_ProvinceNameTH" ColumnName="slm_ProvinceNameTH" />
+          <ScalarProperty Name="slm_ProvinceCode" ColumnName="slm_ProvinceCode" />
+          <ScalarProperty Name="slm_ProvinceId" ColumnName="slm_ProvinceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_amphur">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_amphur">
+        <MappingFragment StoreEntitySet="kkslm_ms_amphur">
+          <ScalarProperty Name="slm_AmphurStatus" ColumnName="slm_AmphurStatus" />
+          <ScalarProperty Name="slm_AmphurNameEN" ColumnName="slm_AmphurNameEN" />
+          <ScalarProperty Name="slm_AmphurNameTH" ColumnName="slm_AmphurNameTH" />
+          <ScalarProperty Name="slm_ProvinceCode" ColumnName="slm_ProvinceCode" />
+          <ScalarProperty Name="slm_AmphurCode" ColumnName="slm_AmphurCode" />
+          <ScalarProperty Name="slm_AmphurId" ColumnName="slm_AmphurId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_tambol">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_tambol">
+        <MappingFragment StoreEntitySet="kkslm_ms_tambol">
+          <ScalarProperty Name="slm_TambolStatus" ColumnName="slm_TambolStatus" />
+          <ScalarProperty Name="slm_TambolNameEN" ColumnName="slm_TambolNameEN" />
+          <ScalarProperty Name="slm_TambolNameTH" ColumnName="slm_TambolNameTH" />
+          <ScalarProperty Name="slm_ProvinceCode" ColumnName="slm_ProvinceCode" />
+          <ScalarProperty Name="slm_AmphurCode" ColumnName="slm_AmphurCode" />
+          <ScalarProperty Name="slm_TambolCode" ColumnName="slm_TambolCode" />
+          <ScalarProperty Name="slm_TambolId" ColumnName="slm_TambolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_relate">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_relate">
+        <MappingFragment StoreEntitySet="kkslm_ms_relate">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_RelateDesc" ColumnName="slm_RelateDesc" />
+          <ScalarProperty Name="slm_RelateId" ColumnName="slm_RelateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_view">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_view">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_view">
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_ActNetPremium" ColumnName="slm_ActNetPremium" />
+          <ScalarProperty Name="slm_ActStamp" ColumnName="slm_ActStamp" />
+          <ScalarProperty Name="slm_ActVat" ColumnName="slm_ActVat" />
+          <ScalarProperty Name="slm_ActGrossPremium" ColumnName="slm_ActGrossPremium" />
+          <ScalarProperty Name="slm_ActEndCoverDate" ColumnName="slm_ActEndCoverDate" />
+          <ScalarProperty Name="slm_ActStartCoverDate" ColumnName="slm_ActStartCoverDate" />
+          <ScalarProperty Name="slm_ActNo" ColumnName="slm_ActNo" />
+          <ScalarProperty Name="slm_PolicyDiscountAmt" ColumnName="slm_PolicyDiscountAmt" />
+          <ScalarProperty Name="slm_PolicyGrossPremium" ColumnName="slm_PolicyGrossPremium" />
+          <ScalarProperty Name="slm_PolicyCost" ColumnName="slm_PolicyCost" />
+          <ScalarProperty Name="slm_PolicyEndCoverDate" ColumnName="slm_PolicyEndCoverDate" />
+          <ScalarProperty Name="slm_PolicyStartCoverDate" ColumnName="slm_PolicyStartCoverDate" />
+          <ScalarProperty Name="slm_PolicyNo" ColumnName="slm_PolicyNo" />
+          <ScalarProperty Name="slm_ContractNo" ColumnName="slm_ContractNo" />
+          <ScalarProperty Name="slm_OccupationNameTH" ColumnName="slm_OccupationNameTH" />
+          <ScalarProperty Name="slm_MaritalStatus" ColumnName="slm_MaritalStatus" />
+          <ScalarProperty Name="slm_Birthdate" ColumnName="slm_Birthdate" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_CardTypeName" ColumnName="slm_CardTypeName" />
+          <ScalarProperty Name="slm_TelNo_1" ColumnName="slm_TelNo_1" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_TitleName" ColumnName="slm_TitleName" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_performance">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_performance">
+        <MappingFragment StoreEntitySet="kkslm_tr_performance">
+          <ScalarProperty Name="slm_CountAct" ColumnName="slm_CountAct" />
+          <ScalarProperty Name="slm_CountPolicy" ColumnName="slm_CountPolicy" />
+          <ScalarProperty Name="slm_Discount" ColumnName="slm_Discount" />
+          <ScalarProperty Name="slm_PolicyActPremiumTotal" ColumnName="slm_PolicyActPremiumTotal" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Level" ColumnName="slm_Level" />
+          <ScalarProperty Name="slm_Month" ColumnName="slm_Month" />
+          <ScalarProperty Name="slm_Year" ColumnName="slm_Year" />
+          <ScalarProperty Name="slm_Performance" ColumnName="slm_Performance" />
+          <ScalarProperty Name="slm_EmpName" ColumnName="slm_EmpName" />
+          <ScalarProperty Name="slm_EmpCode" ColumnName="slm_EmpCode" />
+          <ScalarProperty Name="slm_TeamTelesales_Code" ColumnName="slm_TeamTelesales_Code" />
+          <ScalarProperty Name="slm_Performance_Id" ColumnName="slm_Performance_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_substatus">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_substatus">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_substatus">
+          <ScalarProperty Name="slm_SubStatusType" ColumnName="slm_SubStatusType" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_IsFollowup" ColumnName="slm_IsFollowup" />
+          <ScalarProperty Name="slm_SubStatusName" ColumnName="slm_SubStatusName" />
+          <ScalarProperty Name="slm_SubStatusCode" ColumnName="slm_SubStatusCode" />
+          <ScalarProperty Name="slm_OptionCode" ColumnName="slm_OptionCode" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_cp_substatus_id" ColumnName="slm_cp_substatus_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_day">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_day">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_day">
+          <ScalarProperty Name="slm_Days" ColumnName="slm_Days" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_CPId" ColumnName="slm_CPId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_prelead_assign_type">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_prelead_assign_type">
+        <MappingFragment StoreEntitySet="kkslm_ms_prelead_assign_type">
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_AssignTypeName" ColumnName="slm_AssignTypeName" />
+          <ScalarProperty Name="slm_AssignTypeCode" ColumnName="slm_AssignTypeCode" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_blacklist">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_blacklist">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_blacklist">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_IsActive" ColumnName="slm_IsActive" />
+          <ScalarProperty Name="slm_EndDate" ColumnName="slm_EndDate" />
+          <ScalarProperty Name="slm_StartDate" ColumnName="slm_StartDate" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_CardType" ColumnName="slm_CardType" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_ticketId" ColumnName="slm_ticketId" />
+          <ScalarProperty Name="slm_Prelead_Id" ColumnName="slm_Prelead_Id" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_cp_blacklist_id" ColumnName="slm_cp_blacklist_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead_address">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead_address">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead_address">
+          <ScalarProperty Name="slm_Vat_Flag" ColumnName="slm_Vat_Flag" />
+          <ScalarProperty Name="slm_Receipt_Flag" ColumnName="slm_Receipt_Flag" />
+          <ScalarProperty Name="slm_Send_Flag" ColumnName="slm_Send_Flag" />
+          <ScalarProperty Name="slm_Contract_No" ColumnName="slm_Contract_No" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Mobile_Phone" ColumnName="slm_Mobile_Phone" />
+          <ScalarProperty Name="slm_Home_Phone" ColumnName="slm_Home_Phone" />
+          <ScalarProperty Name="slm_Zipcode" ColumnName="slm_Zipcode" />
+          <ScalarProperty Name="slm_Province_name_Org" ColumnName="slm_Province_name_Org" />
+          <ScalarProperty Name="slm_Province_Id" ColumnName="slm_Province_Id" />
+          <ScalarProperty Name="slm_Amphur_Name_Org" ColumnName="slm_Amphur_Name_Org" />
+          <ScalarProperty Name="slm_Amphur_Id" ColumnName="slm_Amphur_Id" />
+          <ScalarProperty Name="slm_Tambon_Name_Org" ColumnName="slm_Tambon_Name_Org" />
+          <ScalarProperty Name="slm_TambolId" ColumnName="slm_TambolId" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Village" ColumnName="slm_Village" />
+          <ScalarProperty Name="slm_Building" ColumnName="slm_Building" />
+          <ScalarProperty Name="slm_Moo" ColumnName="slm_Moo" />
+          <ScalarProperty Name="slm_House_No" ColumnName="slm_House_No" />
+          <ScalarProperty Name="slm_Contract_Adrress" ColumnName="slm_Contract_Adrress" />
+          <ScalarProperty Name="slm_Address_Type" ColumnName="slm_Address_Type" />
+          <ScalarProperty Name="slm_Customer_Key" ColumnName="slm_Customer_Key" />
+          <ScalarProperty Name="slm_Prelead_Id" ColumnName="slm_Prelead_Id" />
+          <ScalarProperty Name="slm_CmtLot" ColumnName="slm_CmtLot" />
+          <ScalarProperty Name="slm_Prelead_Address_Id" ColumnName="slm_Prelead_Address_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_current_year">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_current_year">
+        <MappingFragment StoreEntitySet="kkslm_ms_current_year">
+          <ScalarProperty Name="slm_year" ColumnName="slm_year" />
+          <ScalarProperty Name="slm_id" ColumnName="slm_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMT_OBT_PRODUCT">
+      <EntityTypeMapping TypeName="SLMDBModel.CMT_OBT_PRODUCT">
+        <MappingFragment StoreEntitySet="CMT_OBT_PRODUCT">
+          <ScalarProperty Name="Contract_App_Date" ColumnName="Contract_App_Date" />
+          <ScalarProperty Name="Reference2" ColumnName="Reference2" />
+          <ScalarProperty Name="Reference1" ColumnName="Reference1" />
+          <ScalarProperty Name="Voluntary_First_Create_Date" ColumnName="Voluntary_First_Create_Date" />
+          <ScalarProperty Name="Running_seq" ColumnName="Running_seq" />
+          <ScalarProperty Name="OBT_Flag" ColumnName="OBT_Flag" />
+          <ScalarProperty Name="Is_Normal" ColumnName="Is_Normal" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Guarantor_TelNo3" ColumnName="Guarantor_TelNo3" />
+          <ScalarProperty Name="Guarantor_Relation3" ColumnName="Guarantor_Relation3" />
+          <ScalarProperty Name="Guarantor_Card_ID3" ColumnName="Guarantor_Card_ID3" />
+          <ScalarProperty Name="Guarantor_Last_Name3" ColumnName="Guarantor_Last_Name3" />
+          <ScalarProperty Name="Guarantor_First_Name3" ColumnName="Guarantor_First_Name3" />
+          <ScalarProperty Name="Guarantor_Title_Name3" ColumnName="Guarantor_Title_Name3" />
+          <ScalarProperty Name="Guarantor_Code3" ColumnName="Guarantor_Code3" />
+          <ScalarProperty Name="Guarantor_TelNo2" ColumnName="Guarantor_TelNo2" />
+          <ScalarProperty Name="Guarantor_Relation2" ColumnName="Guarantor_Relation2" />
+          <ScalarProperty Name="Guarantor_Card_ID2" ColumnName="Guarantor_Card_ID2" />
+          <ScalarProperty Name="Guarantor_Last_Name2" ColumnName="Guarantor_Last_Name2" />
+          <ScalarProperty Name="Guarantor_First_Name2" ColumnName="Guarantor_First_Name2" />
+          <ScalarProperty Name="Guarantor_Title_Name2" ColumnName="Guarantor_Title_Name2" />
+          <ScalarProperty Name="Guarantor_Code2" ColumnName="Guarantor_Code2" />
+          <ScalarProperty Name="Guarantor_TelNo1" ColumnName="Guarantor_TelNo1" />
+          <ScalarProperty Name="Guarantor_Relation1" ColumnName="Guarantor_Relation1" />
+          <ScalarProperty Name="Guarantor_Card_ID1" ColumnName="Guarantor_Card_ID1" />
+          <ScalarProperty Name="Guarantor_Last_Name1" ColumnName="Guarantor_Last_Name1" />
+          <ScalarProperty Name="Guarantor_First_Name1" ColumnName="Guarantor_First_Name1" />
+          <ScalarProperty Name="Guarantor_Title_Name1" ColumnName="Guarantor_Title_Name1" />
+          <ScalarProperty Name="Guarantor_Code1" ColumnName="Guarantor_Code1" />
+          <ScalarProperty Name="Compulsory_Company_Name" ColumnName="Compulsory_Company_Name" />
+          <ScalarProperty Name="Compulsory_Company_Code" ColumnName="Compulsory_Company_Code" />
+          <ScalarProperty Name="Compulsory_Gross_Premium" ColumnName="Compulsory_Gross_Premium" />
+          <ScalarProperty Name="Compulsory_COV_AMT" ColumnName="Compulsory_COV_AMT" />
+          <ScalarProperty Name="Compulsory_Policy_EXP_DATE" ColumnName="Compulsory_Policy_EXP_DATE" />
+          <ScalarProperty Name="Compulsory_Policy_EFF_DATE" ColumnName="Compulsory_Policy_EFF_DATE" />
+          <ScalarProperty Name="Compulsory_Policy_Year" ColumnName="Compulsory_Policy_Year" />
+          <ScalarProperty Name="Compulsory_Policy_Number" ColumnName="Compulsory_Policy_Number" />
+          <ScalarProperty Name="Driver_Birth_Date2" ColumnName="Driver_Birth_Date2" />
+          <ScalarProperty Name="Driver_TelNo2" ColumnName="Driver_TelNo2" />
+          <ScalarProperty Name="Driver_Last_Name2" ColumnName="Driver_Last_Name2" />
+          <ScalarProperty Name="Driver_First_Name2" ColumnName="Driver_First_Name2" />
+          <ScalarProperty Name="Driver_Title_Name2" ColumnName="Driver_Title_Name2" />
+          <ScalarProperty Name="Driver_Birth_Date1" ColumnName="Driver_Birth_Date1" />
+          <ScalarProperty Name="Driver_TelNo1" ColumnName="Driver_TelNo1" />
+          <ScalarProperty Name="Driver_Last_Name1" ColumnName="Driver_Last_Name1" />
+          <ScalarProperty Name="Driver_First_Name1" ColumnName="Driver_First_Name1" />
+          <ScalarProperty Name="Driver_Title_Name1" ColumnName="Driver_Title_Name1" />
+          <ScalarProperty Name="Benefit_TelNo" ColumnName="Benefit_TelNo" />
+          <ScalarProperty Name="Benefit_Last_Name" ColumnName="Benefit_Last_Name" />
+          <ScalarProperty Name="Benefit__First_Name" ColumnName="Benefit__First_Name" />
+          <ScalarProperty Name="Benefit_Title_Name" ColumnName="Benefit_Title_Name" />
+          <ScalarProperty Name="Voluntary_Company_Name" ColumnName="Voluntary_Company_Name" />
+          <ScalarProperty Name="Voluntary_Company_Code" ColumnName="Voluntary_Company_Code" />
+          <ScalarProperty Name="Voluntary_Channel_Key" ColumnName="Voluntary_Channel_Key" />
+          <ScalarProperty Name="Voluntary_Gross_Premium" ColumnName="Voluntary_Gross_Premium" />
+          <ScalarProperty Name="Voluntary_COV_AMT" ColumnName="Voluntary_COV_AMT" />
+          <ScalarProperty Name="Voluntary_Policy_EXP_MONTH" ColumnName="Voluntary_Policy_EXP_MONTH" />
+          <ScalarProperty Name="Voluntary_Policy_EXP_YEAR" ColumnName="Voluntary_Policy_EXP_YEAR" />
+          <ScalarProperty Name="Voluntary_Policy_EXP_DATE" ColumnName="Voluntary_Policy_EXP_DATE" />
+          <ScalarProperty Name="Voluntary_Policy_EFF_DATE" ColumnName="Voluntary_Policy_EFF_DATE" />
+          <ScalarProperty Name="Voluntary_Policy_Year" ColumnName="Voluntary_Policy_Year" />
+          <ScalarProperty Name="Voluntary_Type_Name" ColumnName="Voluntary_Type_Name" />
+          <ScalarProperty Name="Voluntary_Type_Key" ColumnName="Voluntary_Type_Key" />
+          <ScalarProperty Name="Voluntary_Policy_Number" ColumnName="Voluntary_Policy_Number" />
+          <ScalarProperty Name="Voluntary_MKT_Last_Name" ColumnName="Voluntary_MKT_Last_Name" />
+          <ScalarProperty Name="Voluntary_MKT_First_Name" ColumnName="Voluntary_MKT_First_Name" />
+          <ScalarProperty Name="Voluntary_MKT_Title" ColumnName="Voluntary_MKT_Title" />
+          <ScalarProperty Name="Voluntary_MKT_ID" ColumnName="Voluntary_MKT_ID" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="Register_Province" ColumnName="Register_Province" />
+          <ScalarProperty Name="License_No" ColumnName="License_No" />
+          <ScalarProperty Name="Model_Year" ColumnName="Model_Year" />
+          <ScalarProperty Name="Chassis_No" ColumnName="Chassis_No" />
+          <ScalarProperty Name="Engine_No" ColumnName="Engine_No" />
+          <ScalarProperty Name="Model_Name" ColumnName="Model_Name" />
+          <ScalarProperty Name="Model_Code" ColumnName="Model_Code" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Brand_Code" ColumnName="Brand_Code" />
+          <ScalarProperty Name="Car_By_Gov_Name" ColumnName="Car_By_Gov_Name" />
+          <ScalarProperty Name="Career_Desc" ColumnName="Career_Desc" />
+          <ScalarProperty Name="Career_Key" ColumnName="Career_Key" />
+          <ScalarProperty Name="Tax_ID" ColumnName="Tax_ID" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Customer_Type" ColumnName="Customer_Type" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+          <ScalarProperty Name="Single_View_Customer" ColumnName="Single_View_Customer" />
+          <ScalarProperty Name="Thai_Last_Name" ColumnName="Thai_Last_Name" />
+          <ScalarProperty Name="Thai_First_Name" ColumnName="Thai_First_Name" />
+          <ScalarProperty Name="Thai_Title_Name" ColumnName="Thai_Title_Name" />
+          <ScalarProperty Name="Customer_Key" ColumnName="Customer_Key" />
+          <ScalarProperty Name="Car_Category" ColumnName="Car_Category" />
+          <ScalarProperty Name="Contract_Status" ColumnName="Contract_Status" />
+          <ScalarProperty Name="Contract_Year" ColumnName="Contract_Year" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Contract_Number" ColumnName="Contract_Number" />
+          <ScalarProperty Name="Campaign_Id" ColumnName="Campaign_Id" />
+          <ScalarProperty Name="Cmt_Product_Id" ColumnName="Cmt_Product_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_dedup">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_dedup">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_dedup">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_EndDate" ColumnName="slm_EndDate" />
+          <ScalarProperty Name="slm_StartDate" ColumnName="slm_StartDate" />
+          <ScalarProperty Name="slm_Chassis_No" ColumnName="slm_Chassis_No" />
+          <ScalarProperty Name="slm_Engine_No" ColumnName="slm_Engine_No" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_CmtLot" ColumnName="slm_CmtLot" />
+          <ScalarProperty Name="slm_cp_DedupId" ColumnName="slm_cp_DedupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_customer_grade">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_customer_grade">
+        <MappingFragment StoreEntitySet="kkslm_ms_customer_grade">
+          <ScalarProperty Name="slm_Ranking" ColumnName="slm_Ranking" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Customer_Grade_Name" ColumnName="slm_Customer_Grade_Name" />
+          <ScalarProperty Name="slm_Customer_Grade_Id" ColumnName="slm_Customer_Grade_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_activity">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_activity">
+        <MappingFragment StoreEntitySet="kkslm_tr_activity">
+          <ScalarProperty Name="slm_ThisWork" ColumnName="slm_ThisWork" />
+          <ScalarProperty Name="slm_ThisAlert" ColumnName="slm_ThisAlert" />
+          <ScalarProperty Name="slm_ExternalSystem_New" ColumnName="slm_ExternalSystem_New" />
+          <ScalarProperty Name="slm_ExternalSubStatusDesc_New" ColumnName="slm_ExternalSubStatusDesc_New" />
+          <ScalarProperty Name="slm_ExternalSubStatus_New" ColumnName="slm_ExternalSubStatus_New" />
+          <ScalarProperty Name="slm_ExternalStatus_New" ColumnName="slm_ExternalStatus_New" />
+          <ScalarProperty Name="slm_ExternalSystem_Old" ColumnName="slm_ExternalSystem_Old" />
+          <ScalarProperty Name="slm_ExternalSubStatusDesc_Old" ColumnName="slm_ExternalSubStatusDesc_Old" />
+          <ScalarProperty Name="slm_ExternalSubStatus_Old" ColumnName="slm_ExternalSubStatus_Old" />
+          <ScalarProperty Name="slm_ExternalStatus_Old" ColumnName="slm_ExternalStatus_Old" />
+          <ScalarProperty Name="slm_CreatedBy_Position" ColumnName="slm_CreatedBy_Position" />
+          <ScalarProperty Name="slm_OldDelegate_Position" ColumnName="slm_OldDelegate_Position" />
+          <ScalarProperty Name="slm_NewDelegate_Position" ColumnName="slm_NewDelegate_Position" />
+          <ScalarProperty Name="slm_OldOwner_Position" ColumnName="slm_OldOwner_Position" />
+          <ScalarProperty Name="slm_NewOwner_Position" ColumnName="slm_NewOwner_Position" />
+          <ScalarProperty Name="slm_SystemActionBy" ColumnName="slm_SystemActionBy" />
+          <ScalarProperty Name="slm_SystemAction" ColumnName="slm_SystemAction" />
+          <ScalarProperty Name="coc_Seq" ColumnName="coc_Seq" />
+          <ScalarProperty Name="slm_OldSubStatus" ColumnName="slm_OldSubStatus" />
+          <ScalarProperty Name="slm_NewSubStatus" ColumnName="slm_NewSubStatus" />
+          <ScalarProperty Name="coc_Team" ColumnName="coc_Team" />
+          <ScalarProperty Name="Activity_Flag" ColumnName="Activity_Flag" />
+          <ScalarProperty Name="slm_NewDelegate" ColumnName="slm_NewDelegate" />
+          <ScalarProperty Name="slm_OldDelegate" ColumnName="slm_OldDelegate" />
+          <ScalarProperty Name="slm_OldCounting" ColumnName="slm_OldCounting" />
+          <ScalarProperty Name="slm_NewCounting" ColumnName="slm_NewCounting" />
+          <ScalarProperty Name="slm_WorkDesc" ColumnName="slm_WorkDesc" />
+          <ScalarProperty Name="slm_WorkId" ColumnName="slm_WorkId" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_OldStatus" ColumnName="slm_OldStatus" />
+          <ScalarProperty Name="slm_OldOwner" ColumnName="slm_OldOwner" />
+          <ScalarProperty Name="slm_NewStatus" ColumnName="slm_NewStatus" />
+          <ScalarProperty Name="slm_NewOwner" ColumnName="slm_NewOwner" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_ActivityId" ColumnName="slm_ActivityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_branch">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_branch">
+        <MappingFragment StoreEntitySet="kkslm_ms_branch">
+          <ScalarProperty Name="slm_UpperBranch" ColumnName="slm_UpperBranch" />
+          <ScalarProperty Name="slm_BranchCodeNew" ColumnName="slm_BranchCodeNew" />
+          <ScalarProperty Name="slm_Zipcode" ColumnName="slm_Zipcode" />
+          <ScalarProperty Name="slm_ProvinceId" ColumnName="slm_ProvinceId" />
+          <ScalarProperty Name="slm_AmphurId" ColumnName="slm_AmphurId" />
+          <ScalarProperty Name="slm_TambolId" ColumnName="slm_TambolId" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Village" ColumnName="slm_Village" />
+          <ScalarProperty Name="slm_Building" ColumnName="slm_Building" />
+          <ScalarProperty Name="slm_Moo" ColumnName="slm_Moo" />
+          <ScalarProperty Name="slm_House_No" ColumnName="slm_House_No" />
+          <ScalarProperty Name="slm_ChannelId" ColumnName="slm_ChannelId" />
+          <ScalarProperty Name="slm_EndTime_Minute" ColumnName="slm_EndTime_Minute" />
+          <ScalarProperty Name="slm_EndTime_Hour" ColumnName="slm_EndTime_Hour" />
+          <ScalarProperty Name="slm_StartTime_Minute" ColumnName="slm_StartTime_Minute" />
+          <ScalarProperty Name="slm_StartTime_Hour" ColumnName="slm_StartTime_Hour" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_BranchName" ColumnName="slm_BranchName" />
+          <ScalarProperty Name="slm_Branch_CreatedBy" ColumnName="slm_Branch_CreatedBy" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_calendar_branch">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_calendar_branch">
+        <MappingFragment StoreEntitySet="kkslm_ms_calendar_branch">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_HolidayDesc" ColumnName="slm_HolidayDesc" />
+          <ScalarProperty Name="slm_HolidayDate" ColumnName="slm_HolidayDate" />
+          <ScalarProperty Name="slm_Calendar_Branch_Id" ColumnName="slm_Calendar_Branch_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_receipt">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_receipt">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_receipt">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_RecNo" ColumnName="slm_RecNo" />
+          <ScalarProperty Name="slm_ticketId" ColumnName="slm_ticketId" />
+          <ScalarProperty Name="slm_RenewInsuranceReceiptId" ColumnName="slm_RenewInsuranceReceiptId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_receipt_detail">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_receipt_detail">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_receipt_detail">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_TransDate" ColumnName="slm_TransDate" />
+          <ScalarProperty Name="slm_RecAmount" ColumnName="slm_RecAmount" />
+          <ScalarProperty Name="slm_RecNo" ColumnName="slm_RecNo" />
+          <ScalarProperty Name="slm_RecBy" ColumnName="slm_RecBy" />
+          <ScalarProperty Name="slm_InstNo" ColumnName="slm_InstNo" />
+          <ScalarProperty Name="slm_InsNoDesc" ColumnName="slm_InsNoDesc" />
+          <ScalarProperty Name="slm_PaymentCode" ColumnName="slm_PaymentCode" />
+          <ScalarProperty Name="slm_RenewInsuranceReceiptId" ColumnName="slm_RenewInsuranceReceiptId" />
+          <ScalarProperty Name="slm_RenewInsuranceReceiptDetailId" ColumnName="slm_RenewInsuranceReceiptDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_campaign">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_campaign">
+        <MappingFragment StoreEntitySet="kkslm_ms_campaign">
+          <ScalarProperty Name="slm_Desc_For_Customer" ColumnName="slm_Desc_For_Customer" />
+          <ScalarProperty Name="slm_CampaignType" ColumnName="slm_CampaignType" />
+          <ScalarProperty Name="slm_sla" ColumnName="slm_sla" />
+          <ScalarProperty Name="slm_flag" ColumnName="slm_flag" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_HaveList" ColumnName="slm_HaveList" />
+          <ScalarProperty Name="slm_html" ColumnName="slm_html" />
+          <ScalarProperty Name="slm_log" ColumnName="slm_log" />
+          <ScalarProperty Name="slm_url" ColumnName="slm_url" />
+          <ScalarProperty Name="slm_product" ColumnName="slm_product" />
+          <ScalarProperty Name="slm_ListCount" ColumnName="slm_ListCount" />
+          <ScalarProperty Name="slm_score" ColumnName="slm_score" />
+          <ScalarProperty Name="slm_channel" ColumnName="slm_channel" />
+          <ScalarProperty Name="slm_criteria" ColumnName="slm_criteria" />
+          <ScalarProperty Name="slm_Offer" ColumnName="slm_Offer" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_EndDate" ColumnName="slm_EndDate" />
+          <ScalarProperty Name="slm_StartDate" ColumnName="slm_StartDate" />
+          <ScalarProperty Name="slm_Email" ColumnName="slm_Email" />
+          <ScalarProperty Name="slm_CampaignName" ColumnName="slm_CampaignName" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_address">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_address">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_address">
+          <ScalarProperty Name="slm_Village" ColumnName="slm_Village" />
+          <ScalarProperty Name="slm_Moo" ColumnName="slm_Moo" />
+          <ScalarProperty Name="slm_House_No" ColumnName="slm_House_No" />
+          <ScalarProperty Name="slm_PostalCode" ColumnName="slm_PostalCode" />
+          <ScalarProperty Name="slm_Province" ColumnName="slm_Province" />
+          <ScalarProperty Name="slm_Amphur" ColumnName="slm_Amphur" />
+          <ScalarProperty Name="slm_Tambon" ColumnName="slm_Tambon" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Floor" ColumnName="slm_Floor" />
+          <ScalarProperty Name="slm_BuildingName" ColumnName="slm_BuildingName" />
+          <ScalarProperty Name="slm_AddressNo" ColumnName="slm_AddressNo" />
+          <ScalarProperty Name="slm_AddressType" ColumnName="slm_AddressType" />
+          <ScalarProperty Name="slm_RenewInsureId" ColumnName="slm_RenewInsureId" />
+          <ScalarProperty Name="slm_RenewInsureAddressId" ColumnName="slm_RenewInsureAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_productinfo">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_productinfo">
+        <MappingFragment StoreEntitySet="kkslm_tr_productinfo">
+          <ScalarProperty Name="slm_RedbookKKKeyExt" ColumnName="slm_RedbookKKKeyExt" />
+          <ScalarProperty Name="slm_RedbookKKKey" ColumnName="slm_RedbookKKKey" />
+          <ScalarProperty Name="slm_RedbookYearGroupExt" ColumnName="slm_RedbookYearGroupExt" />
+          <ScalarProperty Name="slm_RedbookYearGroup" ColumnName="slm_RedbookYearGroup" />
+          <ScalarProperty Name="slm_RedbookModelCodeExt" ColumnName="slm_RedbookModelCodeExt" />
+          <ScalarProperty Name="slm_RedbookModelCode" ColumnName="slm_RedbookModelCode" />
+          <ScalarProperty Name="slm_RedbookBrandCodeExt" ColumnName="slm_RedbookBrandCodeExt" />
+          <ScalarProperty Name="slm_RedbookBrandCode" ColumnName="slm_RedbookBrandCode" />
+          <ScalarProperty Name="slm_CarType" ColumnName="slm_CarType" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_OtherDetail_4" ColumnName="slm_OtherDetail_4" />
+          <ScalarProperty Name="slm_OtherDetail_3" ColumnName="slm_OtherDetail_3" />
+          <ScalarProperty Name="slm_OtherDetail_2" ColumnName="slm_OtherDetail_2" />
+          <ScalarProperty Name="slm_OtherDetail_1" ColumnName="slm_OtherDetail_1" />
+          <ScalarProperty Name="slm_Atm" ColumnName="slm_Atm" />
+          <ScalarProperty Name="slm_Ebank" ColumnName="slm_Ebank" />
+          <ScalarProperty Name="slm_LoanOdTerm" ColumnName="slm_LoanOdTerm" />
+          <ScalarProperty Name="slm_LoanOd" ColumnName="slm_LoanOd" />
+          <ScalarProperty Name="slm_Invest" ColumnName="slm_Invest" />
+          <ScalarProperty Name="slm_Interest" ColumnName="slm_Interest" />
+          <ScalarProperty Name="slm_AccTerm" ColumnName="slm_AccTerm" />
+          <ScalarProperty Name="slm_AccPromotion" ColumnName="slm_AccPromotion" />
+          <ScalarProperty Name="slm_AccType" ColumnName="slm_AccType" />
+          <ScalarProperty Name="slm_PlanType" ColumnName="slm_PlanType" />
+          <ScalarProperty Name="slm_ProvinceRegis" ColumnName="slm_ProvinceRegis" />
+          <ScalarProperty Name="slm_CoverageDate" ColumnName="slm_CoverageDate" />
+          <ScalarProperty Name="slm_BalloonPercent" ColumnName="slm_BalloonPercent" />
+          <ScalarProperty Name="slm_BalloonAmt" ColumnName="slm_BalloonAmt" />
+          <ScalarProperty Name="slm_PaymentType" ColumnName="slm_PaymentType" />
+          <ScalarProperty Name="slm_PaymentTerm" ColumnName="slm_PaymentTerm" />
+          <ScalarProperty Name="slm_FinanceAmt" ColumnName="slm_FinanceAmt" />
+          <ScalarProperty Name="slm_CarPrice" ColumnName="slm_CarPrice" />
+          <ScalarProperty Name="slm_DownPercent" ColumnName="slm_DownPercent" />
+          <ScalarProperty Name="slm_DownPayment" ColumnName="slm_DownPayment" />
+          <ScalarProperty Name="slm_Submodel" ColumnName="slm_Submodel" />
+          <ScalarProperty Name="slm_Model" ColumnName="slm_Model" />
+          <ScalarProperty Name="slm_Brand" ColumnName="slm_Brand" />
+          <ScalarProperty Name="slm_YearOfCarRegis" ColumnName="slm_YearOfCarRegis" />
+          <ScalarProperty Name="slm_YearOfCar" ColumnName="slm_YearOfCar" />
+          <ScalarProperty Name="slm_LicenseNo" ColumnName="slm_LicenseNo" />
+          <ScalarProperty Name="slm_InterestedProd" ColumnName="slm_InterestedProd" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_hp_payment_temp">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_hp_payment_temp">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_hp_payment_temp">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Update_Date" ColumnName="slm_Update_Date" />
+          <ScalarProperty Name="slm_Tran_Date" ColumnName="slm_Tran_Date" />
+          <ScalarProperty Name="slm_Rec_Amount" ColumnName="slm_Rec_Amount" />
+          <ScalarProperty Name="slm_Rec_No" ColumnName="slm_Rec_No" />
+          <ScalarProperty Name="slm_Rec_by" ColumnName="slm_Rec_by" />
+          <ScalarProperty Name="slm_Inst_No" ColumnName="slm_Inst_No" />
+          <ScalarProperty Name="slm_Ins_No_Desc" ColumnName="slm_Ins_No_Desc" />
+          <ScalarProperty Name="slm_Tran_Code" ColumnName="slm_Tran_Code" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_setle_claim_cancel_report">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_setle_claim_cancel_report">
+        <MappingFragment StoreEntitySet="kkslm_tr_setle_claim_cancel_report">
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Export_Date" ColumnName="slm_Export_Date" />
+          <ScalarProperty Name="slm_Export_Flag" ColumnName="slm_Export_Flag" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_CoverageEndDate" ColumnName="slm_CoverageEndDate" />
+          <ScalarProperty Name="slm_CoverageStartDate" ColumnName="slm_CoverageStartDate" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Id" ColumnName="slm_Title_Id" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_InsReceiveDate" ColumnName="slm_InsReceiveDate" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_InsReceiveNo" ColumnName="slm_InsReceiveNo" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead_prepare_sms">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead_prepare_sms">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead_prepare_sms">
+          <ScalarProperty Name="slm_FlagType" ColumnName="slm_FlagType" />
+          <ScalarProperty Name="slm_CAS_Date" ColumnName="slm_CAS_Date" />
+          <ScalarProperty Name="slm_CAS_Flag" ColumnName="slm_CAS_Flag" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_ErrorReason" ColumnName="slm_ErrorReason" />
+          <ScalarProperty Name="slm_ErrorCode" ColumnName="slm_ErrorCode" />
+          <ScalarProperty Name="slm_SendingStatus" ColumnName="slm_SendingStatus" />
+          <ScalarProperty Name="slm_SendingStatusCode" ColumnName="slm_SendingStatusCode" />
+          <ScalarProperty Name="slm_RefId" ColumnName="slm_RefId" />
+          <ScalarProperty Name="slm_ExportStatus" ColumnName="slm_ExportStatus" />
+          <ScalarProperty Name="slm_RuleActivityId" ColumnName="slm_RuleActivityId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_ticketId" ColumnName="slm_ticketId" />
+          <ScalarProperty Name="slm_RequestDate" ColumnName="slm_RequestDate" />
+          <ScalarProperty Name="slm_QueueId" ColumnName="slm_QueueId" />
+          <ScalarProperty Name="slm_PhoneNumber" ColumnName="slm_PhoneNumber" />
+          <ScalarProperty Name="slm_MessageStatusId" ColumnName="slm_MessageStatusId" />
+          <ScalarProperty Name="slm_Message_CreatedBy" ColumnName="slm_Message_CreatedBy" />
+          <ScalarProperty Name="slm_Message" ColumnName="slm_Message" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_Prelead_Id" ColumnName="slm_Prelead_Id" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_prepare_email">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_prepare_email">
+        <MappingFragment StoreEntitySet="kkslm_prepare_email">
+          <ScalarProperty Name="slm_ExportStatus" ColumnName="slm_ExportStatus" />
+          <ScalarProperty Name="slm_RuleActivityId" ColumnName="slm_RuleActivityId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_ticketId" ColumnName="slm_ticketId" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_EmailSubject" ColumnName="slm_EmailSubject" />
+          <ScalarProperty Name="slm_EmailSender" ColumnName="slm_EmailSender" />
+          <ScalarProperty Name="slm_Email_CreatedBy" ColumnName="slm_Email_CreatedBy" />
+          <ScalarProperty Name="slm_EmailContent" ColumnName="slm_EmailContent" />
+          <ScalarProperty Name="slm_EmailAddress" ColumnName="slm_EmailAddress" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_payment">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_payment">
+        <MappingFragment StoreEntitySet="kkslm_ms_payment">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_PaymentDesc" ColumnName="slm_PaymentDesc" />
+          <ScalarProperty Name="slm_PaymentCode" ColumnName="slm_PaymentCode" />
+          <ScalarProperty Name="slm_PaymentId" ColumnName="slm_PaymentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_batch">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_batch">
+        <MappingFragment StoreEntitySet="kkslm_ms_batch">
+          <ScalarProperty Name="slm_BatchPath" ColumnName="slm_BatchPath" />
+          <ScalarProperty Name="slm_PreRequisite" ColumnName="slm_PreRequisite" />
+          <ScalarProperty Name="slm_ReRunEndTime" ColumnName="slm_ReRunEndTime" />
+          <ScalarProperty Name="slm_ReRunStartTime" ColumnName="slm_ReRunStartTime" />
+          <ScalarProperty Name="slm_IsReRun" ColumnName="slm_IsReRun" />
+          <ScalarProperty Name="slm_system" ColumnName="slm_system" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_BatchDate" ColumnName="slm_BatchDate" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_ActionBy" ColumnName="slm_ActionBy" />
+          <ScalarProperty Name="slm_ProcessTime" ColumnName="slm_ProcessTime" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_EndTime" ColumnName="slm_EndTime" />
+          <ScalarProperty Name="slm_StartTime" ColumnName="slm_StartTime" />
+          <ScalarProperty Name="slm_BatchDescription" ColumnName="slm_BatchDescription" />
+          <ScalarProperty Name="slm_Group" ColumnName="slm_Group" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_BatchName" ColumnName="slm_BatchName" />
+          <ScalarProperty Name="slm_BatchCode" ColumnName="slm_BatchCode" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_phone_call">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_phone_call">
+        <MappingFragment StoreEntitySet="kkslm_phone_call">
+          <ScalarProperty Name="slm_InvoiceFileSize" ColumnName="slm_InvoiceFileSize" />
+          <ScalarProperty Name="slm_InvoiceFilePath" ColumnName="slm_InvoiceFilePath" />
+          <ScalarProperty Name="slm_InvoiceFileName" ColumnName="slm_InvoiceFileName" />
+          <ScalarProperty Name="slm_CAS_Date" ColumnName="slm_CAS_Date" />
+          <ScalarProperty Name="slm_CAS_Flag" ColumnName="slm_CAS_Flag" />
+          <ScalarProperty Name="slm_Need_PolicyFlagDate" ColumnName="slm_Need_PolicyFlagDate" />
+          <ScalarProperty Name="slm_Need_PolicyFlag" ColumnName="slm_Need_PolicyFlag" />
+          <ScalarProperty Name="slm_Need_CompulsoryFlagDate" ColumnName="slm_Need_CompulsoryFlagDate" />
+          <ScalarProperty Name="slm_Need_CompulsoryFlag" ColumnName="slm_Need_CompulsoryFlag" />
+          <ScalarProperty Name="slm_DriverLicenseFileSize" ColumnName="slm_DriverLicenseFileSize" />
+          <ScalarProperty Name="slm_DriverLicenseFilePath" ColumnName="slm_DriverLicenseFilePath" />
+          <ScalarProperty Name="slm_DriverLicenseiFileName" ColumnName="slm_DriverLicenseiFileName" />
+          <ScalarProperty Name="slm_50TawiFileSize" ColumnName="slm_50TawiFileSize" />
+          <ScalarProperty Name="slm_50TawiFilePath" ColumnName="slm_50TawiFilePath" />
+          <ScalarProperty Name="slm_50TawiFileName" ColumnName="slm_50TawiFileName" />
+          <ScalarProperty Name="slm_CreditFileSize" ColumnName="slm_CreditFileSize" />
+          <ScalarProperty Name="slm_CreditFilePath" ColumnName="slm_CreditFilePath" />
+          <ScalarProperty Name="slm_CreditFileName" ColumnName="slm_CreditFileName" />
+          <ScalarProperty Name="slm_SubStatusName" ColumnName="slm_SubStatusName" />
+          <ScalarProperty Name="slm_SubStatus" ColumnName="slm_SubStatus" />
+          <ScalarProperty Name="slm_CreatedBy_Position" ColumnName="slm_CreatedBy_Position" />
+          <ScalarProperty Name="slm_Owner_Position" ColumnName="slm_Owner_Position" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_CreateDate" ColumnName="slm_CreateDate" />
+          <ScalarProperty Name="slm_CreateBy" ColumnName="slm_CreateBy" />
+          <ScalarProperty Name="slm_ContactPhone" ColumnName="slm_ContactPhone" />
+          <ScalarProperty Name="slm_ContactDetail" ColumnName="slm_ContactDetail" />
+          <ScalarProperty Name="slm_PhoneCallId" ColumnName="slm_PhoneCallId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_setle_claim">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_setle_claim">
+        <MappingFragment StoreEntitySet="kkslm_tr_setle_claim">
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Export_Date" ColumnName="slm_Export_Date" />
+          <ScalarProperty Name="slm_Export_Flag" ColumnName="slm_Export_Flag" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_CoverageEndDate" ColumnName="slm_CoverageEndDate" />
+          <ScalarProperty Name="slm_CoverageStartDate" ColumnName="slm_CoverageStartDate" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Id" ColumnName="slm_Title_Id" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_InsReceiveDate" ColumnName="slm_InsReceiveDate" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_InsReceiveNo" ColumnName="slm_InsReceiveNo" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_cas_resend">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_cas_resend">
+        <MappingFragment StoreEntitySet="kkslm_tr_cas_resend">
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_LastResendMessage" ColumnName="slm_LastResendMessage" />
+          <ScalarProperty Name="slm_LastResendRespone" ColumnName="slm_LastResendRespone" />
+          <ScalarProperty Name="slm_BatchVersion" ColumnName="slm_BatchVersion" />
+          <ScalarProperty Name="slm_ResendCount" ColumnName="slm_ResendCount" />
+          <ScalarProperty Name="slm_LastResendDate" ColumnName="slm_LastResendDate" />
+          <ScalarProperty Name="slm_ResendDate" ColumnName="slm_ResendDate" />
+          <ScalarProperty Name="slm_LogDate" ColumnName="slm_LogDate" />
+          <ScalarProperty Name="slm_LogStatus" ColumnName="slm_LogStatus" />
+          <ScalarProperty Name="slm_CasDetail" ColumnName="slm_CasDetail" />
+          <ScalarProperty Name="slm_CasErrorMessage" ColumnName="slm_CasErrorMessage" />
+          <ScalarProperty Name="slm_CasResponse" ColumnName="slm_CasResponse" />
+          <ScalarProperty Name="slm_CasLogType" ColumnName="slm_CasLogType" />
+          <ScalarProperty Name="slm_CasServiceName" ColumnName="slm_CasServiceName" />
+          <ScalarProperty Name="slm_CasSystemCode" ColumnName="slm_CasSystemCode" />
+          <ScalarProperty Name="slm_CasReferenceNo" ColumnName="slm_CasReferenceNo" />
+          <ScalarProperty Name="slm_CasLogId" ColumnName="slm_CasLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_redbook_submodel">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_redbook_submodel">
+        <MappingFragment StoreEntitySet="kkslm_ms_redbook_submodel">
+          <ScalarProperty Name="slm_EngineDescription" ColumnName="slm_EngineDescription" />
+          <ScalarProperty Name="slm_GearTypeDescription" ColumnName="slm_GearTypeDescription" />
+          <ScalarProperty Name="slm_SubAutoType" ColumnName="slm_SubAutoType" />
+          <ScalarProperty Name="slm_AutoType" ColumnName="slm_AutoType" />
+          <ScalarProperty Name="slm_Description" ColumnName="slm_Description" />
+          <ScalarProperty Name="slm_MonthGroup" ColumnName="slm_MonthGroup" />
+          <ScalarProperty Name="slm_YearGroup" ColumnName="slm_YearGroup" />
+          <ScalarProperty Name="slm_ModelName" ColumnName="slm_ModelName" />
+          <ScalarProperty Name="slm_ModelCode" ColumnName="slm_ModelCode" />
+          <ScalarProperty Name="slm_BrandName" ColumnName="slm_BrandName" />
+          <ScalarProperty Name="slm_BrandCode" ColumnName="slm_BrandCode" />
+          <ScalarProperty Name="slm_VehicleKey" ColumnName="slm_VehicleKey" />
+          <ScalarProperty Name="slm_KKKey" ColumnName="slm_KKKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_SLMBatch_OBT_PRO_26_LoadPaymentPending" FunctionName="SLMDBModel.Store.SP_SLMBatch_OBT_PRO_26_LoadPaymentPending">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SLMDBModel.SP_SLMBatch_OBT_PRO_26_LoadPaymentPending_Result">
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Update" ColumnName="Update" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerLastName" ColumnName="CustomerLastName" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="InstNo" ColumnName="InstNo" />
+          <ScalarProperty Name="RecBy" ColumnName="RecBy" />
+          <ScalarProperty Name="RecNo" ColumnName="RecNo" />
+          <ScalarProperty Name="RecAmount" ColumnName="RecAmount" />
+          <ScalarProperty Name="CompanyOld" ColumnName="CompanyOld" />
+          <ScalarProperty Name="PolicyNoOld" ColumnName="PolicyNoOld" />
+          <ScalarProperty Name="BranchOld" ColumnName="BranchOld" />
+          <ScalarProperty Name="BranchOldName" ColumnName="BranchOldName" />
+          <ScalarProperty Name="LicenseNoProvince" ColumnName="LicenseNoProvince" />
+          <ScalarProperty Name="ReceiveNo" ColumnName="ReceiveNo" />
+          <ScalarProperty Name="MarketingName" ColumnName="MarketingName" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ChassisNo" ColumnName="ChassisNo" />
+          <ScalarProperty Name="EngineNo" ColumnName="EngineNo" />
+          <ScalarProperty Name="YearGroup" ColumnName="YearGroup" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="SubModelDesc" ColumnName="SubModelDesc" />
+          <ScalarProperty Name="CarTypeName" ColumnName="CarTypeName" />
+          <ScalarProperty Name="PolicyNetGrossPremium" ColumnName="PolicyNetGrossPremium" />
+          <ScalarProperty Name="PolicyGrossPremiumTotal" ColumnName="PolicyGrossPremiumTotal" />
+          <ScalarProperty Name="ActStartCoverDate" ColumnName="ActStartCoverDate" />
+          <ScalarProperty Name="ActEndCoverDate" ColumnName="ActEndCoverDate" />
+          <ScalarProperty Name="AddressNo" ColumnName="AddressNo" />
+          <ScalarProperty Name="Moo" ColumnName="Moo" />
+          <ScalarProperty Name="Village" ColumnName="Village" />
+          <ScalarProperty Name="BuildingName" ColumnName="BuildingName" />
+          <ScalarProperty Name="SOI" ColumnName="SOI" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="TambonName" ColumnName="TambonName" />
+          <ScalarProperty Name="AmphurName" ColumnName="AmphurName" />
+          <ScalarProperty Name="ProvinceAddrName" ColumnName="ProvinceAddrName" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="AddressDescription" ColumnName="AddressDescription" />
+          <ScalarProperty Name="TelContact" ColumnName="TelContact" />
+          <ScalarProperty Name="CitizenId" ColumnName="CitizenId" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+          <ScalarProperty Name="OccupationName" ColumnName="OccupationName" />
+          <ScalarProperty Name="MaritalStatusName" ColumnName="MaritalStatusName" />
+          <ScalarProperty Name="VatNo" ColumnName="VatNo" />
+          <ScalarProperty Name="Guarantor_Title_Name1_Org" ColumnName="Guarantor_Title_Name1_Org" />
+          <ScalarProperty Name="GUARANTOR_FIRST_NAME1" ColumnName="GUARANTOR_FIRST_NAME1" />
+          <ScalarProperty Name="GUARANTOR_LAST_NAME1" ColumnName="GUARANTOR_LAST_NAME1" />
+          <ScalarProperty Name="Guarantor_Card_Id1" ColumnName="Guarantor_Card_Id1" />
+          <ScalarProperty Name="Guarantor_Title_Name2_Org" ColumnName="Guarantor_Title_Name2_Org" />
+          <ScalarProperty Name="GUARANTOR_FIRST_NAME2" ColumnName="GUARANTOR_FIRST_NAME2" />
+          <ScalarProperty Name="GUARANTOR_LAST_NAME2" ColumnName="GUARANTOR_LAST_NAME2" />
+          <ScalarProperty Name="Guarantor_Card_Id2" ColumnName="Guarantor_Card_Id2" />
+          <ScalarProperty Name="Guarantor_Title_Name3_Org" ColumnName="Guarantor_Title_Name3_Org" />
+          <ScalarProperty Name="GUARANTOR_FIRST_NAME3" ColumnName="GUARANTOR_FIRST_NAME3" />
+          <ScalarProperty Name="GUARANTOR_LAST_NAME3" ColumnName="GUARANTOR_LAST_NAME3" />
+          <ScalarProperty Name="Guarantor_Card_Id3" ColumnName="Guarantor_Card_Id3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_compare">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_compare">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_compare">
+          <ScalarProperty Name="slm_DeDuctibleFlag" ColumnName="slm_DeDuctibleFlag" />
+          <ScalarProperty Name="slm_MedicalFeePassenger" ColumnName="slm_MedicalFeePassenger" />
+          <ScalarProperty Name="slm_MedicalFeeDriver" ColumnName="slm_MedicalFeeDriver" />
+          <ScalarProperty Name="slm_PersonalAccidentDriver" ColumnName="slm_PersonalAccidentDriver" />
+          <ScalarProperty Name="slm_PersonalAccidentPassenger" ColumnName="slm_PersonalAccidentPassenger" />
+          <ScalarProperty Name="slm_Year" ColumnName="slm_Year" />
+          <ScalarProperty Name="slm_Vat1PercentBath" ColumnName="slm_Vat1PercentBath" />
+          <ScalarProperty Name="slm_DiscountBath" ColumnName="slm_DiscountBath" />
+          <ScalarProperty Name="slm_DiscountPercent" ColumnName="slm_DiscountPercent" />
+          <ScalarProperty Name="slm_Vat1Percent" ColumnName="slm_Vat1Percent" />
+          <ScalarProperty Name="slm_PolicyEndCoverDate" ColumnName="slm_PolicyEndCoverDate" />
+          <ScalarProperty Name="slm_PolicyStartCoverDate" ColumnName="slm_PolicyStartCoverDate" />
+          <ScalarProperty Name="slm_OldReceiveNo" ColumnName="slm_OldReceiveNo" />
+          <ScalarProperty Name="slm_Driver_Birthdate2" ColumnName="slm_Driver_Birthdate2" />
+          <ScalarProperty Name="slm_Driver_Last_Name2" ColumnName="slm_Driver_Last_Name2" />
+          <ScalarProperty Name="slm_Driver_First_Name2" ColumnName="slm_Driver_First_Name2" />
+          <ScalarProperty Name="slm_Driver_TitleId2" ColumnName="slm_Driver_TitleId2" />
+          <ScalarProperty Name="slm_Driver_Birthdate1" ColumnName="slm_Driver_Birthdate1" />
+          <ScalarProperty Name="slm_Driver_Last_Name1" ColumnName="slm_Driver_Last_Name1" />
+          <ScalarProperty Name="slm_Driver_First_Name1" ColumnName="slm_Driver_First_Name1" />
+          <ScalarProperty Name="slm_Driver_TitleId1" ColumnName="slm_Driver_TitleId1" />
+          <ScalarProperty Name="slm_DriverFlag" ColumnName="slm_DriverFlag" />
+          <ScalarProperty Name="slm_OldPolicyNo" ColumnName="slm_OldPolicyNo" />
+          <ScalarProperty Name="slm_Selected" ColumnName="slm_Selected" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CostSave" ColumnName="slm_CostSave" />
+          <ScalarProperty Name="slm_PolicyGrossPremiumPay" ColumnName="slm_PolicyGrossPremiumPay" />
+          <ScalarProperty Name="slm_NetGrossPremium" ColumnName="slm_NetGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossPremium" ColumnName="slm_PolicyGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossVat" ColumnName="slm_PolicyGrossVat" />
+          <ScalarProperty Name="slm_PolicyGrossStamp" ColumnName="slm_PolicyGrossStamp" />
+          <ScalarProperty Name="slm_InsuranceDriver" ColumnName="slm_InsuranceDriver" />
+          <ScalarProperty Name="slm_MedicalFeeMan" ColumnName="slm_MedicalFeeMan" />
+          <ScalarProperty Name="slm_MedicalFee" ColumnName="slm_MedicalFee" />
+          <ScalarProperty Name="slm_PersonalAccidentMan" ColumnName="slm_PersonalAccidentMan" />
+          <ScalarProperty Name="slm_PersonalAccident" ColumnName="slm_PersonalAccident" />
+          <ScalarProperty Name="slm_DeDuctible" ColumnName="slm_DeDuctible" />
+          <ScalarProperty Name="slm_FT" ColumnName="slm_FT" />
+          <ScalarProperty Name="slm_OD" ColumnName="slm_OD" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_TPPD" ColumnName="slm_TPPD" />
+          <ScalarProperty Name="slm_InjuryDeath" ColumnName="slm_InjuryDeath" />
+          <ScalarProperty Name="slm_CoverageTypeId" ColumnName="slm_CoverageTypeId" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_PromotionId" ColumnName="slm_PromotionId" />
+          <ScalarProperty Name="slm_NotifyPremiumId" ColumnName="slm_NotifyPremiumId" />
+          <ScalarProperty Name="slm_RenewInsureId" ColumnName="slm_RenewInsureId" />
+          <ScalarProperty Name="slm_RenewInsureCompareId" ColumnName="slm_RenewInsureCompareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_compare_act">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_compare_act">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_compare_act">
+          <ScalarProperty Name="slm_Vat1PercentBath" ColumnName="slm_Vat1PercentBath" />
+          <ScalarProperty Name="slm_Vat1Percent" ColumnName="slm_Vat1Percent" />
+          <ScalarProperty Name="slm_ActNetGrossPremiumFull" ColumnName="slm_ActNetGrossPremiumFull" />
+          <ScalarProperty Name="slm_ActSignNo" ColumnName="slm_ActSignNo" />
+          <ScalarProperty Name="slm_DiscountBath" ColumnName="slm_DiscountBath" />
+          <ScalarProperty Name="slm_DiscountPercent" ColumnName="slm_DiscountPercent" />
+          <ScalarProperty Name="slm_ActPurchaseFlag" ColumnName="slm_ActPurchaseFlag" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_ActGrossPremiumPay" ColumnName="slm_ActGrossPremiumPay" />
+          <ScalarProperty Name="slm_ActNetGrossPremium" ColumnName="slm_ActNetGrossPremium" />
+          <ScalarProperty Name="slm_ActGrossPremium" ColumnName="slm_ActGrossPremium" />
+          <ScalarProperty Name="slm_ActGrossVat" ColumnName="slm_ActGrossVat" />
+          <ScalarProperty Name="slm_ActGrossStamp" ColumnName="slm_ActGrossStamp" />
+          <ScalarProperty Name="slm_CarTaxExpiredDate" ColumnName="slm_CarTaxExpiredDate" />
+          <ScalarProperty Name="slm_ActIssueBranch" ColumnName="slm_ActIssueBranch" />
+          <ScalarProperty Name="slm_ActEndCoverDate" ColumnName="slm_ActEndCoverDate" />
+          <ScalarProperty Name="slm_ActStartCoverDate" ColumnName="slm_ActStartCoverDate" />
+          <ScalarProperty Name="slm_ActNo" ColumnName="slm_ActNo" />
+          <ScalarProperty Name="slm_SendDocType" ColumnName="slm_SendDocType" />
+          <ScalarProperty Name="slm_ActIssuePlace" ColumnName="slm_ActIssuePlace" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_Year" ColumnName="slm_Year" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_PromotionId" ColumnName="slm_PromotionId" />
+          <ScalarProperty Name="slm_RenewInsureId" ColumnName="slm_RenewInsureId" />
+          <ScalarProperty Name="slm_RenewInsureCompareActId" ColumnName="slm_RenewInsureCompareActId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_discount">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_discount">
+        <MappingFragment StoreEntitySet="kkslm_ms_discount">
+          <ScalarProperty Name="slm_InsuranceTypeCode" ColumnName="slm_InsuranceTypeCode" />
+          <ScalarProperty Name="slm_DiscountBath" ColumnName="slm_DiscountBath" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_DiscountPercent" ColumnName="slm_DiscountPercent" />
+          <ScalarProperty Name="slm_StaffTypeId" ColumnName="slm_StaffTypeId" />
+          <ScalarProperty Name="slm_Discount_Id" ColumnName="slm_Discount_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_note">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_note">
+        <MappingFragment StoreEntitySet="kkslm_note">
+          <ScalarProperty Name="slm_CAS_Date" ColumnName="slm_CAS_Date" />
+          <ScalarProperty Name="slm_CAS_Flag" ColumnName="slm_CAS_Flag" />
+          <ScalarProperty Name="slm_CreatedBy_Position" ColumnName="slm_CreatedBy_Position" />
+          <ScalarProperty Name="slm_EmailSubject" ColumnName="slm_EmailSubject" />
+          <ScalarProperty Name="slm_SendEmailFlag" ColumnName="slm_SendEmailFlag" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_NoteFlag" ColumnName="slm_NoteFlag" />
+          <ScalarProperty Name="slm_NoteDetail" ColumnName="slm_NoteDetail" />
+          <ScalarProperty Name="slm_CreateDate" ColumnName="slm_CreateDate" />
+          <ScalarProperty Name="slm_CreateBy" ColumnName="slm_CreateBy" />
+          <ScalarProperty Name="slm_NoteId" ColumnName="slm_NoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_screen">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_screen">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_screen">
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_TableName" ColumnName="slm_TableName" />
+          <ScalarProperty Name="slm_ScreenCode" ColumnName="slm_ScreenCode" />
+          <ScalarProperty Name="slm_ActionType" ColumnName="slm_ActionType" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_cp_screen_id" ColumnName="slm_cp_screen_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_hp_payment_snap">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_hp_payment_snap">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_hp_payment_snap">
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Source" ColumnName="slm_Source" />
+          <ScalarProperty Name="slm_Update_Date" ColumnName="slm_Update_Date" />
+          <ScalarProperty Name="slm_Tran_Date" ColumnName="slm_Tran_Date" />
+          <ScalarProperty Name="slm_Rec_Amount" ColumnName="slm_Rec_Amount" />
+          <ScalarProperty Name="slm_Rec_No" ColumnName="slm_Rec_No" />
+          <ScalarProperty Name="slm_Rec_by" ColumnName="slm_Rec_by" />
+          <ScalarProperty Name="slm_Inst_No" ColumnName="slm_Inst_No" />
+          <ScalarProperty Name="slm_Ins_No_Desc" ColumnName="slm_Ins_No_Desc" />
+          <ScalarProperty Name="slm_Tran_Code" ColumnName="slm_Tran_Code" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_config_product_payment">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_product_payment">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_product_payment">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_PaymentCode" ColumnName="slm_PaymentCode" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_id" ColumnName="slm_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance">
+          <ScalarProperty Name="slm_BeneficiaryId" ColumnName="slm_BeneficiaryId" />
+          <ScalarProperty Name="slm_Reference2" ColumnName="slm_Reference2" />
+          <ScalarProperty Name="slm_Reference1" ColumnName="slm_Reference1" />
+          <ScalarProperty Name="slm_IsSMS8" ColumnName="slm_IsSMS8" />
+          <ScalarProperty Name="slm_IsSMS70" ColumnName="slm_IsSMS70" />
+          <ScalarProperty Name="slm_PeriodYear" ColumnName="slm_PeriodYear" />
+          <ScalarProperty Name="slm_PeriodMonth" ColumnName="slm_PeriodMonth" />
+          <ScalarProperty Name="slm_InsurancecarTypeId" ColumnName="slm_InsurancecarTypeId" />
+          <ScalarProperty Name="slm_GenSMSReceiveNoDate" ColumnName="slm_GenSMSReceiveNoDate" />
+          <ScalarProperty Name="slm_GenSMSReceiveNo" ColumnName="slm_GenSMSReceiveNo" />
+          <ScalarProperty Name="slm_ActReferenceNote" ColumnName="slm_ActReferenceNote" />
+          <ScalarProperty Name="slm_PolicyReferenceNote" ColumnName="slm_PolicyReferenceNote" />
+          <ScalarProperty Name="slm_ObtPro08FlagDate" ColumnName="slm_ObtPro08FlagDate" />
+          <ScalarProperty Name="slm_ActCancelDate" ColumnName="slm_ActCancelDate" />
+          <ScalarProperty Name="slm_ActCancelId" ColumnName="slm_ActCancelId" />
+          <ScalarProperty Name="slm_PolicyCancelDate" ColumnName="slm_PolicyCancelDate" />
+          <ScalarProperty Name="slm_PolicyCancelId" ColumnName="slm_PolicyCancelId" />
+          <ScalarProperty Name="slm_ActIncentiveCancelDate" ColumnName="slm_ActIncentiveCancelDate" />
+          <ScalarProperty Name="slm_IncentiveCancelDate" ColumnName="slm_IncentiveCancelDate" />
+          <ScalarProperty Name="slm_ActDiscountAmt" ColumnName="slm_ActDiscountAmt" />
+          <ScalarProperty Name="slm_ActDiscountPercent" ColumnName="slm_ActDiscountPercent" />
+          <ScalarProperty Name="slm_ActVat1PercentBath" ColumnName="slm_ActVat1PercentBath" />
+          <ScalarProperty Name="slm_ActVat1Percent" ColumnName="slm_ActVat1Percent" />
+          <ScalarProperty Name="slm_ActSendDate" ColumnName="slm_ActSendDate" />
+          <ScalarProperty Name="slm_ClaimFlag" ColumnName="slm_ClaimFlag" />
+          <ScalarProperty Name="slm_ActIncentiveAmount" ColumnName="slm_ActIncentiveAmount" />
+          <ScalarProperty Name="slm_ActOV2BathIncentive" ColumnName="slm_ActOV2BathIncentive" />
+          <ScalarProperty Name="slm_ActOV2BathVat" ColumnName="slm_ActOV2BathVat" />
+          <ScalarProperty Name="slm_ActOV2Bath" ColumnName="slm_ActOV2Bath" />
+          <ScalarProperty Name="slm_ActOV1BathIncentive" ColumnName="slm_ActOV1BathIncentive" />
+          <ScalarProperty Name="slm_ActOV1BathVat" ColumnName="slm_ActOV1BathVat" />
+          <ScalarProperty Name="slm_ActOV1Bath" ColumnName="slm_ActOV1Bath" />
+          <ScalarProperty Name="slm_ActComBathIncentive" ColumnName="slm_ActComBathIncentive" />
+          <ScalarProperty Name="slm_ActComBathVat" ColumnName="slm_ActComBathVat" />
+          <ScalarProperty Name="slm_ActComBath" ColumnName="slm_ActComBath" />
+          <ScalarProperty Name="slm_PolicyIncentiveAmount" ColumnName="slm_PolicyIncentiveAmount" />
+          <ScalarProperty Name="slm_PolicyOV2BathIncentive" ColumnName="slm_PolicyOV2BathIncentive" />
+          <ScalarProperty Name="slm_PolicyOV2BathVat" ColumnName="slm_PolicyOV2BathVat" />
+          <ScalarProperty Name="slm_PolicyOV2Bath" ColumnName="slm_PolicyOV2Bath" />
+          <ScalarProperty Name="slm_PolicyOV1BathIncentive" ColumnName="slm_PolicyOV1BathIncentive" />
+          <ScalarProperty Name="slm_PolicyOV1BathVat" ColumnName="slm_PolicyOV1BathVat" />
+          <ScalarProperty Name="slm_PolicyOV1Bath" ColumnName="slm_PolicyOV1Bath" />
+          <ScalarProperty Name="slm_PolicyComBathIncentive" ColumnName="slm_PolicyComBathIncentive" />
+          <ScalarProperty Name="slm_PolicyComBathVat" ColumnName="slm_PolicyComBathVat" />
+          <ScalarProperty Name="slm_PolicyComBath" ColumnName="slm_PolicyComBath" />
+          <ScalarProperty Name="slm_ActIncentiveDate" ColumnName="slm_ActIncentiveDate" />
+          <ScalarProperty Name="slm_ActIncentiveFlag" ColumnName="slm_ActIncentiveFlag" />
+          <ScalarProperty Name="slm_ActPayBranchCode" ColumnName="slm_ActPayBranchCode" />
+          <ScalarProperty Name="slm_ActPayOptionId" ColumnName="slm_ActPayOptionId" />
+          <ScalarProperty Name="slm_RemarkAct" ColumnName="slm_RemarkAct" />
+          <ScalarProperty Name="slm_RemarkPolicy" ColumnName="slm_RemarkPolicy" />
+          <ScalarProperty Name="slm_PayBranchCode" ColumnName="slm_PayBranchCode" />
+          <ScalarProperty Name="slm_PayOptionId" ColumnName="slm_PayOptionId" />
+          <ScalarProperty Name="slm_Receiver" ColumnName="slm_Receiver" />
+          <ScalarProperty Name="slm_SendDocBrandCode" ColumnName="slm_SendDocBrandCode" />
+          <ScalarProperty Name="slm_SendDocFlag" ColumnName="slm_SendDocFlag" />
+          <ScalarProperty Name="slm_Grade" ColumnName="slm_Grade" />
+          <ScalarProperty Name="slm_Vat1PercentBath" ColumnName="slm_Vat1PercentBath" />
+          <ScalarProperty Name="slm_DiscountPercent" ColumnName="slm_DiscountPercent" />
+          <ScalarProperty Name="slm_Vat1Percent" ColumnName="slm_Vat1Percent" />
+          <ScalarProperty Name="slm_PolicyCostSave" ColumnName="slm_PolicyCostSave" />
+          <ScalarProperty Name="slm_Voluntary_First_Create_Date" ColumnName="slm_Voluntary_First_Create_Date" />
+          <ScalarProperty Name="slm_RemarkPayment" ColumnName="slm_RemarkPayment" />
+          <ScalarProperty Name="slm_Need_PolicyFlagDate" ColumnName="slm_Need_PolicyFlagDate" />
+          <ScalarProperty Name="slm_Need_PolicyFlag" ColumnName="slm_Need_PolicyFlag" />
+          <ScalarProperty Name="slm_Need_CompulsoryFlagDate" ColumnName="slm_Need_CompulsoryFlagDate" />
+          <ScalarProperty Name="slm_Need_CompulsoryFlag" ColumnName="slm_Need_CompulsoryFlag" />
+          <ScalarProperty Name="slm_DriverLicenseFileSize" ColumnName="slm_DriverLicenseFileSize" />
+          <ScalarProperty Name="slm_DriverLicenseFilePath" ColumnName="slm_DriverLicenseFilePath" />
+          <ScalarProperty Name="slm_DriverLicenseiFileName" ColumnName="slm_DriverLicenseiFileName" />
+          <ScalarProperty Name="slm_50TawiFileSize" ColumnName="slm_50TawiFileSize" />
+          <ScalarProperty Name="slm_50TawiFilePath" ColumnName="slm_50TawiFilePath" />
+          <ScalarProperty Name="slm_50TawiFileName" ColumnName="slm_50TawiFileName" />
+          <ScalarProperty Name="slm_CreditFileSize" ColumnName="slm_CreditFileSize" />
+          <ScalarProperty Name="slm_CreditFilePath" ColumnName="slm_CreditFilePath" />
+          <ScalarProperty Name="slm_CreditFileName" ColumnName="slm_CreditFileName" />
+          <ScalarProperty Name="slm_Need_DriverLicenseFlag" ColumnName="slm_Need_DriverLicenseFlag" />
+          <ScalarProperty Name="slm_Need_50TawiFlag" ColumnName="slm_Need_50TawiFlag" />
+          <ScalarProperty Name="slm_Need_CreditFlag" ColumnName="slm_Need_CreditFlag" />
+          <ScalarProperty Name="slm_IncentiveDate" ColumnName="slm_IncentiveDate" />
+          <ScalarProperty Name="slm_IncentiveFlag" ColumnName="slm_IncentiveFlag" />
+          <ScalarProperty Name="slm_ObtPro08Flag" ColumnName="slm_ObtPro08Flag" />
+          <ScalarProperty Name="slm_ActamountPeriod" ColumnName="slm_ActamountPeriod" />
+          <ScalarProperty Name="slm_ActPayMethodId" ColumnName="slm_ActPayMethodId" />
+          <ScalarProperty Name="slm_ActStamp" ColumnName="slm_ActStamp" />
+          <ScalarProperty Name="slm_ActVat" ColumnName="slm_ActVat" />
+          <ScalarProperty Name="slm_ActNetPremium" ColumnName="slm_ActNetPremium" />
+          <ScalarProperty Name="slm_ActComId" ColumnName="slm_ActComId" />
+          <ScalarProperty Name="slm_ActGrossPremium" ColumnName="slm_ActGrossPremium" />
+          <ScalarProperty Name="slm_PolicyAmountPeriod" ColumnName="slm_PolicyAmountPeriod" />
+          <ScalarProperty Name="slm_PolicyPayMethodId" ColumnName="slm_PolicyPayMethodId" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_PolicyCost" ColumnName="slm_PolicyCost" />
+          <ScalarProperty Name="slm_PolicyNetGrossPremium" ColumnName="slm_PolicyNetGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossPremiumTotal" ColumnName="slm_PolicyGrossPremiumTotal" />
+          <ScalarProperty Name="slm_PolicyGrossPremium" ColumnName="slm_PolicyGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossStamp" ColumnName="slm_PolicyGrossStamp" />
+          <ScalarProperty Name="slm_PolicyGrossVat" ColumnName="slm_PolicyGrossVat" />
+          <ScalarProperty Name="slm_PolicyDiscountAmt" ColumnName="slm_PolicyDiscountAmt" />
+          <ScalarProperty Name="slm_InsuranceComId" ColumnName="slm_InsuranceComId" />
+          <ScalarProperty Name="slm_ReceiveDate" ColumnName="slm_ReceiveDate" />
+          <ScalarProperty Name="slm_ReceiveNo" ColumnName="slm_ReceiveNo" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_EngineNo" ColumnName="slm_EngineNo" />
+          <ScalarProperty Name="slm_ChassisNo" ColumnName="slm_ChassisNo" />
+          <ScalarProperty Name="slm_LicenseNo" ColumnName="slm_LicenseNo" />
+          <ScalarProperty Name="slm_CoverageTypeId" ColumnName="slm_CoverageTypeId" />
+          <ScalarProperty Name="slm_RedbookKKKeyExt" ColumnName="slm_RedbookKKKeyExt" />
+          <ScalarProperty Name="slm_RedbookYearGroupExt" ColumnName="slm_RedbookYearGroupExt" />
+          <ScalarProperty Name="slm_RedbookModelCodeExt" ColumnName="slm_RedbookModelCodeExt" />
+          <ScalarProperty Name="slm_RedbookBrandCodeExt" ColumnName="slm_RedbookBrandCodeExt" />
+          <ScalarProperty Name="slm_RedbookKKKey" ColumnName="slm_RedbookKKKey" />
+          <ScalarProperty Name="slm_RedbookYearGroup" ColumnName="slm_RedbookYearGroup" />
+          <ScalarProperty Name="slm_RedbookModelCode" ColumnName="slm_RedbookModelCode" />
+          <ScalarProperty Name="slm_RedbookBrandCode" ColumnName="slm_RedbookBrandCode" />
+          <ScalarProperty Name="slm_CC" ColumnName="slm_CC" />
+          <ScalarProperty Name="slm_ContractNo" ColumnName="slm_ContractNo" />
+          <ScalarProperty Name="slm_ActIssueBranch" ColumnName="slm_ActIssueBranch" />
+          <ScalarProperty Name="slm_ActIssuePlace" ColumnName="slm_ActIssuePlace" />
+          <ScalarProperty Name="slm_ActEndCoverDate" ColumnName="slm_ActEndCoverDate" />
+          <ScalarProperty Name="slm_ActStartCoverDate" ColumnName="slm_ActStartCoverDate" />
+          <ScalarProperty Name="slm_ActNo" ColumnName="slm_ActNo" />
+          <ScalarProperty Name="slm_ActPurchaseFlag" ColumnName="slm_ActPurchaseFlag" />
+          <ScalarProperty Name="slm_PolicyIssueBranch" ColumnName="slm_PolicyIssueBranch" />
+          <ScalarProperty Name="slm_PolicyIssuePlace" ColumnName="slm_PolicyIssuePlace" />
+          <ScalarProperty Name="slm_PolicyEndCoverDate" ColumnName="slm_PolicyEndCoverDate" />
+          <ScalarProperty Name="slm_PolicyStartCoverDate" ColumnName="slm_PolicyStartCoverDate" />
+          <ScalarProperty Name="slm_PolicySaleType" ColumnName="slm_PolicySaleType" />
+          <ScalarProperty Name="slm_PolicyNo" ColumnName="slm_PolicyNo" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_RenewInsureId" ColumnName="slm_RenewInsureId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_notify_renewinsurance_report">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_notify_renewinsurance_report">
+        <MappingFragment StoreEntitySet="kkslm_tr_notify_renewinsurance_report">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_SumInsured_Year2_FT" ColumnName="slm_SumInsured_Year2_FT" />
+          <ScalarProperty Name="slm_KKKey" ColumnName="slm_KKKey" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Export_Date" ColumnName="slm_Export_Date" />
+          <ScalarProperty Name="slm_Export_Flag" ColumnName="slm_Export_Flag" />
+          <ScalarProperty Name="slm_CitizenId_Committe3" ColumnName="slm_CitizenId_Committe3" />
+          <ScalarProperty Name="slm_LastName_Committee3" ColumnName="slm_LastName_Committee3" />
+          <ScalarProperty Name="slm_Name_Committee3" ColumnName="slm_Name_Committee3" />
+          <ScalarProperty Name="slm_Title_Id_Committee3" ColumnName="slm_Title_Id_Committee3" />
+          <ScalarProperty Name="slm_CitizenId_Committe2" ColumnName="slm_CitizenId_Committe2" />
+          <ScalarProperty Name="slm_LastName_Committee2" ColumnName="slm_LastName_Committee2" />
+          <ScalarProperty Name="slm_Name_Committee2" ColumnName="slm_Name_Committee2" />
+          <ScalarProperty Name="slm_Title_Id_Committee2" ColumnName="slm_Title_Id_Committee2" />
+          <ScalarProperty Name="slm_CitizenId_Committe1" ColumnName="slm_CitizenId_Committe1" />
+          <ScalarProperty Name="slm_LastName_Committee1" ColumnName="slm_LastName_Committee1" />
+          <ScalarProperty Name="slm_Name_Committee1" ColumnName="slm_Name_Committee1" />
+          <ScalarProperty Name="slm_Title_Id_Committee1" ColumnName="slm_Title_Id_Committee1" />
+          <ScalarProperty Name="slm_TaxNo" ColumnName="slm_TaxNo" />
+          <ScalarProperty Name="slm_MaritalStatus" ColumnName="slm_MaritalStatus" />
+          <ScalarProperty Name="slm_Occupation" ColumnName="slm_Occupation" />
+          <ScalarProperty Name="slm_Birthdate" ColumnName="slm_Birthdate" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_TelNo_1" ColumnName="slm_TelNo_1" />
+          <ScalarProperty Name="slm_Discount_Fleet" ColumnName="slm_Discount_Fleet" />
+          <ScalarProperty Name="slm_Discouont_Good_History" ColumnName="slm_Discouont_Good_History" />
+          <ScalarProperty Name="slm_Zipcode_Receipt" ColumnName="slm_Zipcode_Receipt" />
+          <ScalarProperty Name="slm_ProvinceId_Receipt" ColumnName="slm_ProvinceId_Receipt" />
+          <ScalarProperty Name="slm_AmphurId_Receipt" ColumnName="slm_AmphurId_Receipt" />
+          <ScalarProperty Name="slm_TambolId_Receipt" ColumnName="slm_TambolId_Receipt" />
+          <ScalarProperty Name="slm_Street_Receipt" ColumnName="slm_Street_Receipt" />
+          <ScalarProperty Name="slm_Soi_Receipt" ColumnName="slm_Soi_Receipt" />
+          <ScalarProperty Name="slm_Building_Receipt" ColumnName="slm_Building_Receipt" />
+          <ScalarProperty Name="slm_Village_Receipt" ColumnName="slm_Village_Receipt" />
+          <ScalarProperty Name="slm_House_No_Receipt" ColumnName="slm_House_No_Receipt" />
+          <ScalarProperty Name="slm_Name_Receipt" ColumnName="slm_Name_Receipt" />
+          <ScalarProperty Name="slm_Title_Id_Receipt" ColumnName="slm_Title_Id_Receipt" />
+          <ScalarProperty Name="slm_Birthdate_Driver2" ColumnName="slm_Birthdate_Driver2" />
+          <ScalarProperty Name="slm_Birthdate_Driver1" ColumnName="slm_Birthdate_Driver1" />
+          <ScalarProperty Name="slm_Remark" ColumnName="slm_Remark" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_NetPremium_Year2" ColumnName="slm_NetPremium_Year2" />
+          <ScalarProperty Name="slm_SumInsured_Year2" ColumnName="slm_SumInsured_Year2" />
+          <ScalarProperty Name="slm_NetPremium_Year1" ColumnName="slm_NetPremium_Year1" />
+          <ScalarProperty Name="slm_SumInsured_Year1" ColumnName="slm_SumInsured_Year1" />
+          <ScalarProperty Name="slm_WeightPerTon" ColumnName="slm_WeightPerTon" />
+          <ScalarProperty Name="slm_Cc" ColumnName="slm_Cc" />
+          <ScalarProperty Name="slm_ModelYearId" ColumnName="slm_ModelYearId" />
+          <ScalarProperty Name="slm_EngineNo" ColumnName="slm_EngineNo" />
+          <ScalarProperty Name="slm_VIN" ColumnName="slm_VIN" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_Cartype" ColumnName="slm_Cartype" />
+          <ScalarProperty Name="slm_ModelCode" ColumnName="slm_ModelCode" />
+          <ScalarProperty Name="slm_BrandCode" ColumnName="slm_BrandCode" />
+          <ScalarProperty Name="slm_InsuranceCarTypeId" ColumnName="slm_InsuranceCarTypeId" />
+          <ScalarProperty Name="slm_VehicleNo" ColumnName="slm_VehicleNo" />
+          <ScalarProperty Name="slm_CoverageEndDate" ColumnName="slm_CoverageEndDate" />
+          <ScalarProperty Name="slm_CoverageStartDate" ColumnName="slm_CoverageStartDate" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_CoverageTypeId" ColumnName="slm_CoverageTypeId" />
+          <ScalarProperty Name="slm_Zipcode" ColumnName="slm_Zipcode" />
+          <ScalarProperty Name="slm_ProvinceId" ColumnName="slm_ProvinceId" />
+          <ScalarProperty Name="slm_AmphurId" ColumnName="slm_AmphurId" />
+          <ScalarProperty Name="slm_TambolId" ColumnName="slm_TambolId" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Building" ColumnName="slm_Building" />
+          <ScalarProperty Name="slm_Village" ColumnName="slm_Village" />
+          <ScalarProperty Name="slm_Moo" ColumnName="slm_Moo" />
+          <ScalarProperty Name="slm_House_No" ColumnName="slm_House_No" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Id" ColumnName="slm_Title_Id" />
+          <ScalarProperty Name="slm_CardTypeId" ColumnName="slm_CardTypeId" />
+          <ScalarProperty Name="slm_SubCampaignName" ColumnName="slm_SubCampaignName" />
+          <ScalarProperty Name="slm_CampaignName" ColumnName="slm_CampaignName" />
+          <ScalarProperty Name="slm_InsReceiveNo" ColumnName="slm_InsReceiveNo" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_PolicyNoOld" ColumnName="slm_PolicyNoOld" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_InsPayDate" ColumnName="slm_InsPayDate" />
+          <ScalarProperty Name="slm_InsReceiveDate" ColumnName="slm_InsReceiveDate" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_notify_act_report">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_notify_act_report">
+        <MappingFragment StoreEntitySet="kkslm_tr_notify_act_report">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Export_Date" ColumnName="slm_Export_Date" />
+          <ScalarProperty Name="slm_Export_Flag" ColumnName="slm_Export_Flag" />
+          <ScalarProperty Name="slm_CitizenId_Committe3" ColumnName="slm_CitizenId_Committe3" />
+          <ScalarProperty Name="slm_LastName_Committee3" ColumnName="slm_LastName_Committee3" />
+          <ScalarProperty Name="slm_Name_Committee3" ColumnName="slm_Name_Committee3" />
+          <ScalarProperty Name="slm_TitleId_Committee3" ColumnName="slm_TitleId_Committee3" />
+          <ScalarProperty Name="slm_CitizenId_Committe2" ColumnName="slm_CitizenId_Committe2" />
+          <ScalarProperty Name="slm_LastName_Committee2" ColumnName="slm_LastName_Committee2" />
+          <ScalarProperty Name="slm_Name_Committee2" ColumnName="slm_Name_Committee2" />
+          <ScalarProperty Name="slm_TitleId_Committee2" ColumnName="slm_TitleId_Committee2" />
+          <ScalarProperty Name="slm_CitizenId_Committe1" ColumnName="slm_CitizenId_Committe1" />
+          <ScalarProperty Name="slm_LastName_Committee1" ColumnName="slm_LastName_Committee1" />
+          <ScalarProperty Name="slm_Name_Committee1" ColumnName="slm_Name_Committee1" />
+          <ScalarProperty Name="slm_TitleId_Committee1" ColumnName="slm_TitleId_Committee1" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_TelNoContact" ColumnName="slm_TelNoContact" />
+          <ScalarProperty Name="slm_Remark" ColumnName="slm_Remark" />
+          <ScalarProperty Name="slm_Zipcode" ColumnName="slm_Zipcode" />
+          <ScalarProperty Name="slm_ProvinceId" ColumnName="slm_ProvinceId" />
+          <ScalarProperty Name="slm_AmphurId" ColumnName="slm_AmphurId" />
+          <ScalarProperty Name="slm_TambolId" ColumnName="slm_TambolId" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Building" ColumnName="slm_Building" />
+          <ScalarProperty Name="slm_Village" ColumnName="slm_Village" />
+          <ScalarProperty Name="slm_Moo" ColumnName="slm_Moo" />
+          <ScalarProperty Name="slm_House_No" ColumnName="slm_House_No" />
+          <ScalarProperty Name="slm_EndDateAct" ColumnName="slm_EndDateAct" />
+          <ScalarProperty Name="slm_StartDateAct" ColumnName="slm_StartDateAct" />
+          <ScalarProperty Name="slm_NetPremiumIncludeVat" ColumnName="slm_NetPremiumIncludeVat" />
+          <ScalarProperty Name="slm_NetPremium" ColumnName="slm_NetPremium" />
+          <ScalarProperty Name="slm_EngineNo" ColumnName="slm_EngineNo" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_InsReceiveNo" ColumnName="slm_InsReceiveNo" />
+          <ScalarProperty Name="slm_BrandCode" ColumnName="slm_BrandCode" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_TitleId" ColumnName="slm_TitleId" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_ActNo" ColumnName="slm_ActNo" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_lead">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_lead">
+        <MappingFragment StoreEntitySet="kkslm_tr_lead">
+          <ScalarProperty Name="slm_TicketIdRefer" ColumnName="slm_TicketIdRefer" />
+          <ScalarProperty Name="slm_OldSubStatus" ColumnName="slm_OldSubStatus" />
+          <ScalarProperty Name="slm_CurrentSLA" ColumnName="slm_CurrentSLA" />
+          <ScalarProperty Name="slm_TotalWork" ColumnName="slm_TotalWork" />
+          <ScalarProperty Name="slm_TotalAlert" ColumnName="slm_TotalAlert" />
+          <ScalarProperty Name="slm_ThisWork" ColumnName="slm_ThisWork" />
+          <ScalarProperty Name="slm_SubStatus" ColumnName="slm_SubStatus" />
+          <ScalarProperty Name="slm_TitleId" ColumnName="slm_TitleId" />
+          <ScalarProperty Name="slm_NextContactDate" ColumnName="slm_NextContactDate" />
+          <ScalarProperty Name="slm_StatusDateSource" ColumnName="slm_StatusDateSource" />
+          <ScalarProperty Name="slm_ExternalSystem" ColumnName="slm_ExternalSystem" />
+          <ScalarProperty Name="slm_ExternalSubStatusDesc" ColumnName="slm_ExternalSubStatusDesc" />
+          <ScalarProperty Name="slm_ExternalSubStatus" ColumnName="slm_ExternalSubStatus" />
+          <ScalarProperty Name="slm_ExternalStatus" ColumnName="slm_ExternalStatus" />
+          <ScalarProperty Name="coc_MarketingOwner_Position" ColumnName="coc_MarketingOwner_Position" />
+          <ScalarProperty Name="coc_LastOwner_Position" ColumnName="coc_LastOwner_Position" />
+          <ScalarProperty Name="slm_AssignType" ColumnName="slm_AssignType" />
+          <ScalarProperty Name="slm_ContractNoRefer" ColumnName="slm_ContractNoRefer" />
+          <ScalarProperty Name="slm_CreatedBy_Position" ColumnName="slm_CreatedBy_Position" />
+          <ScalarProperty Name="slm_Delegate_Position" ColumnName="slm_Delegate_Position" />
+          <ScalarProperty Name="slm_Owner_Position" ColumnName="slm_Owner_Position" />
+          <ScalarProperty Name="coc_IsCOCDate" ColumnName="coc_IsCOCDate" />
+          <ScalarProperty Name="coc_IsCOC" ColumnName="coc_IsCOC" />
+          <ScalarProperty Name="coc_RoutingId" ColumnName="coc_RoutingId" />
+          <ScalarProperty Name="coc_MarketingOwner" ColumnName="coc_MarketingOwner" />
+          <ScalarProperty Name="coc_Action" ColumnName="coc_Action" />
+          <ScalarProperty Name="coc_SubStatus" ColumnName="coc_SubStatus" />
+          <ScalarProperty Name="coc_Status" ColumnName="coc_Status" />
+          <ScalarProperty Name="coc_RouteBackEmpCode" ColumnName="coc_RouteBackEmpCode" />
+          <ScalarProperty Name="coc_RouteBackTeam" ColumnName="coc_RouteBackTeam" />
+          <ScalarProperty Name="coc_Type" ColumnName="coc_Type" />
+          <ScalarProperty Name="coc_FlowType" ColumnName="coc_FlowType" />
+          <ScalarProperty Name="coc_Appno" ColumnName="coc_Appno" />
+          <ScalarProperty Name="coc_CurrentTeam" ColumnName="coc_CurrentTeam" />
+          <ScalarProperty Name="coc_NextSLA" ColumnName="coc_NextSLA" />
+          <ScalarProperty Name="coc_EmailFlag" ColumnName="coc_EmailFlag" />
+          <ScalarProperty Name="coc_Counting" ColumnName="coc_Counting" />
+          <ScalarProperty Name="coc_StatusDate" ColumnName="coc_StatusDate" />
+          <ScalarProperty Name="coc_StatusBy" ColumnName="coc_StatusBy" />
+          <ScalarProperty Name="coc_CurrentRuleState" ColumnName="coc_CurrentRuleState" />
+          <ScalarProperty Name="coc_FirstTeamAssign" ColumnName="coc_FirstTeamAssign" />
+          <ScalarProperty Name="coc_FirstAssign" ColumnName="coc_FirstAssign" />
+          <ScalarProperty Name="coc_AssignedType" ColumnName="coc_AssignedType" />
+          <ScalarProperty Name="coc_AssignedFlag" ColumnName="coc_AssignedFlag" />
+          <ScalarProperty Name="coc_AssignedDate" ColumnName="coc_AssignedDate" />
+          <ScalarProperty Name="coc_AssignedBy" ColumnName="coc_AssignedBy" />
+          <ScalarProperty Name="coc_OldDelegate" ColumnName="coc_OldDelegate" />
+          <ScalarProperty Name="coc_Delegate" ColumnName="coc_Delegate" />
+          <ScalarProperty Name="coc_OldLastOwner" ColumnName="coc_OldLastOwner" />
+          <ScalarProperty Name="coc_LastOwner" ColumnName="coc_LastOwner" />
+          <ScalarProperty Name="coc_System" ColumnName="coc_System" />
+          <ScalarProperty Name="slm_NextSLA" ColumnName="slm_NextSLA" />
+          <ScalarProperty Name="slm_Product_Group_Id" ColumnName="slm_Product_Group_Id" />
+          <ScalarProperty Name="slm_Product_Name" ColumnName="slm_Product_Name" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_Reference" ColumnName="slm_Reference" />
+          <ScalarProperty Name="slm_DealerName" ColumnName="slm_DealerName" />
+          <ScalarProperty Name="slm_DealerCode" ColumnName="slm_DealerCode" />
+          <ScalarProperty Name="slm_CreatedBy_Branch" ColumnName="slm_CreatedBy_Branch" />
+          <ScalarProperty Name="slm_Delegate_Branch" ColumnName="slm_Delegate_Branch" />
+          <ScalarProperty Name="slm_Owner_Branch" ColumnName="slm_Owner_Branch" />
+          <ScalarProperty Name="slm_DelegateDate" ColumnName="slm_DelegateDate" />
+          <ScalarProperty Name="slm_TransferDate" ColumnName="slm_TransferDate" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_NoteFlag" ColumnName="slm_NoteFlag" />
+          <ScalarProperty Name="slm_OldCounting" ColumnName="slm_OldCounting" />
+          <ScalarProperty Name="slm_Delegate_Flag" ColumnName="slm_Delegate_Flag" />
+          <ScalarProperty Name="slm_SmsFlag" ColumnName="slm_SmsFlag" />
+          <ScalarProperty Name="slm_EmailFlag" ColumnName="slm_EmailFlag" />
+          <ScalarProperty Name="slm_Counting" ColumnName="slm_Counting" />
+          <ScalarProperty Name="slm_LastworkId" ColumnName="slm_LastworkId" />
+          <ScalarProperty Name="slm_StaffId" ColumnName="slm_StaffId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_StatusDate" ColumnName="slm_StatusDate" />
+          <ScalarProperty Name="slm_StatusBy" ColumnName="slm_StatusBy" />
+          <ScalarProperty Name="slm_CurrentRuleState" ColumnName="slm_CurrentRuleState" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_AvailableTime" ColumnName="slm_AvailableTime" />
+          <ScalarProperty Name="slm_AssignedFlag" ColumnName="slm_AssignedFlag" />
+          <ScalarProperty Name="slm_AssignedDate" ColumnName="slm_AssignedDate" />
+          <ScalarProperty Name="slm_AssignedBy" ColumnName="slm_AssignedBy" />
+          <ScalarProperty Name="slm_Delegate" ColumnName="slm_Delegate" />
+          <ScalarProperty Name="slm_OldOwner" ColumnName="slm_OldOwner" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_ChannelId" ColumnName="slm_ChannelId" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_Ext_1" ColumnName="slm_Ext_1" />
+          <ScalarProperty Name="slm_TelNo_1" ColumnName="slm_TelNo_1" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_ticketId" ColumnName="slm_ticketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_hp_payment_pending">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_hp_payment_pending">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_hp_payment_pending">
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Update_Date" ColumnName="slm_Update_Date" />
+          <ScalarProperty Name="slm_Tran_Date" ColumnName="slm_Tran_Date" />
+          <ScalarProperty Name="slm_Rec_Amount" ColumnName="slm_Rec_Amount" />
+          <ScalarProperty Name="slm_Rec_No" ColumnName="slm_Rec_No" />
+          <ScalarProperty Name="slm_Rec_by" ColumnName="slm_Rec_by" />
+          <ScalarProperty Name="slm_Inst_No" ColumnName="slm_Inst_No" />
+          <ScalarProperty Name="slm_Ins_No_Desc" ColumnName="slm_Ins_No_Desc" />
+          <ScalarProperty Name="slm_Tran_Code" ColumnName="slm_Tran_Code" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_hp_policyno_actno_pending">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_hp_policyno_actno_pending">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_hp_policyno_actno_pending">
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Create_Time" ColumnName="slm_Create_Time" />
+          <ScalarProperty Name="slm_Create_Date" ColumnName="slm_Create_Date" />
+          <ScalarProperty Name="slm_Create_By" ColumnName="slm_Create_By" />
+          <ScalarProperty Name="slm_Main_Time" ColumnName="slm_Main_Time" />
+          <ScalarProperty Name="slm_Main_Date" ColumnName="slm_Main_Date" />
+          <ScalarProperty Name="slm_Main_By" ColumnName="slm_Main_By" />
+          <ScalarProperty Name="slm_Policy_No" ColumnName="slm_Policy_No" />
+          <ScalarProperty Name="slm_Policy_Type" ColumnName="slm_Policy_Type" />
+          <ScalarProperty Name="slm_Policy_Year" ColumnName="slm_Policy_Year" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_notification">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_notification">
+        <MappingFragment StoreEntitySet="kkslm_tr_notification">
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_ReadDate" ColumnName="slm_ReadDate" />
+          <ScalarProperty Name="slm_ViewDate" ColumnName="slm_ViewDate" />
+          <ScalarProperty Name="slm_Username" ColumnName="slm_Username" />
+          <ScalarProperty Name="slm_Detail" ColumnName="slm_Detail" />
+          <ScalarProperty Name="slm_Title" ColumnName="slm_Title" />
+          <ScalarProperty Name="slm_NotificationDate" ColumnName="slm_NotificationDate" />
+          <ScalarProperty Name="slm_NotificationType" ColumnName="slm_NotificationType" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_NotificationId" ColumnName="slm_NotificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_SLMBatch_OBT_PRO_10_TelesalesPerformance" FunctionName="SLMDBModel.Store.SP_SLMBatch_OBT_PRO_10_TelesalesPerformance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SLMDBModel.SP_SLMBatch_OBT_PRO_10_TelesalesPerformance_Result">
+          <ScalarProperty Name="DataCount" ColumnName="DataCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="kkslm_ms_config_purge_day">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_config_purge_day">
+        <MappingFragment StoreEntitySet="kkslm_ms_config_purge_day">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_NumOfDay" ColumnName="slm_NumOfDay" />
+          <ScalarProperty Name="slm_TypeDescription" ColumnName="slm_TypeDescription" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_BatchCode" ColumnName="slm_BatchCode" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ws_log">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ws_log">
+        <MappingFragment StoreEntitySet="kkslm_ws_log">
+          <ScalarProperty Name="slm_CauseError" ColumnName="slm_CauseError" />
+          <ScalarProperty Name="slm_ResponseTime" ColumnName="slm_ResponseTime" />
+          <ScalarProperty Name="slm_ResponseDate" ColumnName="slm_ResponseDate" />
+          <ScalarProperty Name="slm_ResponseDesc" ColumnName="slm_ResponseDesc" />
+          <ScalarProperty Name="slm_ResponseCode" ColumnName="slm_ResponseCode" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_OutputXml" ColumnName="slm_OutputXml" />
+          <ScalarProperty Name="slm_InputXml" ColumnName="slm_InputXml" />
+          <ScalarProperty Name="slm_Username" ColumnName="slm_Username" />
+          <ScalarProperty Name="slm_ChannelId" ColumnName="slm_ChannelId" />
+          <ScalarProperty Name="slm_Operation" ColumnName="slm_Operation" />
+          <ScalarProperty Name="slm_OperationDate" ColumnName="slm_OperationDate" />
+          <ScalarProperty Name="slm_ws_LogId" ColumnName="slm_ws_LogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMT_OBT_ADDRESS">
+      <EntityTypeMapping TypeName="SLMDBModel.CMT_OBT_ADDRESS">
+        <MappingFragment StoreEntitySet="CMT_OBT_ADDRESS">
+          <ScalarProperty Name="Vat_Flag" ColumnName="Vat_Flag" />
+          <ScalarProperty Name="Receipt_Flag" ColumnName="Receipt_Flag" />
+          <ScalarProperty Name="Send_Flag" ColumnName="Send_Flag" />
+          <ScalarProperty Name="Contract_No" ColumnName="Contract_No" />
+          <ScalarProperty Name="Running_seq" ColumnName="Running_seq" />
+          <ScalarProperty Name="OBT_Flag" ColumnName="OBT_Flag" />
+          <ScalarProperty Name="Is_Normal" ColumnName="Is_Normal" />
+          <ScalarProperty Name="Mobile_Phone" ColumnName="Mobile_Phone" />
+          <ScalarProperty Name="Home_Phone" ColumnName="Home_Phone" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Amphur" ColumnName="Amphur" />
+          <ScalarProperty Name="Tambon" ColumnName="Tambon" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Soi" ColumnName="Soi" />
+          <ScalarProperty Name="Village" ColumnName="Village" />
+          <ScalarProperty Name="Building" ColumnName="Building" />
+          <ScalarProperty Name="Moo" ColumnName="Moo" />
+          <ScalarProperty Name="House_No" ColumnName="House_No" />
+          <ScalarProperty Name="Contract_Address" ColumnName="Contract_Address" />
+          <ScalarProperty Name="Address_Type" ColumnName="Address_Type" />
+          <ScalarProperty Name="Customer_Key" ColumnName="Customer_Key" />
+          <ScalarProperty Name="Cmt_Address_Id" ColumnName="Cmt_Address_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_preleadportmonitor">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_preleadportmonitor">
+        <MappingFragment StoreEntitySet="kkslm_tr_preleadportmonitor">
+          <ScalarProperty Name="slm_TKSFlag" ColumnName="slm_TKSFlag" />
+          <ScalarProperty Name="slm_PeriodYear" ColumnName="slm_PeriodYear" />
+          <ScalarProperty Name="slm_PeriodMonth" ColumnName="slm_PeriodMonth" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_PortStatus" ColumnName="slm_PortStatus" />
+          <ScalarProperty Name="slm_Exceptional" ColumnName="slm_Exceptional" />
+          <ScalarProperty Name="slm_Blaklist" ColumnName="slm_Blaklist" />
+          <ScalarProperty Name="slm_DeDup" ColumnName="slm_DeDup" />
+          <ScalarProperty Name="slm_Success" ColumnName="slm_Success" />
+          <ScalarProperty Name="slm_TotalPort" ColumnName="slm_TotalPort" />
+          <ScalarProperty Name="slm_CMTLot" ColumnName="slm_CMTLot" />
+          <ScalarProperty Name="slm_PreleadMonitorId" ColumnName="slm_PreleadMonitorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_renewinsurance_hp_policyno_actno_snap">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_renewinsurance_hp_policyno_actno_snap">
+        <MappingFragment StoreEntitySet="kkslm_tr_renewinsurance_hp_policyno_actno_snap">
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Source" ColumnName="slm_Source" />
+          <ScalarProperty Name="slm_Create_Time" ColumnName="slm_Create_Time" />
+          <ScalarProperty Name="slm_Create_Date" ColumnName="slm_Create_Date" />
+          <ScalarProperty Name="slm_Create_By" ColumnName="slm_Create_By" />
+          <ScalarProperty Name="slm_Main_Time" ColumnName="slm_Main_Time" />
+          <ScalarProperty Name="slm_Main_Date" ColumnName="slm_Main_Date" />
+          <ScalarProperty Name="slm_Main_By" ColumnName="slm_Main_By" />
+          <ScalarProperty Name="slm_Policy_No" ColumnName="slm_Policy_No" />
+          <ScalarProperty Name="slm_Policy_Type" ColumnName="slm_Policy_Type" />
+          <ScalarProperty Name="slm_Policy_Year" ColumnName="slm_Policy_Year" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead_temp">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead_temp">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead_temp">
+          <ScalarProperty Name="slm_Contract_App_Date" ColumnName="slm_Contract_App_Date" />
+          <ScalarProperty Name="slm_Reference2" ColumnName="slm_Reference2" />
+          <ScalarProperty Name="slm_Reference1" ColumnName="slm_Reference1" />
+          <ScalarProperty Name="slm_Voluntary_First_Create_Date" ColumnName="slm_Voluntary_First_Create_Date" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_IsForce" ColumnName="slm_IsForce" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_View_UpdateDate" ColumnName="slm_View_UpdateDate" />
+          <ScalarProperty Name="slm_Grade" ColumnName="slm_Grade" />
+          <ScalarProperty Name="slm_Guarantor_Telno3" ColumnName="slm_Guarantor_Telno3" />
+          <ScalarProperty Name="slm_Guarantor_Relation3_Org" ColumnName="slm_Guarantor_Relation3_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId3" ColumnName="slm_Guarantor_RelationId3" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id3" ColumnName="slm_Guarantor_Card_Id3" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name3" ColumnName="slm_Guarantor_Last_Name3" />
+          <ScalarProperty Name="slm_Guarantor_First_Name3" ColumnName="slm_Guarantor_First_Name3" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name3_Org" ColumnName="slm_Guarantor_Title_Name3_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId3" ColumnName="slm_Guarantor_TitleId3" />
+          <ScalarProperty Name="slm_Guarantor_Code3" ColumnName="slm_Guarantor_Code3" />
+          <ScalarProperty Name="slm_Guarantor_Telno2" ColumnName="slm_Guarantor_Telno2" />
+          <ScalarProperty Name="slm_Guarantor_Relation2_Org" ColumnName="slm_Guarantor_Relation2_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId2" ColumnName="slm_Guarantor_RelationId2" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id2" ColumnName="slm_Guarantor_Card_Id2" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name2" ColumnName="slm_Guarantor_Last_Name2" />
+          <ScalarProperty Name="slm_Guarantor_First_Name2" ColumnName="slm_Guarantor_First_Name2" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name2_Org" ColumnName="slm_Guarantor_Title_Name2_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId2" ColumnName="slm_Guarantor_TitleId2" />
+          <ScalarProperty Name="slm_Guarantor_Code2" ColumnName="slm_Guarantor_Code2" />
+          <ScalarProperty Name="slm_Guarantor_Telno1" ColumnName="slm_Guarantor_Telno1" />
+          <ScalarProperty Name="slm_Guarantor_Relation1_Org" ColumnName="slm_Guarantor_Relation1_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId1" ColumnName="slm_Guarantor_RelationId1" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id1" ColumnName="slm_Guarantor_Card_Id1" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name1" ColumnName="slm_Guarantor_Last_Name1" />
+          <ScalarProperty Name="slm_Guarantor_First_Name1" ColumnName="slm_Guarantor_First_Name1" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name1_Org" ColumnName="slm_Guarantor_Title_Name1_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId1" ColumnName="slm_Guarantor_TitleId1" />
+          <ScalarProperty Name="slm_Guarantor_Code1" ColumnName="slm_Guarantor_Code1" />
+          <ScalarProperty Name="slm_Compulsory_Company_Name" ColumnName="slm_Compulsory_Company_Name" />
+          <ScalarProperty Name="slm_Compulsory_Company_Code" ColumnName="slm_Compulsory_Company_Code" />
+          <ScalarProperty Name="slm_Compulsory_Gross_Premium" ColumnName="slm_Compulsory_Gross_Premium" />
+          <ScalarProperty Name="slm_Compulsory_Cov_Amt" ColumnName="slm_Compulsory_Cov_Amt" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Exp_Date" ColumnName="slm_Compulsory_Policy_Exp_Date" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Eff_Date" ColumnName="slm_Compulsory_Policy_Eff_Date" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Year" ColumnName="slm_Compulsory_Policy_Year" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Number" ColumnName="slm_Compulsory_Policy_Number" />
+          <ScalarProperty Name="slm_Driver_Birthdate2" ColumnName="slm_Driver_Birthdate2" />
+          <ScalarProperty Name="slm_Driver_Telno2" ColumnName="slm_Driver_Telno2" />
+          <ScalarProperty Name="slm_Driver_Last_Name2" ColumnName="slm_Driver_Last_Name2" />
+          <ScalarProperty Name="slm_Driver_First_Name2" ColumnName="slm_Driver_First_Name2" />
+          <ScalarProperty Name="slm_Driver_Title_Name2_Org" ColumnName="slm_Driver_Title_Name2_Org" />
+          <ScalarProperty Name="slm_Driver_TitleId2" ColumnName="slm_Driver_TitleId2" />
+          <ScalarProperty Name="slm_Driver_Birthdate1" ColumnName="slm_Driver_Birthdate1" />
+          <ScalarProperty Name="slm_Driver_Telno1" ColumnName="slm_Driver_Telno1" />
+          <ScalarProperty Name="slm_Driver_Last_Name1" ColumnName="slm_Driver_Last_Name1" />
+          <ScalarProperty Name="slm_Driver_First_Name1" ColumnName="slm_Driver_First_Name1" />
+          <ScalarProperty Name="slm_Driver_Title_Name1_Org" ColumnName="slm_Driver_Title_Name1_Org" />
+          <ScalarProperty Name="slm_Driver_TitleId1" ColumnName="slm_Driver_TitleId1" />
+          <ScalarProperty Name="slm_Benefit_Telno" ColumnName="slm_Benefit_Telno" />
+          <ScalarProperty Name="slm_Benefit_Last_Name" ColumnName="slm_Benefit_Last_Name" />
+          <ScalarProperty Name="slm_Benefit_First_Name" ColumnName="slm_Benefit_First_Name" />
+          <ScalarProperty Name="slm_Benefit_Title_Name_Org" ColumnName="slm_Benefit_Title_Name_Org" />
+          <ScalarProperty Name="slm_Benefit_TitleId" ColumnName="slm_Benefit_TitleId" />
+          <ScalarProperty Name="slm_Voluntary_Company_Name" ColumnName="slm_Voluntary_Company_Name" />
+          <ScalarProperty Name="slm_Voluntary_Company_Code" ColumnName="slm_Voluntary_Company_Code" />
+          <ScalarProperty Name="slm_Voluntary_Channel_Key" ColumnName="slm_Voluntary_Channel_Key" />
+          <ScalarProperty Name="slm_Voluntary_Gross_Premium" ColumnName="slm_Voluntary_Gross_Premium" />
+          <ScalarProperty Name="slm_Voluntary_Cov_Amt" ColumnName="slm_Voluntary_Cov_Amt" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Month" ColumnName="slm_Voluntary_Policy_Exp_Month" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Year" ColumnName="slm_Voluntary_Policy_Exp_Year" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Date" ColumnName="slm_Voluntary_Policy_Exp_Date" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Eff_Date" ColumnName="slm_Voluntary_Policy_Eff_Date" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Year" ColumnName="slm_Voluntary_Policy_Year" />
+          <ScalarProperty Name="slm_Voluntary_Type_Name" ColumnName="slm_Voluntary_Type_Name" />
+          <ScalarProperty Name="slm_Voluntary_Type_Key" ColumnName="slm_Voluntary_Type_Key" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Number" ColumnName="slm_Voluntary_Policy_Number" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Last_Name" ColumnName="slm_Voluntary_Mkt_Last_Name" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_First_Name" ColumnName="slm_Voluntary_Mkt_First_Name" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Title_Org" ColumnName="slm_Voluntary_Mkt_Title_Org" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_TitleId" ColumnName="slm_Voluntary_Mkt_TitleId" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Id_Org" ColumnName="slm_Voluntary_Mkt_Id_Org" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Id" ColumnName="slm_Voluntary_Mkt_Id" />
+          <ScalarProperty Name="slm_Expire_Date" ColumnName="slm_Expire_Date" />
+          <ScalarProperty Name="slm_Cc" ColumnName="slm_Cc" />
+          <ScalarProperty Name="slm_ProvinceRegis_Org" ColumnName="slm_ProvinceRegis_Org" />
+          <ScalarProperty Name="slm_ProvinceRegis" ColumnName="slm_ProvinceRegis" />
+          <ScalarProperty Name="slm_Car_License_No" ColumnName="slm_Car_License_No" />
+          <ScalarProperty Name="slm_Model_Year" ColumnName="slm_Model_Year" />
+          <ScalarProperty Name="slm_Chassis_No" ColumnName="slm_Chassis_No" />
+          <ScalarProperty Name="slm_Engine_No" ColumnName="slm_Engine_No" />
+          <ScalarProperty Name="slm_Model_name_Org" ColumnName="slm_Model_name_Org" />
+          <ScalarProperty Name="slm_Model_Code_Org" ColumnName="slm_Model_Code_Org" />
+          <ScalarProperty Name="slm_Model_Code" ColumnName="slm_Model_Code" />
+          <ScalarProperty Name="slm_Brand_Name_Org" ColumnName="slm_Brand_Name_Org" />
+          <ScalarProperty Name="slm_Brand_Code_Org" ColumnName="slm_Brand_Code_Org" />
+          <ScalarProperty Name="slm_Brand_Code" ColumnName="slm_Brand_Code" />
+          <ScalarProperty Name="slm_Car_By_Gov_Name_Org" ColumnName="slm_Car_By_Gov_Name_Org" />
+          <ScalarProperty Name="slm_Car_By_Gov_Id" ColumnName="slm_Car_By_Gov_Id" />
+          <ScalarProperty Name="slm_Career_Desc_Org" ColumnName="slm_Career_Desc_Org" />
+          <ScalarProperty Name="slm_Career_Key_Org" ColumnName="slm_Career_Key_Org" />
+          <ScalarProperty Name="slm_OccupationId" ColumnName="slm_OccupationId" />
+          <ScalarProperty Name="slm_Tax_Id" ColumnName="slm_Tax_Id" />
+          <ScalarProperty Name="slm_Birthdate" ColumnName="slm_Birthdate" />
+          <ScalarProperty Name="slm_CardType_Org" ColumnName="slm_CardType_Org" />
+          <ScalarProperty Name="slm_CardTypeId" ColumnName="slm_CardTypeId" />
+          <ScalarProperty Name="slm_Marital_Status" ColumnName="slm_Marital_Status" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Name_Org" ColumnName="slm_Title_Name_Org" />
+          <ScalarProperty Name="slm_TitleId" ColumnName="slm_TitleId" />
+          <ScalarProperty Name="slm_Customer_Key" ColumnName="slm_Customer_Key" />
+          <ScalarProperty Name="slm_Car_Category" ColumnName="slm_Car_Category" />
+          <ScalarProperty Name="slm_Contract_Status" ColumnName="slm_Contract_Status" />
+          <ScalarProperty Name="slm_Contract_Year" ColumnName="slm_Contract_Year" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_CmtLot" ColumnName="slm_CmtLot" />
+          <ScalarProperty Name="slm_Cmt_Product_Id" ColumnName="slm_Cmt_Product_Id" />
+          <ScalarProperty Name="slm_TempId" ColumnName="slm_TempId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead">
+          <ScalarProperty Name="slm_IsSMS8" ColumnName="slm_IsSMS8" />
+          <ScalarProperty Name="slm_IsSMS70" ColumnName="slm_IsSMS70" />
+          <ScalarProperty Name="slm_TelNoSms" ColumnName="slm_TelNoSms" />
+          <ScalarProperty Name="slm_Contract_App_Date" ColumnName="slm_Contract_App_Date" />
+          <ScalarProperty Name="slm_Reference2" ColumnName="slm_Reference2" />
+          <ScalarProperty Name="slm_Reference1" ColumnName="slm_Reference1" />
+          <ScalarProperty Name="slm_IsExportTKSDate" ColumnName="slm_IsExportTKSDate" />
+          <ScalarProperty Name="slm_IsExportTKS" ColumnName="slm_IsExportTKS" />
+          <ScalarProperty Name="slm_PeriodYear" ColumnName="slm_PeriodYear" />
+          <ScalarProperty Name="slm_PeriodMonth" ColumnName="slm_PeriodMonth" />
+          <ScalarProperty Name="slm_IsExportExpiredDate" ColumnName="slm_IsExportExpiredDate" />
+          <ScalarProperty Name="slm_IsExportExpired" ColumnName="slm_IsExportExpired" />
+          <ScalarProperty Name="slm_RemarkAct" ColumnName="slm_RemarkAct" />
+          <ScalarProperty Name="slm_RemarkPolicy" ColumnName="slm_RemarkPolicy" />
+          <ScalarProperty Name="slm_StatusDate" ColumnName="slm_StatusDate" />
+          <ScalarProperty Name="slm_ObtPro03FlagDate" ColumnName="slm_ObtPro03FlagDate" />
+          <ScalarProperty Name="slm_OldSubStatus" ColumnName="slm_OldSubStatus" />
+          <ScalarProperty Name="slm_OldStatus" ColumnName="slm_OldStatus" />
+          <ScalarProperty Name="slm_OldOwner" ColumnName="slm_OldOwner" />
+          <ScalarProperty Name="slm_Receiver" ColumnName="slm_Receiver" />
+          <ScalarProperty Name="slm_SendDocBrandCode" ColumnName="slm_SendDocBrandCode" />
+          <ScalarProperty Name="slm_SendDocFlag" ColumnName="slm_SendDocFlag" />
+          <ScalarProperty Name="slm_CurrentSLA" ColumnName="slm_CurrentSLA" />
+          <ScalarProperty Name="slm_TotalWork" ColumnName="slm_TotalWork" />
+          <ScalarProperty Name="slm_TotalAlert" ColumnName="slm_TotalAlert" />
+          <ScalarProperty Name="slm_ThisWork" ColumnName="slm_ThisWork" />
+          <ScalarProperty Name="slm_RemarkPayment" ColumnName="slm_RemarkPayment" />
+          <ScalarProperty Name="slm_Type" ColumnName="slm_Type" />
+          <ScalarProperty Name="slm_Voluntary_First_Create_Date" ColumnName="slm_Voluntary_First_Create_Date" />
+          <ScalarProperty Name="slm_Curent_Substatus" ColumnName="slm_Curent_Substatus" />
+          <ScalarProperty Name="slm_Current_Status" ColumnName="slm_Current_Status" />
+          <ScalarProperty Name="slm_AssignBy" ColumnName="slm_AssignBy" />
+          <ScalarProperty Name="slm_ObtPro03Flag" ColumnName="slm_ObtPro03Flag" />
+          <ScalarProperty Name="slm_NextContactDate" ColumnName="slm_NextContactDate" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_NextSLA" ColumnName="slm_NextSLA" />
+          <ScalarProperty Name="slm_Counting" ColumnName="slm_Counting" />
+          <ScalarProperty Name="slm_SubStatus" ColumnName="slm_SubStatus" />
+          <ScalarProperty Name="slm_Status" ColumnName="slm_Status" />
+          <ScalarProperty Name="slm_Assign_Status" ColumnName="slm_Assign_Status" />
+          <ScalarProperty Name="slm_AssignDescription" ColumnName="slm_AssignDescription" />
+          <ScalarProperty Name="slm_AssignType" ColumnName="slm_AssignType" />
+          <ScalarProperty Name="slm_AssignFlag" ColumnName="slm_AssignFlag" />
+          <ScalarProperty Name="slm_AssignDate" ColumnName="slm_AssignDate" />
+          <ScalarProperty Name="slm_Owner_Team" ColumnName="slm_Owner_Team" />
+          <ScalarProperty Name="slm_Owner_Position" ColumnName="slm_Owner_Position" />
+          <ScalarProperty Name="slm_OwnerBranch" ColumnName="slm_OwnerBranch" />
+          <ScalarProperty Name="slm_Owner" ColumnName="slm_Owner" />
+          <ScalarProperty Name="slm_sms" ColumnName="slm_sms" />
+          <ScalarProperty Name="slm_Email" ColumnName="slm_Email" />
+          <ScalarProperty Name="slm_View_UpdateDate" ColumnName="slm_View_UpdateDate" />
+          <ScalarProperty Name="slm_Grade" ColumnName="slm_Grade" />
+          <ScalarProperty Name="slm_Guarantor_Telno3" ColumnName="slm_Guarantor_Telno3" />
+          <ScalarProperty Name="slm_Guarantor_Relation3_Org" ColumnName="slm_Guarantor_Relation3_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId3" ColumnName="slm_Guarantor_RelationId3" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id3" ColumnName="slm_Guarantor_Card_Id3" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name3" ColumnName="slm_Guarantor_Last_Name3" />
+          <ScalarProperty Name="slm_Guarantor_First_Name3" ColumnName="slm_Guarantor_First_Name3" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name3_Org" ColumnName="slm_Guarantor_Title_Name3_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId3" ColumnName="slm_Guarantor_TitleId3" />
+          <ScalarProperty Name="slm_Guarantor_Code3" ColumnName="slm_Guarantor_Code3" />
+          <ScalarProperty Name="slm_Guarantor_Telno2" ColumnName="slm_Guarantor_Telno2" />
+          <ScalarProperty Name="slm_Guarantor_Relation2_Org" ColumnName="slm_Guarantor_Relation2_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId2" ColumnName="slm_Guarantor_RelationId2" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id2" ColumnName="slm_Guarantor_Card_Id2" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name2" ColumnName="slm_Guarantor_Last_Name2" />
+          <ScalarProperty Name="slm_Guarantor_First_Name2" ColumnName="slm_Guarantor_First_Name2" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name2_Org" ColumnName="slm_Guarantor_Title_Name2_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId2" ColumnName="slm_Guarantor_TitleId2" />
+          <ScalarProperty Name="slm_Guarantor_Code2" ColumnName="slm_Guarantor_Code2" />
+          <ScalarProperty Name="slm_Guarantor_Telno1" ColumnName="slm_Guarantor_Telno1" />
+          <ScalarProperty Name="slm_Guarantor_Relation1_Org" ColumnName="slm_Guarantor_Relation1_Org" />
+          <ScalarProperty Name="slm_Guarantor_RelationId1" ColumnName="slm_Guarantor_RelationId1" />
+          <ScalarProperty Name="slm_Guarantor_Card_Id1" ColumnName="slm_Guarantor_Card_Id1" />
+          <ScalarProperty Name="slm_Guarantor_Last_Name1" ColumnName="slm_Guarantor_Last_Name1" />
+          <ScalarProperty Name="slm_Guarantor_First_Name1" ColumnName="slm_Guarantor_First_Name1" />
+          <ScalarProperty Name="slm_Guarantor_Title_Name1_Org" ColumnName="slm_Guarantor_Title_Name1_Org" />
+          <ScalarProperty Name="slm_Guarantor_TitleId1" ColumnName="slm_Guarantor_TitleId1" />
+          <ScalarProperty Name="slm_Guarantor_Code1" ColumnName="slm_Guarantor_Code1" />
+          <ScalarProperty Name="slm_Compulsory_Company_Name" ColumnName="slm_Compulsory_Company_Name" />
+          <ScalarProperty Name="slm_Compulsory_Company_Code" ColumnName="slm_Compulsory_Company_Code" />
+          <ScalarProperty Name="slm_Compulsory_Gross_Premium" ColumnName="slm_Compulsory_Gross_Premium" />
+          <ScalarProperty Name="slm_Compulsory_Cov_Amt" ColumnName="slm_Compulsory_Cov_Amt" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Exp_Date" ColumnName="slm_Compulsory_Policy_Exp_Date" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Eff_Date" ColumnName="slm_Compulsory_Policy_Eff_Date" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Year" ColumnName="slm_Compulsory_Policy_Year" />
+          <ScalarProperty Name="slm_Compulsory_Policy_Number" ColumnName="slm_Compulsory_Policy_Number" />
+          <ScalarProperty Name="slm_Driver_Birthdate2" ColumnName="slm_Driver_Birthdate2" />
+          <ScalarProperty Name="slm_Driver_Telno2" ColumnName="slm_Driver_Telno2" />
+          <ScalarProperty Name="slm_Driver_Last_Name2" ColumnName="slm_Driver_Last_Name2" />
+          <ScalarProperty Name="slm_Driver_First_Name2" ColumnName="slm_Driver_First_Name2" />
+          <ScalarProperty Name="slm_Driver_Title_Name2_Org" ColumnName="slm_Driver_Title_Name2_Org" />
+          <ScalarProperty Name="slm_Driver_TitleId2" ColumnName="slm_Driver_TitleId2" />
+          <ScalarProperty Name="slm_Driver_Birthdate1" ColumnName="slm_Driver_Birthdate1" />
+          <ScalarProperty Name="slm_Driver_Telno1" ColumnName="slm_Driver_Telno1" />
+          <ScalarProperty Name="slm_Driver_Last_Name1" ColumnName="slm_Driver_Last_Name1" />
+          <ScalarProperty Name="slm_Driver_First_Name1" ColumnName="slm_Driver_First_Name1" />
+          <ScalarProperty Name="slm_Driver_Title_Name1_Org" ColumnName="slm_Driver_Title_Name1_Org" />
+          <ScalarProperty Name="slm_Driver_TitleId1" ColumnName="slm_Driver_TitleId1" />
+          <ScalarProperty Name="slm_Benefit_Telno" ColumnName="slm_Benefit_Telno" />
+          <ScalarProperty Name="slm_Benefit_Last_Name" ColumnName="slm_Benefit_Last_Name" />
+          <ScalarProperty Name="slm_Benefit_First_Name" ColumnName="slm_Benefit_First_Name" />
+          <ScalarProperty Name="slm_Benefit_Title_Name_Org" ColumnName="slm_Benefit_Title_Name_Org" />
+          <ScalarProperty Name="slm_Benefit_TitleId" ColumnName="slm_Benefit_TitleId" />
+          <ScalarProperty Name="slm_Voluntary_Company_Name" ColumnName="slm_Voluntary_Company_Name" />
+          <ScalarProperty Name="slm_Voluntary_Company_Code" ColumnName="slm_Voluntary_Company_Code" />
+          <ScalarProperty Name="slm_Voluntary_Channel_Key" ColumnName="slm_Voluntary_Channel_Key" />
+          <ScalarProperty Name="slm_Voluntary_Gross_Premium" ColumnName="slm_Voluntary_Gross_Premium" />
+          <ScalarProperty Name="slm_Voluntary_Cov_Amt" ColumnName="slm_Voluntary_Cov_Amt" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Month" ColumnName="slm_Voluntary_Policy_Exp_Month" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Year" ColumnName="slm_Voluntary_Policy_Exp_Year" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Exp_Date" ColumnName="slm_Voluntary_Policy_Exp_Date" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Eff_Date" ColumnName="slm_Voluntary_Policy_Eff_Date" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Year" ColumnName="slm_Voluntary_Policy_Year" />
+          <ScalarProperty Name="slm_Voluntary_Type_Name" ColumnName="slm_Voluntary_Type_Name" />
+          <ScalarProperty Name="slm_Voluntary_Type_Key" ColumnName="slm_Voluntary_Type_Key" />
+          <ScalarProperty Name="slm_Voluntary_Policy_Number" ColumnName="slm_Voluntary_Policy_Number" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Last_Name" ColumnName="slm_Voluntary_Mkt_Last_Name" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_First_Name" ColumnName="slm_Voluntary_Mkt_First_Name" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Title_Org" ColumnName="slm_Voluntary_Mkt_Title_Org" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_TitleId" ColumnName="slm_Voluntary_Mkt_TitleId" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Id_Org" ColumnName="slm_Voluntary_Mkt_Id_Org" />
+          <ScalarProperty Name="slm_Voluntary_Mkt_Id" ColumnName="slm_Voluntary_Mkt_Id" />
+          <ScalarProperty Name="slm_Expire_Date" ColumnName="slm_Expire_Date" />
+          <ScalarProperty Name="slm_Cc" ColumnName="slm_Cc" />
+          <ScalarProperty Name="slm_ProvinceRegis_Org" ColumnName="slm_ProvinceRegis_Org" />
+          <ScalarProperty Name="slm_ProvinceRegis" ColumnName="slm_ProvinceRegis" />
+          <ScalarProperty Name="slm_Car_License_No" ColumnName="slm_Car_License_No" />
+          <ScalarProperty Name="slm_Model_Year" ColumnName="slm_Model_Year" />
+          <ScalarProperty Name="slm_Chassis_No" ColumnName="slm_Chassis_No" />
+          <ScalarProperty Name="slm_Engine_No" ColumnName="slm_Engine_No" />
+          <ScalarProperty Name="slm_Model_name_Org" ColumnName="slm_Model_name_Org" />
+          <ScalarProperty Name="slm_Model_Code_Org" ColumnName="slm_Model_Code_Org" />
+          <ScalarProperty Name="slm_Model_Code" ColumnName="slm_Model_Code" />
+          <ScalarProperty Name="slm_Brand_Name_Org" ColumnName="slm_Brand_Name_Org" />
+          <ScalarProperty Name="slm_Brand_Code_Org" ColumnName="slm_Brand_Code_Org" />
+          <ScalarProperty Name="slm_Brand_Code" ColumnName="slm_Brand_Code" />
+          <ScalarProperty Name="slm_Car_By_Gov_Name_Org" ColumnName="slm_Car_By_Gov_Name_Org" />
+          <ScalarProperty Name="slm_Car_By_Gov_Id" ColumnName="slm_Car_By_Gov_Id" />
+          <ScalarProperty Name="slm_Career_Desc_Org" ColumnName="slm_Career_Desc_Org" />
+          <ScalarProperty Name="slm_Career_Key_Org" ColumnName="slm_Career_Key_Org" />
+          <ScalarProperty Name="slm_OccupationId" ColumnName="slm_OccupationId" />
+          <ScalarProperty Name="slm_Tax_Id" ColumnName="slm_Tax_Id" />
+          <ScalarProperty Name="slm_Birthdate" ColumnName="slm_Birthdate" />
+          <ScalarProperty Name="slm_CardType_Org" ColumnName="slm_CardType_Org" />
+          <ScalarProperty Name="slm_CardTypeId" ColumnName="slm_CardTypeId" />
+          <ScalarProperty Name="slm_Marital_Status" ColumnName="slm_Marital_Status" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Name_Org" ColumnName="slm_Title_Name_Org" />
+          <ScalarProperty Name="slm_TitleId" ColumnName="slm_TitleId" />
+          <ScalarProperty Name="slm_Customer_Key" ColumnName="slm_Customer_Key" />
+          <ScalarProperty Name="slm_Car_Category" ColumnName="slm_Car_Category" />
+          <ScalarProperty Name="slm_Contract_Status" ColumnName="slm_Contract_Status" />
+          <ScalarProperty Name="slm_Contract_Year" ColumnName="slm_Contract_Year" />
+          <ScalarProperty Name="slm_BranchCode" ColumnName="slm_BranchCode" />
+          <ScalarProperty Name="slm_CampaignId" ColumnName="slm_CampaignId" />
+          <ScalarProperty Name="slm_Product_Id" ColumnName="slm_Product_Id" />
+          <ScalarProperty Name="slm_Contract_Number" ColumnName="slm_Contract_Number" />
+          <ScalarProperty Name="slm_CmtLot" ColumnName="slm_CmtLot" />
+          <ScalarProperty Name="slm_Cmt_Product_Id" ColumnName="slm_Cmt_Product_Id" />
+          <ScalarProperty Name="slm_TempId" ColumnName="slm_TempId" />
+          <ScalarProperty Name="slm_Prelead_Id" ColumnName="slm_Prelead_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_cusinfo">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_cusinfo">
+        <MappingFragment StoreEntitySet="kkslm_tr_cusinfo">
+          <ScalarProperty Name="slm_TelNoSms" ColumnName="slm_TelNoSms" />
+          <ScalarProperty Name="slm_MaritalStatus" ColumnName="slm_MaritalStatus" />
+          <ScalarProperty Name="slm_CardType" ColumnName="slm_CardType" />
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_ContactBranch" ColumnName="slm_ContactBranch" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_ContactTime" ColumnName="slm_ContactTime" />
+          <ScalarProperty Name="slm_TelesaleName" ColumnName="slm_TelesaleName" />
+          <ScalarProperty Name="slm_TelesaleId" ColumnName="slm_TelesaleId" />
+          <ScalarProperty Name="slm_PathLink" ColumnName="slm_PathLink" />
+          <ScalarProperty Name="slm_Note" ColumnName="slm_Note" />
+          <ScalarProperty Name="slm_Detail" ColumnName="slm_Detail" />
+          <ScalarProperty Name="slm_Topic" ColumnName="slm_Topic" />
+          <ScalarProperty Name="slm_IsCustomer" ColumnName="slm_IsCustomer" />
+          <ScalarProperty Name="slm_BaseSalary" ColumnName="slm_BaseSalary" />
+          <ScalarProperty Name="slm_Occupation" ColumnName="slm_Occupation" />
+          <ScalarProperty Name="slm_PostalCode" ColumnName="slm_PostalCode" />
+          <ScalarProperty Name="slm_Province" ColumnName="slm_Province" />
+          <ScalarProperty Name="slm_Amphur" ColumnName="slm_Amphur" />
+          <ScalarProperty Name="slm_Tambon" ColumnName="slm_Tambon" />
+          <ScalarProperty Name="slm_Street" ColumnName="slm_Street" />
+          <ScalarProperty Name="slm_Soi" ColumnName="slm_Soi" />
+          <ScalarProperty Name="slm_Floor" ColumnName="slm_Floor" />
+          <ScalarProperty Name="slm_AddressNo" ColumnName="slm_AddressNo" />
+          <ScalarProperty Name="slm_BuildingName" ColumnName="slm_BuildingName" />
+          <ScalarProperty Name="slm_Ext_3" ColumnName="slm_Ext_3" />
+          <ScalarProperty Name="slm_TelNo_3" ColumnName="slm_TelNo_3" />
+          <ScalarProperty Name="slm_Ext_2" ColumnName="slm_Ext_2" />
+          <ScalarProperty Name="slm_TelNo_2" ColumnName="slm_TelNo_2" />
+          <ScalarProperty Name="slm_Email" ColumnName="slm_Email" />
+          <ScalarProperty Name="slm_Birthdate" ColumnName="slm_Birthdate" />
+          <ScalarProperty Name="slm_CitizenId" ColumnName="slm_CitizenId" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_CusCode" ColumnName="slm_CusCode" />
+          <ScalarProperty Name="slm_TicketId" ColumnName="slm_TicketId" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_notify_premium">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_notify_premium">
+        <MappingFragment StoreEntitySet="kkslm_tr_notify_premium">
+          <ScalarProperty Name="slm_DriverFlag" ColumnName="slm_DriverFlag" />
+          <ScalarProperty Name="slm_ActGrossPremium" ColumnName="slm_ActGrossPremium" />
+          <ScalarProperty Name="slm_ActVat_Amount" ColumnName="slm_ActVat_Amount" />
+          <ScalarProperty Name="slm_ActStamp" ColumnName="slm_ActStamp" />
+          <ScalarProperty Name="slm_ActNetPremium" ColumnName="slm_ActNetPremium" />
+          <ScalarProperty Name="slm_RunNo" ColumnName="slm_RunNo" />
+          <ScalarProperty Name="slm_PeriodYear" ColumnName="slm_PeriodYear" />
+          <ScalarProperty Name="slm_PeriodMonth" ColumnName="slm_PeriodMonth" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_InsuranceComId" ColumnName="slm_InsuranceComId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Remark" ColumnName="slm_Remark" />
+          <ScalarProperty Name="slm_GrossPremium" ColumnName="slm_GrossPremium" />
+          <ScalarProperty Name="slm_Vat_Amount" ColumnName="slm_Vat_Amount" />
+          <ScalarProperty Name="slm_Stamp" ColumnName="slm_Stamp" />
+          <ScalarProperty Name="slm_NetPremium" ColumnName="slm_NetPremium" />
+          <ScalarProperty Name="slm_Discount_Amount" ColumnName="slm_Discount_Amount" />
+          <ScalarProperty Name="slm_Discount_Percent" ColumnName="slm_Discount_Percent" />
+          <ScalarProperty Name="slm_Sum_Insure" ColumnName="slm_Sum_Insure" />
+          <ScalarProperty Name="slm_InsuranceCarTypeId" ColumnName="slm_InsuranceCarTypeId" />
+          <ScalarProperty Name="slm_VIN" ColumnName="slm_VIN" />
+          <ScalarProperty Name="slm_Model" ColumnName="slm_Model" />
+          <ScalarProperty Name="slm_Brand" ColumnName="slm_Brand" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_InsExpireDate" ColumnName="slm_InsExpireDate" />
+          <ScalarProperty Name="slm_Claim_Garage" ColumnName="slm_Claim_Garage" />
+          <ScalarProperty Name="slm_Claim_Center" ColumnName="slm_Claim_Center" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Id" ColumnName="slm_Title_Id" />
+          <ScalarProperty Name="slm_PolicyNo" ColumnName="slm_PolicyNo" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_notify_premium_temp">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_notify_premium_temp">
+        <MappingFragment StoreEntitySet="kkslm_tr_notify_premium_temp">
+          <ScalarProperty Name="slm_ImportDate" ColumnName="slm_ImportDate" />
+          <ScalarProperty Name="slm_ImportFlag" ColumnName="slm_ImportFlag" />
+          <ScalarProperty Name="slm_Filename" ColumnName="slm_Filename" />
+          <ScalarProperty Name="slm_DriverFlag" ColumnName="slm_DriverFlag" />
+          <ScalarProperty Name="slm_ActGrossPremium" ColumnName="slm_ActGrossPremium" />
+          <ScalarProperty Name="slm_ActVat_Amount" ColumnName="slm_ActVat_Amount" />
+          <ScalarProperty Name="slm_ActStamp" ColumnName="slm_ActStamp" />
+          <ScalarProperty Name="slm_ActNetPremium" ColumnName="slm_ActNetPremium" />
+          <ScalarProperty Name="slm_RunNo" ColumnName="slm_RunNo" />
+          <ScalarProperty Name="slm_PeriodYear" ColumnName="slm_PeriodYear" />
+          <ScalarProperty Name="slm_PeriodMonth" ColumnName="slm_PeriodMonth" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_InsuranceComId" ColumnName="slm_InsuranceComId" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_Remark" ColumnName="slm_Remark" />
+          <ScalarProperty Name="slm_GrossPremium" ColumnName="slm_GrossPremium" />
+          <ScalarProperty Name="slm_Vat_Amount" ColumnName="slm_Vat_Amount" />
+          <ScalarProperty Name="slm_Stamp" ColumnName="slm_Stamp" />
+          <ScalarProperty Name="slm_NetPremium" ColumnName="slm_NetPremium" />
+          <ScalarProperty Name="slm_Discount_Amount" ColumnName="slm_Discount_Amount" />
+          <ScalarProperty Name="slm_Discount_Percent" ColumnName="slm_Discount_Percent" />
+          <ScalarProperty Name="slm_Sum_Insure" ColumnName="slm_Sum_Insure" />
+          <ScalarProperty Name="slm_InsuranceCarTypeId" ColumnName="slm_InsuranceCarTypeId" />
+          <ScalarProperty Name="slm_VIN" ColumnName="slm_VIN" />
+          <ScalarProperty Name="slm_Model" ColumnName="slm_Model" />
+          <ScalarProperty Name="slm_Brand" ColumnName="slm_Brand" />
+          <ScalarProperty Name="slm_CarLicenseNo" ColumnName="slm_CarLicenseNo" />
+          <ScalarProperty Name="slm_InsExpireDate" ColumnName="slm_InsExpireDate" />
+          <ScalarProperty Name="slm_Claim_Garage" ColumnName="slm_Claim_Garage" />
+          <ScalarProperty Name="slm_Claim_Center" ColumnName="slm_Claim_Center" />
+          <ScalarProperty Name="slm_LastName" ColumnName="slm_LastName" />
+          <ScalarProperty Name="slm_Name" ColumnName="slm_Name" />
+          <ScalarProperty Name="slm_Title_Id" ColumnName="slm_Title_Id" />
+          <ScalarProperty Name="slm_PolicyNo" ColumnName="slm_PolicyNo" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_ms_repairtype">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_ms_repairtype">
+        <MappingFragment StoreEntitySet="kkslm_ms_repairtype">
+          <ScalarProperty Name="is_Deleted" ColumnName="is_Deleted" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_RepairTypeName" ColumnName="slm_RepairTypeName" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead_compare">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead_compare">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead_compare">
+          <ScalarProperty Name="slm_DeDuctibleFlag" ColumnName="slm_DeDuctibleFlag" />
+          <ScalarProperty Name="slm_MedicalFeePassenger" ColumnName="slm_MedicalFeePassenger" />
+          <ScalarProperty Name="slm_MedicalFeeDriver" ColumnName="slm_MedicalFeeDriver" />
+          <ScalarProperty Name="slm_PersonalAccidentDriver" ColumnName="slm_PersonalAccidentDriver" />
+          <ScalarProperty Name="slm_PersonalAccidentPassenger" ColumnName="slm_PersonalAccidentPassenger" />
+          <ScalarProperty Name="slm_Vat1PercentBath" ColumnName="slm_Vat1PercentBath" />
+          <ScalarProperty Name="slm_DiscountBath" ColumnName="slm_DiscountBath" />
+          <ScalarProperty Name="slm_DiscountPercent" ColumnName="slm_DiscountPercent" />
+          <ScalarProperty Name="slm_Vat1Percent" ColumnName="slm_Vat1Percent" />
+          <ScalarProperty Name="slm_PolicyEndCoverDate" ColumnName="slm_PolicyEndCoverDate" />
+          <ScalarProperty Name="slm_PolicyStartCoverDate" ColumnName="slm_PolicyStartCoverDate" />
+          <ScalarProperty Name="slm_OldReceiveNo" ColumnName="slm_OldReceiveNo" />
+          <ScalarProperty Name="slm_Driver_Birthdate2" ColumnName="slm_Driver_Birthdate2" />
+          <ScalarProperty Name="slm_Driver_Last_Name2" ColumnName="slm_Driver_Last_Name2" />
+          <ScalarProperty Name="slm_Driver_First_Name2" ColumnName="slm_Driver_First_Name2" />
+          <ScalarProperty Name="slm_Driver_TitleId2" ColumnName="slm_Driver_TitleId2" />
+          <ScalarProperty Name="slm_Driver_Birthdate1" ColumnName="slm_Driver_Birthdate1" />
+          <ScalarProperty Name="slm_Driver_Last_Name1" ColumnName="slm_Driver_Last_Name1" />
+          <ScalarProperty Name="slm_Driver_First_Name1" ColumnName="slm_Driver_First_Name1" />
+          <ScalarProperty Name="slm_Driver_TitleId1" ColumnName="slm_Driver_TitleId1" />
+          <ScalarProperty Name="slm_DriverFlag" ColumnName="slm_DriverFlag" />
+          <ScalarProperty Name="slm_OldPolicyNo" ColumnName="slm_OldPolicyNo" />
+          <ScalarProperty Name="slm_Selected" ColumnName="slm_Selected" />
+          <ScalarProperty Name="slm_UpdatedBy" ColumnName="slm_UpdatedBy" />
+          <ScalarProperty Name="slm_UpdatedDate" ColumnName="slm_UpdatedDate" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_CostSave" ColumnName="slm_CostSave" />
+          <ScalarProperty Name="slm_PolicyGrossPremiumPay" ColumnName="slm_PolicyGrossPremiumPay" />
+          <ScalarProperty Name="slm_NetGrossPremium" ColumnName="slm_NetGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossPremium" ColumnName="slm_PolicyGrossPremium" />
+          <ScalarProperty Name="slm_PolicyGrossVat" ColumnName="slm_PolicyGrossVat" />
+          <ScalarProperty Name="slm_PolicyGrossStamp" ColumnName="slm_PolicyGrossStamp" />
+          <ScalarProperty Name="slm_InsuranceDriver" ColumnName="slm_InsuranceDriver" />
+          <ScalarProperty Name="slm_MedicalFeeMan" ColumnName="slm_MedicalFeeMan" />
+          <ScalarProperty Name="slm_MedicalFee" ColumnName="slm_MedicalFee" />
+          <ScalarProperty Name="slm_PersonalAccidentMan" ColumnName="slm_PersonalAccidentMan" />
+          <ScalarProperty Name="slm_PersonalAccident" ColumnName="slm_PersonalAccident" />
+          <ScalarProperty Name="slm_DeDuctible" ColumnName="slm_DeDuctible" />
+          <ScalarProperty Name="slm_FT" ColumnName="slm_FT" />
+          <ScalarProperty Name="slm_OD" ColumnName="slm_OD" />
+          <ScalarProperty Name="slm_RepairTypeId" ColumnName="slm_RepairTypeId" />
+          <ScalarProperty Name="slm_TPPD" ColumnName="slm_TPPD" />
+          <ScalarProperty Name="slm_InjuryDeath" ColumnName="slm_InjuryDeath" />
+          <ScalarProperty Name="slm_CoverageTypeId" ColumnName="slm_CoverageTypeId" />
+          <ScalarProperty Name="slm_Ins_Com_Id" ColumnName="slm_Ins_Com_Id" />
+          <ScalarProperty Name="slm_Year" ColumnName="slm_Year" />
+          <ScalarProperty Name="slm_Seq" ColumnName="slm_Seq" />
+          <ScalarProperty Name="slm_PromotionId" ColumnName="slm_PromotionId" />
+          <ScalarProperty Name="slm_NotifyPremiumId" ColumnName="slm_NotifyPremiumId" />
+          <ScalarProperty Name="slm_Prelead_Id" ColumnName="slm_Prelead_Id" />
+          <ScalarProperty Name="slm_PreLeadCompareId" ColumnName="slm_PreLeadCompareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kkslm_tr_prelead_assign_log">
+      <EntityTypeMapping TypeName="SLMDBModel.kkslm_tr_prelead_assign_log">
+        <MappingFragment StoreEntitySet="kkslm_tr_prelead_assign_log">
+          <ScalarProperty Name="slm_ContractNo" ColumnName="slm_ContractNo" />
+          <ScalarProperty Name="slm_CreatedBy" ColumnName="slm_CreatedBy" />
+          <ScalarProperty Name="slm_CreatedDate" ColumnName="slm_CreatedDate" />
+          <ScalarProperty Name="slm_Remark" ColumnName="slm_Remark" />
+          <ScalarProperty Name="slm_NewAssignType" ColumnName="slm_NewAssignType" />
+          <ScalarProperty Name="slm_OldAssignType" ColumnName="slm_OldAssignType" />
+          <ScalarProperty Name="slm_CmtLot" ColumnName="slm_CmtLot" />
+          <ScalarProperty Name="slm_Cmt_Product_Id" ColumnName="slm_Cmt_Product_Id" />
+          <ScalarProperty Name="slm_Id" ColumnName="slm_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

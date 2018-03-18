@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OPERDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="kkslm_ms_benefit">
+    <Key>
+      <PropertyRef Name="slm_BenefitId" />
+    </Key>
+    <Property Name="slm_BenefitId" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_CampaignInsuranceId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_ComissionFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_ComissionPercentValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_ComissionBathValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_OV1Flag" Type="char" MaxLength="1" />
+    <Property Name="slm_OV1PercentValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_OV1BathValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_OV2Flag" Type="char" MaxLength="1" />
+    <Property Name="slm_OV2PercentValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_OV2BathValue" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="slm_VatFlag" Type="char" MaxLength="1" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="slm_BenefitTypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsurancecarTypeId" Type="int" />
+    <Property Name="slm_CoverageTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_campaigninsurance">
+    <Key>
+      <PropertyRef Name="slm_CampaignInsuranceId" />
+    </Key>
+    <Property Name="slm_CampaignInsuranceId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_CampaignName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_ins_com">
+    <Key>
+      <PropertyRef Name="slm_Ins_Com_Id" />
+    </Key>
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_InsCode" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="slm_InsABB" Type="varchar" MaxLength="50" />
+    <Property Name="slm_InsNameEng" Type="varchar" MaxLength="500" />
+    <Property Name="slm_InsNameTh" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="slm_InsType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="slm_InsTax" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_Tel" Type="varchar" MaxLength="200" />
+    <Property Name="slm_TelContact" Type="varchar" MaxLength="50" />
+    <Property Name="slm_AddressNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Moo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_BuildingName" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Floor" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Soi" Type="varchar" MaxLength="500" />
+    <Property Name="slm_Road" Type="varchar" MaxLength="500" />
+    <Property Name="slm_ProvinceId" Type="int" />
+    <Property Name="slm_AmphurId" Type="int" />
+    <Property Name="slm_TambolId" Type="int" />
+    <Property Name="slm_PostCode" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_promotioninsurance">
+    <Key>
+      <PropertyRef Name="slm_PromotionId" />
+    </Key>
+    <Property Name="slm_PromotionId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_CampaignInsuranceId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_DurationYear" Type="int" />
+    <Property Name="slm_EffectiveDateFrom" Type="datetime" />
+    <Property Name="slm_EffectiveDateTo" Type="datetime" />
+    <Property Name="slm_Brand_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Model_Code" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UseCarType" Type="varchar" MaxLength="250" />
+    <Property Name="slm_CoverageTypeId" Type="int" />
+    <Property Name="slm_AgeDrivenFlag" Type="varchar" MaxLength="3" />
+    <Property Name="slm_RepairTypeId" Type="int" />
+    <Property Name="slm_AgeCarYear" Type="int" />
+    <Property Name="slm_EngineSize" Type="varchar" MaxLength="500" />
+    <Property Name="slm_OD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_FT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_DeDuctible" Type="varchar" MaxLength="3" />
+    <Property Name="slm_GrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Stamp" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Vat" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_NetGrossPremium" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Act" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_InjuryDeath" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_TPPD" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccident" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_PersonalAccidentDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_PersonalAccidentPassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFee" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_MedicalFeeDriver" Type="varchar" MaxLength="3" />
+    <Property Name="slm_MedicalFeePassenger" Type="varchar" MaxLength="3" />
+    <Property Name="slm_InsuranceDriver" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="slm_Remark" Type="varchar(max)" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_receiveno">
+    <Key>
+      <PropertyRef Name="slm_ReceiveNoId" />
+    </Key>
+    <Property Name="slm_ReceiveNoId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_Lot" Type="int" Nullable="false" />
+    <Property Name="slm_CodeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="slm_ReceiveNoStart" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_ReceiveNoEnd" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kkslm_ms_receivenolist">
+    <Key>
+      <PropertyRef Name="slm_ReceiveNoListId" />
+    </Key>
+    <Property Name="slm_ReceiveNoListId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="slm_ReceiveNoId" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_Product_Id" Type="varchar" MaxLength="10" />
+    <Property Name="slm_Ins_Com_Id" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="slm_ReceiveNo" Type="varchar" MaxLength="50" />
+    <Property Name="slm_Status" Type="char" MaxLength="1" />
+    <Property Name="slm_TicketId" Type="nvarchar" MaxLength="50" />
+    <Property Name="slm_UseDate" Type="datetime" />
+    <Property Name="slm_UseBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="slm_CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_CreatedDate" Type="datetime" />
+    <Property Name="slm_UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="slm_UpdatedDate" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OPERDBModelStoreContainer">
+    <EntitySet Name="kkslm_ms_benefit" EntityType="Self.kkslm_ms_benefit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_campaigninsurance" EntityType="Self.kkslm_ms_campaigninsurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_ins_com" EntityType="Self.kkslm_ms_ins_com" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_promotioninsurance" EntityType="Self.kkslm_ms_promotioninsurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_receiveno" EntityType="Self.kkslm_ms_receiveno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kkslm_ms_receivenolist" EntityType="Self.kkslm_ms_receivenolist" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

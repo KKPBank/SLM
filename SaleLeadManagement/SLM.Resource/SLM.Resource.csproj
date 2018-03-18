@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B58133E-618D-4506-9F57-C76358B87A5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLM.Resource</RootNamespace>
+    <AssemblyName>SLM.Resource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\AccessRightData.cs" />
+    <Compile Include="Data\AccountStatusData.cs" />
+    <Compile Include="Data\ActData.cs" />
+    <Compile Include="Data\ActIssueReportData.cs" />
+    <Compile Include="Data\ActivityConfigData.cs" />
+    <Compile Include="Data\AddressData.cs" />
+    <Compile Include="Data\AssignConditionData.cs" />
+    <Compile Include="Data\BankData.cs" />
+    <Compile Include="Data\BPReportData.cs" />
+    <Compile Include="Data\BranchData.cs" />
+    <Compile Include="Data\BrandCarData.cs" />
+    <Compile Include="Data\CalendarBranchData.cs" />
+    <Compile Include="Data\CampaignWSData.cs" />
+    <Compile Include="Data\ConfigBranchPrivilegeData.cs" />
+    <Compile Include="Data\ConfigProductPremiumData.cs" />
+    <Compile Include="Data\ConfigProductScreenData.cs" />
+    <Compile Include="Data\ConfigProductScriptData.cs" />
+    <Compile Include="Data\ConfigProductSubStatusData.cs" />
+    <Compile Include="Data\ConfigProductTabData.cs" />
+    <Compile Include="Data\ControlListData.cs" />
+    <Compile Include="Data\CountryData.cs" />
+    <Compile Include="Data\CustomerData.cs" />
+    <Compile Include="Data\InsuranceData.cs" />
+    <Compile Include="Data\LeadControlCommonData.cs" />
+    <Compile Include="Data\LicenseData.cs" />
+    <Compile Include="Data\NotificationData.cs" />
+    <Compile Include="Data\PaymentData.cs" />
+    <Compile Include="Data\PreleadData.cs" />
+    <Compile Include="Data\PreleadViewData.cs" />
+    <Compile Include="Data\PremiumData.cs" />
+    <Compile Include="Data\PromotionData.cs" />
+    <Compile Include="Data\RankingData.cs" />
+    <Compile Include="Data\ReAssignLeadData.cs" />
+    <Compile Include="Data\ReceiptInfoData.cs" />
+    <Compile Include="Data\RenewinsuranceData.cs" />
+    <Compile Include="Data\RenewPhoneCallHistoryData.cs" />
+    <Compile Include="Data\SearchInsureSummaryResult.cs" />
+    <Compile Include="Data\ExistingProductData.cs" />
+    <Compile Include="Data\InsuredData.cs" />
+    <Compile Include="Data\LeadData.cs" />
+    <Compile Include="Data\MenuData.cs" />
+    <Compile Include="Data\NoteHistoryData.cs" />
+    <Compile Include="Data\NoticeData.cs" />
+    <Compile Include="Data\InsuranceBenefit.cs" />
+    <Compile Include="Data\OwnerDelegateEmailData.cs" />
+    <Compile Include="Data\OwnerLoggingData.cs" />
+    <Compile Include="Data\PhoneCallHistoryData.cs" />
+    <Compile Include="Data\PhoneCallViewInfo.cs" />
+    <Compile Include="Data\PositionData.cs" />
+    <Compile Include="Data\PrivilegeOwnerData.cs" />
+    <Compile Include="Data\ProductData.cs" />
+    <Compile Include="Data\ReceiveNoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SaveResultData.cs" />
+    <Compile Include="Data\ScreenPrivilegeData.cs" />
+    <Compile Include="Data\SearchLeadCondition.cs" />
+    <Compile Include="Data\SearchLeadResult.cs" />
+    <Compile Include="Data\SearchObtCondition.cs" />
+    <Compile Include="Data\SearchObtResult.cs" />
+    <Compile Include="Data\SearchPromotionCondition.cs" />
+    <Compile Include="Data\SearchPromotionResult.cs" />
+    <Compile Include="Data\SearchRankingResult.cs" />
+    <Compile Include="Data\SearchUserMonitoringCondition.cs" />
+    <Compile Include="Data\SlaData.cs" />
+    <Compile Include="Data\SlmProblemData.cs" />
+    <Compile Include="Data\SortConditionCustomerData.cs" />
+    <Compile Include="Data\StaffData.cs" />
+    <Compile Include="Data\StaffGroupData.cs" />
+    <Compile Include="Data\SuretyData.cs" />
+    <Compile Include="Data\SystemAssignData.cs" />
+    <Compile Include="Data\TeamTelesalesData.cs" />
+    <Compile Include="Data\TitleNameData.cs" />
+    <Compile Include="Data\UploadLeadData.cs" />
+    <Compile Include="Data\UserManagementData.cs" />
+    <Compile Include="Data\UserMonitoringData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SLMConstant.cs" />
+    <Compile Include="SLMUtil.cs" />
+    <Compile Include="XmlSerializerCache.cs" />
+    <Compile Include="XMLTransformer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
